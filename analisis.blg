@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: analisis.aux
+The style file: plain.bst
+Database file #1: referencias.bib
+Warning--empty booktitle in OECD
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            508 strings with 4306 characters,
+and the built_in function-call counts, 755 in all, are:
+= -- 67
+> -- 30
+< -- 1
++ -- 12
+- -- 10
+* -- 46
+:= -- 119
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 36
+empty$ -- 68
+format.name$ -- 10
+if$ -- 166
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 27
+stack$ -- 0
+substring$ -- 38
+swap$ -- 12
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 6
+width$ -- 3
+write$ -- 22
+(There was 1 warning)
