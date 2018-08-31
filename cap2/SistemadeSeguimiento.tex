@@ -1,9 +1,37 @@
 \section{Arquitectura}
 
-En la figura \ref{fig:arquitectura} se describirá la arquitectura propuesta para la solución de la problemática.
+En la figura \ref{fig:arquitectura} se muestra el diagrama de la arquitectura con la cual se trabajara para solventar la solución propuesta
+
+%En la figura \ref{fig:arquitectura} se describirá la arquitectura propuesta para la solución de la problemática.
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{images/cap2/Arquitectura}
 	\caption{Arquitectura} \label{fig:arquitectura}
 \end{figure}
+
+Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro actores que participaran en el sistema. Los cuales son :
+\begin{itemize}
+	\item Administrador
+	\item Médico
+	\item Paciente
+	\item Externo
+\end{itemize}
+
+El actor \textbf{Administrador} sera el encargado de incluir los medicamentos que serán utilizados en los tratamientos.
+
+El actor \textbf{Médico} dentro del sistema podrá agregar el tratamiento para el paciente.
+
+El actor \textbf{Paciente} tendrá las siguientes acciones en el sistema :
+\begin{itemize}
+	\item Agregar el tratamiento medico.
+	\item Modificar los recordatorios del tratamiento.
+	\item Agregar contactos de emergencia.
+	\item Consultar Reportes.
+	\item Consultar Estadísticas.
+	\item Consultar información de medicamentos.
+	\item Creación de perfiles dependientes al \textbf{Paciente}.
+\end{itemize}
+
+El actor \textbf{Externo} accederá al perfil del Paciente en donde podrá realizar las mismas acciones que el actor \textbf{Paciente}.
+Este actor esta enfocado para las personas que cuentan con poca o nula experiencia en los dispositivos móviles.
