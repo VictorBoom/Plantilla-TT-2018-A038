@@ -61,22 +61,22 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro acto
 \section{Módulos}
 La arquitectura contara con los siguientes módulos:
 \begin{itemize}
-	\item Módulo de Autenticación.
-	\item Módulo captura de tratamientos.
-	\item Módulo de recordatorios.
-	\item Módulo de alarmas.
-	\item Módulo de reportes.
-	\item Módulo de estadísticas.
+	\item Módulo de Autenticación: El modulo encargado de verificar tu perfil y darte acceso a los módulos correspondientes.
+	\item Módulo captura de tratamientos: El modulo encargado de ingresar el tratamiento medico y lo asociara al perfil del paciente con la información correspondiente del tratamiento.
+	\item Módulo de recordatorios: Una vez que se paso por el modulo de \textbf{Captura de tratamiento} llegamos al modulo de recordatorios en donde se generaran los notificaciones a partir de la información obtenida del modulo de captura de tratamiento.
+	\item Módulo de alarmas: Este modulo es el encargado de cuando una notificación no haya sido silenciada esta se convierta en una alarma que le estará recordando al paciente tomar su medicamento.
+	\item Módulo de reportes: El modulo de reportes sirve para notificar al medico y al paciente que tan constante ha sido con su tratamiento.
+%	\item Módulo de estadísticas: 
 \end{itemize}
 
-\textbf{Módulo Autenticación: } Este modulo es el encargado de verificar cual es tu perfil y darte acceso a los módulos correspondientes.
+%\textbf{Módulo Autenticación: } Este modulo es el encargado de verificar cual es tu perfil y darte acceso a los módulos correspondientes.
+%
+%\textbf{Módulo captura de tratamientos: }Este módulo es el encargado de ingresar el tratamiento medico que expida el medico y asociar al perfil todos los detalles como lo son, los medicamentos, la dosis.
+%
+%\textbf{Módulo de recordatorios: }Este módulo es el encargado de crear los recordatorios para el tratamiento medico asociado al perfil.
+%
+%\textbf{Módulo de alarmas: }Este módulo se encargara de gestionar a tus contactos de emergencia y te permitirá editar convertir los recordatorios a alarmas de aquellos medicamentos que sean muy importantes.
+%
+%\textbf{Módulo de reportes: }Este módulo generara un reporte en pdf que mostrara el tratamiento medico actual.
 
-\textbf{Módulo captura de tratamientos: }Este módulo es el encargado de ingresar el tratamiento medico que expida el medico y asociar al perfil todos los detalles como lo son, los medicamentos, la dosis.
-
-\textbf{Módulo de recordatorios: }Este módulo es el encargado de crear los recordatorios para el tratamiento medico asociado al perfil.
-
-\textbf{Módulo de alarmas: }Este módulo se encargara de gestionar a tus contactos de emergencia y te permitirá editar convertir los recordatorios a alarmas de aquellos medicamentos que sean muy importantes.
-
-\textbf{Módulo de reportes: }Este módulo generara un reporte en pdf que mostrara el tratamiento medico actual.
-
-\textbf{Módulo de estadísticas:} Este módulo permitirá la visualización de información medica del paciente y de los medicamentos que toma.
+%\textbf{Módulo de estadísticas:} Este módulo permitirá la visualización de información medica del paciente y de los medicamentos que toma.
