@@ -12,28 +12,51 @@ En la figura \ref{fig:arquitectura} se muestra el diagrama de la arquitectura co
 
 Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro actores que participaran en el sistema. Los cuales son :
 \begin{itemize}
-	\item Administrador
-	\item Médico
-	\item Paciente
-	\item Externo
+	\item Administrador: Dentro del sistema se le llama \textbf{Administrador} a la persona que esta encargada de ingresar los medicamentos a la base de datos, ya que estos serán los utilizados en los tratamientos del paciente.
+	
+	\item Paciente: Se le llama paciente a la persona que cuenta con un diagnostico generado por el \textbf{Médico} que se encuentra a cargo de su salud.\\
+	Las acciones con las que cuentan son:
+	\begin{itemize}
+		\item Agregar el tratamiento medico.
+		\item Modificar el tratamiento medico.
+		\item Eliminar el tratamiento medico.
+		\item Agregar médico.
+		\item Modificar médico.
+		\item Eliminar médico.
+		\item Agregar externo.
+		\item Modificar externo.
+		\item Eliminar externo.
+		\item Consulta de su tratamiento.
+		\item Modificación de notificación.
+		\item Agregar contactos de emergencia.
+	\end{itemize}
+
+	\item Médico: \\ \textbf{Médico} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente y las acciones dentro del sistema son:
+		\begin{itemize}
+			\item consultar el total de pacientes que tiene.
+			\item agregar un tratamiento medico a sus pacientes.
+			\item modificar un tratamiento medico a sus pacientes.
+			\item eliminar un tratamiento medico a sus pacientes.
+			\item consultar el tratamiento medico de sus pacientes.
+			\item consultar el historial medico de sus pacientes.
+			\item agregar un paciente.
+			\item modificar un paciente.
+			\item eliminar un paciente.
+		\end{itemize}
+
+	\item Externo: El actor \textbf{Externo} nace de la necesidad de ayudar a los Pacientes que cuentan con poca o nula experiencia los dispositivos moviles o que por factores ajenas a la aplicación como son la de edad o alguna enfermedad les sea imposible utilizar la aplicación por si mismos\\
+	Las acciones que tendra dentro de la aplicación son:
+	\begin{itemize}
+		\item Agregar Paciente.
+		\item Modificar Paciente.
+		\item Eliminar Paciente.
+		\item Agregar Tratamiento medico.
+		\item Modificar Tratamiento medico.
+		\item Consultar Tratamiento medico.
+		\item Modificar notificación
+	\end{itemize}
 \end{itemize}
 
-El actor \textbf{Administrador} sera el encargado de incluir los medicamentos que serán utilizados en los tratamientos.
-
-El actor \textbf{Médico} dentro del sistema podrá agregar el tratamiento para el paciente.
-
-El actor \textbf{Paciente} tendrá las siguientes acciones en el sistema :
-\begin{itemize}
-	\item Agregar el tratamiento medico.
-	\item Modificar los recordatorios del tratamiento.
-	\item Agregar contactos de emergencia.
-	\item Consultar Reportes.
-	\item Consultar Estadísticas.
-	\item Consultar información de medicamentos.
-	\item Creación de perfiles dependientes al \textbf{Paciente}.
-\end{itemize}
-
-El actor \textbf{Externo} nace de la necesidad de ayudar a los Pacientes que cuentan con poca o nula experiencia los dispositivos moviles o que por factores ajenas a la aplicación como son la de edad o alguna enfermedad les sea imposible utilizar la aplicación por si mismos. Es por eso que las acciones que tendrá en el sistema serán las mismas que las del paciente.
 
 \section{Módulos}
 La arquitectura contara con los siguientes módulos:
