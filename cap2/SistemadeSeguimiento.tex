@@ -61,17 +61,26 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro acto
 \section{Módulos}
 La arquitectura contara con los siguientes módulos:
 \begin{itemize}
-	\item Modulo de registro: Este modulo es el encargado de 
+	\item Modulo de registro: Este modulo es el encargado de ingresar a los actores dentro de la aplicación.
 	
 	
-	\item Modulo de Autenticación:
-	\item Modulo de captura de paciente:
-	\item Modulo de captura de doctor:
-	\item Modulo de captura de externo:
-	\item Modulo de captura de tratamiento:
-	\item Módulo de recordatorios:
-	\item Módulo de alarmas:
-	\item Módulo de reportes:
+	\item Modulo de Autenticación: Una vez que te hayas registrado dentro de la aplicación, el modulo de autenticación se encargara de verificar tu perfil y habilitar los módulos correspondientes
+	
+	 
+	\item Modulo de captura de paciente: Este modulo es el encargado de agregar al paciente con el que trabajaran el doctor y el externo.
+	
+	\item Modulo de captura de doctor: Este modulo es el encargado de ingresar al doctor que esta a cargo del tratamiento del paciente.
+	
+	\item Modulo de captura de externo: Este modulo es el encargado de ingresar al externo que esta a cargo del tratamiento del paciente.
+	
+	\item Modulo de captura de tratamiento: Este modulo es el encargado de ingresar el tratamiento medico. 
+%	y lo asociara al perfil del paciente con la información correspondiente del tratamiento.
+	
+	\item Módulo de recordatorios: Este modulo asociara el tratamiento ingresado al paciente.
+	
+	\item Módulo de alarmas: Este modulo es el encargado de activar las alarmas cuando una notificación no haya sido atendida.
+	
+	\item Módulo de reportes: Este modulo es el encargado de generar un reporte con la información del tratamiento y de datos relevantes del paciente como lo son la edad, estatura, peso, etc...
 	
 	
 	
@@ -84,6 +93,10 @@ La arquitectura contara con los siguientes módulos:
 %	\item Módulo de reportes: El modulo de reportes sirve para notificar al medico y al paciente que tan constante ha sido con su tratamiento.
 %	\item Módulo de estadísticas: 
 \end{itemize}
+
+
+\section{Requerimientos}
+
 
 %\textbf{Módulo Autenticación: } Este modulo es el encargado de verificar cual es tu perfil y darte acceso a los módulos correspondientes.
 %
