@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.13)  12 SEP 2018 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.13)  14 SEP 2018 03:01
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -955,7 +955,7 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 66.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-<cdt/theme/agua.png, id=42, 1154.3125pt x 625.33624pt>
+<cdt/theme/agua.png, id=46, 1154.3125pt x 625.33624pt>
 File: cdt/theme/agua.png Graphic file (type png)
 
 <use cdt/theme/agua.png>
@@ -989,14 +989,14 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./cdt/theme/agua.png>]
-<cdt/theme/headerIpn.jpg, id=54, 426.59375pt x 632.3625pt>
+<cdt/theme/headerIpn.jpg, id=58, 426.59375pt x 632.3625pt>
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg used on input line 79.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 
-<cdt/theme/logoEscom.jpg, id=55, 131.03902pt x 89.34479pt>
+<cdt/theme/logoEscom.jpg, id=59, 131.03902pt x 89.34479pt>
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 
 <use cdt/theme/logoEscom.jpg>
@@ -1061,7 +1061,7 @@ LaTeX Font Warning: Font shape `OT1/cmbr/m/sc' undefined
 Package spanish Warning: Replacing `OT1/cmbr/m/sc' by 
 (spanish)                faked small caps on input line 82.
 
-<cdt/theme/pleca.png, id=73, 1706.375pt x 371.3875pt>
+<cdt/theme/pleca.png, id=78, 1706.375pt x 371.3875pt>
 File: cdt/theme/pleca.png Graphic file (type png)
 
 <use cdt/theme/pleca.png>
@@ -1372,14 +1372,14 @@ Overfull \hbox (68.57936pt too wide) in paragraph at lines 115--130
 [][]
  []
 
-<cdt/theme/logoIpn.jpg, id=115, 426.59375pt x 632.3625pt>
+<cdt/theme/logoIpn.jpg, id=120, 426.59375pt x 632.3625pt>
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg used on input line 138.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 
-<cdt/theme/headerEscom.jpg, id=116, 131.03902pt x 89.34479pt>
+<cdt/theme/headerEscom.jpg, id=121, 131.03902pt x 89.34479pt>
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 
 <use cdt/theme/headerEscom.jpg>
@@ -1692,7 +1692,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<images/cap2/Arquitectura.png, id=148, 691.83469pt x 380.17032pt>
+<images/cap2/Arquitectura.png, id=153, 691.83469pt x 380.17032pt>
 File: images/cap2/Arquitectura.png Graphic file (type png)
 
 <use images/cap2/Arquitectura.png>
@@ -1844,25 +1844,19 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package rerunfilecheck Info: File `analisis.out' has not changed.
+(rerunfilecheck)             Checksum: D440B329C08706531A59AFF856BE5136;689.
 
-
-Package rerunfilecheck Warning: File `analisis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `analisis.out':
-(rerunfilecheck)             Before: 3AC09849B6B4314C11F1A75E4B4C15EC;627
-(rerunfilecheck)             After:  D440B329C08706531A59AFF856BE5136;689.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 9181 strings out of 493323
- 126786 string characters out of 3139066
+ 9182 strings out of 493323
+ 126799 string characters out of 3139066
  252465 words of memory out of 3000000
- 12479 multiletter control sequences out of 15000+200000
+ 12480 multiletter control sequences out of 15000+200000
  13359 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,51p,1062b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1884,9 +1878,9 @@ rs\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10
 .pk> <C:\Users\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\d
 pi864\cmbr17.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/marvosym/marvos
 ym.pfb>
-Output written on analisis.pdf (17 pages, 795403 bytes).
+Output written on analisis.pdf (17 pages, 796451 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
+ 558 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
