@@ -61,26 +61,26 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro acto
 \section{Módulos}
 La arquitectura contara con los siguientes módulos:
 \begin{itemize}
-	\item Modulo de registro: Este modulo es el encargado de ingresar a los actores dentro de la aplicación.
+	\item Modulo de registro: Este modulo es el encargado de registrar e ingresar a los actores dentro de la aplicación. 
 	
 	
-	\item Modulo de Autenticación: Una vez que te hayas registrado dentro de la aplicación, el modulo de autenticación se encargara de verificar tu perfil y habilitar los módulos correspondientes
+	\item Modulo de Autenticación: Una vez que te hayas registrado dentro de la aplicación, el modulo de autenticación se encargara de verificar tu perfil y habilitar los módulos correspondientes.
 	
 	 
 	\item Modulo de captura de paciente: Este modulo es el encargado de agregar al paciente con el que trabajaran el doctor y el externo.
 	
-	\item Modulo de captura de doctor: Este modulo es el encargado de ingresar al doctor que esta a cargo del tratamiento del paciente.
+	\item Modulo de captura de doctor: Este modulo es el encargado de agregar al doctor que esta a cargo del tratamiento del paciente.
 	
-	\item Modulo de captura de externo: Este modulo es el encargado de ingresar al externo que esta a cargo del tratamiento del paciente.
+	\item Modulo de captura de externo: Este modulo es el encargado de agregar al externo que esta a cargo del tratamiento del paciente.
 	
-	\item Modulo de captura de tratamiento: Este modulo es el encargado de ingresar el tratamiento medico. 
+	\item Modulo de captura de tratamiento: Este modulo es el encargado de ingresar el tratamiento medico del paciente y con el que podrán trabajar tanto el doctor como el externo. 
 %	y lo asociara al perfil del paciente con la información correspondiente del tratamiento.
 	
-	\item Módulo de recordatorios: Este modulo asociara el tratamiento ingresado al paciente.
+	\item Módulo de recordatorios: Este modulo es el encargado de crear los recordatorios para tomar los medicamentos que se ingresaron en el tratamiento.
 	
-	\item Módulo de alarmas: Este modulo es el encargado de activar las alarmas cuando una notificación no haya sido atendida.
+	\item Módulo de alarmas: Este modulo es el encargado de crear las alarmas cuando la situación del paciente sea delicada o que la toma de un medicamento sea de alta prioridad.
 	
-	\item Módulo de reportes: Este modulo es el encargado de generar un reporte con la información del tratamiento y de datos relevantes del paciente como lo son la edad, estatura, peso, etc...
+	\item Módulo de reportes: Este modulo es el encargado de generar un reporte con la información del tratamiento y datos relevantes del paciente como lo son la edad, estatura, peso, etc...
 	
 	
 	
@@ -99,9 +99,13 @@ La arquitectura contara con los siguientes módulos:
 En la siguiente sección se especificaran los requerimientos con los que estará trabajando la aplicación.
 Requerimientos Funcionales:
 \begin{itemize}
-	\item El usuario se registra en la aplicación con un correo electronico y una contraseña.
-	\item El usuario ingresa a la aplicación con un correo electronico y su contraseña.
-	\item El usuario agrega a un doctor ingresando su nombre, su correo electronico y su numero telefonico.
+	\item El usuario se registra en la aplicación con un nombre, correo electrónico y una contraseña.
+	\item El usuario ingresa a la aplicación con su correo electrónico y su contraseña.
+	\item El usuario doctor agregara a un paciente ingresando el correo electrónico o nombre del paciente.
+	\item El usuario externo agregara a un paciente ingresando el correo electrónico o nombre del paciente.
+	\item El usuario paciente agregara a un doctor ingresando el correo electrónico o nombre del doctor.
+	\item El usuario paciente agregara a un externo ingresando el correo electrónico o nombre del externo.
+	\item Cuando un usuario reciba la invitación por correo para ser agregado ya sea como paciente, externo o doctor, al dar click en la liga se asociaran sus perfiles pudiendo ver el tratamiento.
 \end{itemize}
 Requerimientos No Funcionales
 
