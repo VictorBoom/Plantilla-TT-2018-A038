@@ -1,10 +1,11 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem\IeC {\'a}tica}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Soluci\IeC {\'o}n propuesta por otras aplicaciones}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Soluci\IeC {\'o}n propuesta}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Referencias}{5}{section.1.5}
+\contentsline {section}{\numberline {1.2}Objetivo}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Problem\IeC {\'a}tica}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Soluci\IeC {\'o}n propuesta por otras aplicaciones}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Soluci\IeC {\'o}n propuesta}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Referencias}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Sistema de Seguimiento de Tratamientos M\IeC {\'e}dicos por medio de un Dispositivo M\IeC {\'o}vil}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Arquitectura}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}M\IeC {\'o}dulos}{11}{section.2.2}
