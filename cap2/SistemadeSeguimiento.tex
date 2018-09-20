@@ -96,16 +96,64 @@ La arquitectura contara con los siguientes módulos:
 
 
 \section{Requerimientos}
-En la siguiente sección se especificaran los requerimientos con los que estará trabajando la aplicación.
+Los requerimientos funcionales describen lo que el sistema debe hacer. Son declaraciones de los
+servicios que debe proporcionar el sistema, de la manera en que este debe reaccionar a entradas.\\
+particulares y de como se debe comportar en situaciones particulares.
+En la siguiente sección se especificaran los requerimientos con los que estará trabajando la aplicación.\\
+
 Requerimientos Funcionales:
+
 \begin{itemize}
-	\item El usuario se registra en la aplicación con un nombre, correo electrónico y una contraseña.
-	\item El usuario ingresa a la aplicación con su correo electrónico y su contraseña.
-	\item El usuario doctor agregara a un paciente ingresando el correo electrónico o nombre del paciente.
-	\item El usuario externo agregara a un paciente ingresando el correo electrónico o nombre del paciente.
-	\item El usuario paciente agregara a un doctor ingresando el correo electrónico o nombre del doctor.
-	\item El usuario paciente agregara a un externo ingresando el correo electrónico o nombre del externo.
-	\item Cuando un usuario reciba la invitación por correo para ser agregado ya sea como paciente, externo o doctor, al dar click en la liga se asociaran sus perfiles pudiendo ver el tratamiento.
+	\item RF1 - Registro de Usuario
+	La aplicación permitirá el registro de nuevos usuarios mediante el ingreso de su nombre, correo electrónico y contraseña.
+	
+	\item RF2 - Acceso al Sistema.
+	La aplicación permitira el acceso al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
+	
+	Los usuarios accederán al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
+	
+	\item RF3 - Agregar Paciente.
+	 
+	 La aplicación permitirá que tanto el doctor como el externo agreguen a los pacientes con los que están trabajando a la \textbf{lista de pacientes}.
+	 
+	El usuario doctor agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
+	El usuario externo agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
+	El usuario paciente agregara a un doctor a su \textbf{lista de doctores} ingresando el correo electrónico o nombre del paciente.
+	El usuario paciente agregara a un doctro a su \textbf{lista de externos} ingresando el correo electrónico o nombre del paciente.
+
+	\item RF4 - Agregar Doctor o Externo.
+	
+	La aplicación permitirá al Paciente agregar al Doctor que receto su tratamiento a su \textbf{lista de doctores} y en el caso de que sea necesario, agregar a la \textbf{lista de externos} a un externo para que sea el encargado de su tratamiento.
+	
+	\item RF5 - Alta de Invitación.
+	
+	Cuando un usuario haya agregado a otro usuario la aplicación mandara un correo con el cual se vincularan sus perfiles.
+	
+	\item RF6 - Agregar Tratamiento.
+	
+	La aplicación permitirá  ya sea al doctor, externo o paciente agregar el tratamiento expedido por el doctor al perfil del paciente en cuestión.
+	
+	\item RF7 - Creación de Recordatorios.
+	
+	La aplicación creara los recordatorios de los medicamentos a tomar  una vez que el tratamiento haya sido ingresado en el sistema.
+	
+	\item RF8 - Creación de alarmas.
+	
+	La aplicación permitirá al usuario configurar alarmas cuando el ingerir un medicamento sea de suma importancia.
+	
+	\item RF9 - Contactos de emergencia.
+	
+	Cuando una notificación de un medicamento con un alta importancia no haya sido silenciada después de tres intentos, la aplicación mandara un mensaje a los contactos de emergencia.
+	
+	\item RF10 - Creación de reportes.
+	
+	La aplicación permitirá al usuario ingresar datos relevantes de su salud y creara un reporte con el avance de sus tratamientos los datos ingresados.
+	
+	
+	
+	
+	
+	
 \end{itemize}
 Requerimientos No Funcionales
 
