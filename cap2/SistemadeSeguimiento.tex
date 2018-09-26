@@ -141,7 +141,7 @@ Requerimientos Funcionales:
 	
 	La aplicación permitirá al usuario configurar alarmas cuando el ingerir un medicamento sea de suma importancia.
 	
-	\item RF9 - Contactos de emergencia.
+	\item RF9 - Gestión de Contactos de emergencia.
 	
 	Cuando una notificación de un medicamento con un alta importancia no haya sido silenciada después de tres intentos, la aplicación mandara un mensaje a los contactos de emergencia.
 	
@@ -156,6 +156,24 @@ Requerimientos Funcionales:
 	
 \end{itemize}
 Requerimientos No Funcionales
+\begin{itemize}
+	\item RNF-1 Creación de Usuario
+	La creación del usuario dependerá del perfil que tenga, esto quiere decir que el formulario que llenara un doctor es distinto el de un paciente.
+	\item RNF-2 Verificación de Perfil
+	La aplicación deberá de distinguir entre los 4 tipos de perfiles que hay, los cuales son: Paciente, Externo, Doctor y Administrador.
+	\item RNF-3 Gestión de Recordatorios.
+	La aplicación creara los recordatorios con un mensaje que se desplegara en la pantalla y emitirá un sonido al ser enviado.
+	\item RNF-4 Interfaz Comprensible.
+	La aplicación contara con una interfaz entendible para un niño hasta una persona de la tercera edad y para lograr esto se trabajara con respecto a los iconos, botones y el flujo de la aplicación.
+	\item RNF-5 Base de datos.
+	La aplicación contara con una base de datos de forma local que permitirá que la consulta de los datos sea mas rápida.
+	\item RNF-6 Desarrollo Multiplataforma.
+	La aplicación sera desatollada para los sistemas operativos iOs y Android siendo una aplicación nativa permitiendo asi explotar todas sus ventajas.
+	\item RNF-7 Desempeño Web y Móvil.
+	La aplicación permitirá que el registro del tratamiento sea ingresado por una pagina web o mediante la aplicación movil. 
+	\item RNF-8	Protección de Información
+	La aplicación contara con un cifrado AES-128 para proporcionar toda la seguridad a la información del usuario.
+\end{itemize}
 
 \section{Procesos}
 
@@ -174,5 +192,5 @@ En cambio con el uso de la aplicación como se muestra en la imagen \ref{fig:pro
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=1.1\textwidth]{images/cap2/RemPillstratamiento}
-	\caption{Proceso medico en la actualidad} \label{fig:proceso2}
+	\caption{Proceso medico con ayuda de la aplicación} \label{fig:proceso2}
 \end{figure}
