@@ -11,3 +11,4 @@
 \contentsline {section}{\numberline {2.2}M\IeC {\'o}dulos}{11}{section.2.2}
 \contentsline {section}{\numberline {2.3}Requerimientos}{11}{section.2.3}
 \contentsline {section}{\numberline {2.4}Procesos}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}Casos de uso}{13}{section.2.5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.13)  25 SEP 2018 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.13)  26 SEP 2018 23:14
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -955,7 +955,7 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 67.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-<cdt/theme/agua.png, id=54, 1154.3125pt x 625.33624pt>
+<cdt/theme/agua.png, id=58, 1154.3125pt x 625.33624pt>
 File: cdt/theme/agua.png Graphic file (type png)
 
 <use cdt/theme/agua.png>
@@ -989,14 +989,14 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./cdt/theme/agua.png>]
-<cdt/theme/headerIpn.jpg, id=66, 426.59375pt x 632.3625pt>
+<cdt/theme/headerIpn.jpg, id=70, 426.59375pt x 632.3625pt>
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg used on input line 80.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 
-<cdt/theme/logoEscom.jpg, id=67, 131.03902pt x 89.34479pt>
+<cdt/theme/logoEscom.jpg, id=71, 131.03902pt x 89.34479pt>
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 
 <use cdt/theme/logoEscom.jpg>
@@ -1061,7 +1061,7 @@ LaTeX Font Warning: Font shape `OT1/cmbr/m/sc' undefined
 Package spanish Warning: Replacing `OT1/cmbr/m/sc' by 
 (spanish)                faked small caps on input line 83.
 
-<cdt/theme/pleca.png, id=88, 1706.375pt x 371.3875pt>
+<cdt/theme/pleca.png, id=93, 1706.375pt x 371.3875pt>
 File: cdt/theme/pleca.png Graphic file (type png)
 
 <use cdt/theme/pleca.png>
@@ -1389,14 +1389,14 @@ Overfull \hbox (68.57936pt too wide) in paragraph at lines 117--133
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
 
-<cdt/theme/logoIpn.jpg, id=132, 426.59375pt x 632.3625pt>
+<cdt/theme/logoIpn.jpg, id=139, 426.59375pt x 632.3625pt>
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg used on input line 136.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 
-<cdt/theme/headerEscom.jpg, id=133, 131.03902pt x 89.34479pt>
+<cdt/theme/headerEscom.jpg, id=140, 131.03902pt x 89.34479pt>
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 
 <use cdt/theme/headerEscom.jpg>
@@ -1708,7 +1708,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<images/cap2/Arquitectura.png, id=167, 691.83469pt x 380.17032pt>
+<images/cap2/Arquitectura.png, id=174, 691.83469pt x 380.17032pt>
 File: images/cap2/Arquitectura.png Graphic file (type png)
 
 <use images/cap2/Arquitectura.png>
@@ -1906,7 +1906,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 178.
 
-<images/cap2/ProcesoMedico.jpg, id=186, 1267.73625pt x 367.3725pt>
+<images/cap2/ProcesoMedico.jpg, id=193, 1267.73625pt x 367.3725pt>
 File: images/cap2/ProcesoMedico.jpg Graphic file (type jpg)
 
 <use images/cap2/ProcesoMedico.jpg>
@@ -1917,7 +1917,7 @@ Overfull \hbox (44.36055pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
-<images/cap2/RemPillstratamiento.jpg, id=188, 1702.36pt x 459.7175pt>
+<images/cap2/RemPillstratamiento.jpg, id=195, 1702.36pt x 459.7175pt>
 File: images/cap2/RemPillstratamiento.jpg Graphic file (type jpg)
 
 <use images/cap2/RemPillstratamiento.jpg>
@@ -1929,10 +1929,121 @@ Overfull \hbox (44.36055pt too wide) in paragraph at lines 194--195
  [][] 
  []
 
-)
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 199.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 199.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 199.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 199.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 199.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 199.
+<images/cap2/casosdeuso.png, id=197, 1791.69376pt x 1734.48pt>
+File: images/cap2/casosdeuso.png Graphic file (type png)
+
+<use images/cap2/casosdeuso.png>
+Package pdftex.def Info: images/cap2/casosdeuso.png used on input line 203.
+(pdftex.def)             Requested size: 487.93903pt x 472.3387pt.
+
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg used on input line 216.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+ <use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg used on input line 216.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+File: cdt/theme/pleca.png Graphic file (type png)
+
+<use cdt/theme/pleca.png>
+Package pdftex.def Info: cdt/theme/pleca.png used on input line 216.
+(pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 216.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 216.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.216 
+       <./images/cap2/ProcesoMedico.jpg>]
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+ <use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg used on input line 243.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg used on input line 243.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+File: cdt/theme/pleca.png Graphic file (type png)
+ <use cdt/theme/pleca.png>
+Package pdftex.def Info: cdt/theme/pleca.png used on input line 243.
+(pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 243.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 243.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.243 		\item E
+               ditar recordatorio <./images/cap2/RemPillstratamiento.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
- <use cdt/theme/logoIpn.jpg>
+
+<use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg used on input line 166.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
@@ -1968,25 +2079,18 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 166.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 166.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.166 \end{document}
-                     <./images/cap2/ProcesoMedico.jpg>]
+ [15]
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-
-<use cdt/theme/headerIpn.jpg>
+ <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg used on input line 166.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
- <use cdt/theme/logoEscom.jpg>
+
+<use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg used on input line 166.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
-
-<use cdt/theme/pleca.png>
+ <use cdt/theme/pleca.png>
 Package pdftex.def Info: cdt/theme/pleca.png used on input line 166.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
@@ -2013,13 +2117,13 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 166.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 166.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-3}) has been already used, duplicate ignored
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.166 \end{document}
-                     <./images/cap2/RemPillstratamiento.jpg>]
+                     <./images/cap2/casosdeuso.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (analisis.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -2028,7 +2132,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `analisis.out' has not changed.
-(rerunfilecheck)             Checksum: 8FD33E5CAA3698B70C531C23F73C59AF;801.
+(rerunfilecheck)             Checksum: 05EC1A75F0767B8CED3E66DDF0A95076;861.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2036,13 +2140,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 9203 strings out of 493323
- 127250 string characters out of 3139066
- 254592 words of memory out of 3000000
- 12492 multiletter control sequences out of 15000+200000
+ 9214 strings out of 493323
+ 127451 string characters out of 3139066
+ 254661 words of memory out of 3000000
+ 12498 multiletter control sequences out of 15000+200000
  13359 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,18n,51p,1062b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,18n,51p,1062b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi
 600\cmbrsl10.pk> <C:\Users\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
 c\cmbright\dpi600\cmbrsy10.pk> <C:\Users\flama\AppData\Local\MiKTeX\2.9\fonts\p
@@ -2061,9 +2165,9 @@ rs\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\cmbr10
 .pk> <C:\Users\flama\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\d
 pi864\cmbr17.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/marvosym/marvos
 ym.pfb>
-Output written on analisis.pdf (20 pages, 1009592 bytes).
+Output written on analisis.pdf (22 pages, 1158841 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
