@@ -10,50 +10,88 @@ En la figura \ref{fig:arquitectura} se muestra el diagrama de la arquitectura pr
 	\caption{Arquitectura} \label{fig:arquitectura}
 \end{figure}
 
-Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro actores que participaran en el sistema. Los cuales son :
+Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro roles que participaran en el sistema. Los cuales son :
 \begin{itemize}
-	\item Administrador: Dentro del sistema se le llama \textbf{Administrador} a la persona que esta encargada de ingresar los medicamentos a la base de datos, ya que estos serán los utilizados en los tratamientos del paciente.
+	\item Administrador: Dentro del sistema el rol \textbf{Administrador} sera el encargado de ingresar los medicamentos a la base de datos, ya que esto son la base para los tratamientos del paciente.
+	Las acciones con las que cuenta su rol son:
+	\begin{itemize}
+		\item Agregar medicamento.
+		\item Eliminar medicamento.
+		\item Consultar medicamento.
+		\item Editar medicamento.
+	\end{itemize}
+	
 	
 	\item Paciente: Se le llama paciente a la persona que cuenta con un diagnostico generado por el \textbf{Médico} que se encuentra a cargo de su salud.\\
-	Las acciones con las que cuentan son:
+	
+	Las acciones con las que cuentan su rol son:
 	\begin{itemize}
+		\item Consultar sus tratamientos medicos.
 		\item Agregar el tratamiento medico.
 		\item Modificar el tratamiento medico.
 		\item Eliminar el tratamiento medico.
-		\item Agregar médico.
-		\item Modificar médico.
-		\item Eliminar médico.
-		\item Agregar externo.
-		\item Modificar externo.
+		\item Consultar sus Doctores.
+		\item Asociar doctor.
+		\item Eliminar doctor.
+		\item Consultar sus externos.
+		\item Asociar externo.
 		\item Eliminar externo.
-		\item Consulta de su tratamiento.
-		\item Modificación de notificación.
-		\item Agregar contactos de emergencia.
+		\item Consultar sus contactos de emergencia.
+		\item Asociar contacto de emergencia.
+		\item Eliminar contacto de emergencia.
+		\item Editar recordatorios.
+		\item Consultar sus Datos.
+		\item Actualizar sus Datos.
 	\end{itemize}
 
-	\item Médico: \\ \textbf{Médico} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente y las acciones dentro del sistema son:
+	\item Médico: \\ \textbf{Médico} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente.
+	Las acciones con las que cuentan su rol son:
 		\begin{itemize}
-			\item consultar el total de pacientes que tiene.
-			\item agregar un tratamiento medico a sus pacientes.
-			\item modificar un tratamiento medico a sus pacientes.
-			\item eliminar un tratamiento medico a sus pacientes.
-			\item consultar el tratamiento medico de sus pacientes.
-			\item consultar el historial medico de sus pacientes.
-			\item agregar un paciente.
-			\item modificar un paciente.
-			\item eliminar un paciente.
+			
+			\item Consultar sus pacientes.
+			\item Consultar el tratamiento de sus pacientes.
+			\item Modificar el tratamiento de sus pacientes.
+			\item Eliminar el tratamiento medico de sus pacientes.
+			\item Asociar nuevo paciente.
+			\item Agregar tratamiento a un nuevo paciente.
+			\item Editar notificaciones.
+			\item Consultar historial clínico.
+			\item Eliminar un paciente.
+			\item Modificar un paciente.
+			
+%			\item consultar el total de pacientes que tiene.
+%			\item agregar un tratamiento medico a sus pacientes.
+%			\item modificar un tratamiento medico a sus pacientes.
+%			\item eliminar un tratamiento medico a sus pacientes.
+%			\item consultar el tratamiento medico de sus pacientes.
+%			\item consultar el historial medico de sus pacientes.
+%			\item agregar un paciente.
+%			\item modificar un paciente.
+%			\item eliminar un paciente.
 		\end{itemize}
 
-	\item Externo: El actor \textbf{Externo} nace de la necesidad de ayudar a los Pacientes que cuentan con poca o nula experiencia los dispositivos moviles o que por factores ajenas a la aplicación como son la de edad o alguna enfermedad les sea imposible utilizar la aplicación por si mismos\\
-	Las acciones que tendra dentro de la aplicación son:
+	\item Externo: nace de la necesidad de ayudar a los Pacientes que cuentan con poca o nula experiencia los dispositivos moviles o que por factores ajenos a la aplicación como son la de edad o alguna enfermedad, les sea imposible utilizar la aplicación por si mismos\\
+	Las acciones con las que cuentan su rol son:
 	\begin{itemize}
-		\item Agregar Paciente.
-		\item Modificar Paciente.
-		\item Eliminar Paciente.
-		\item Agregar Tratamiento medico.
-		\item Modificar Tratamiento medico.
-		\item Consultar Tratamiento medico.
-		\item Modificar notificación
+		\item Consultar sus Pacientes.
+		\item Registrar sus Tratamientos.
+		\item Modificar sus Tratamientos.
+		\item Eliminar sus Tratamientos.
+		\item Editar sus notificaciones.
+		\item Consultar sus Doctores.
+		\item Asociar Doctor.
+		\item Eliminar Doctor.
+		\item Consultar sus Contactos de emergencia.
+		\item Asociar Contactos de emergencia.
+		\item Eliminar Contactos de emergencia.
+%		
+%		\item Agregar Paciente.
+%		\item Modificar Paciente.
+%		\item Eliminar Paciente.
+%		\item Agregar Tratamiento medico.
+%		\item Modificar Tratamiento medico.
+%		\item Consultar Tratamiento medico.
+%		\item Modificar notificación
 	\end{itemize}
 \end{itemize}
 
