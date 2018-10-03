@@ -9,5 +9,6 @@
 \BOOKMARK [1][-]{section.2.1}{Arquitectura}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.2}{M\363dulos}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.3}{Requerimientos}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.4}{Procesos}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.5}{Casos de uso}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Modulo de Registro}{section.2.3}% 12
+\BOOKMARK [1][-]{section.2.4}{Procesos}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Casos de uso}{chapter.2}% 14

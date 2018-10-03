@@ -99,7 +99,7 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro role
 \section{Módulos}
 La arquitectura contara con los siguientes módulos:
 \begin{itemize}
-	\item Modulo de registro: Este modulo es el encargado de registrar e ingresar a los actores dentro de la aplicación. 
+	\item Modulo de Registro: Este modulo es el encargado de registrar e ingresar a los actores dentro de la aplicación. 
 	
 	
 	\item Modulo de Autenticación: Una vez que te hayas registrado dentro de la aplicación, el modulo de autenticación se encargara de verificar tu perfil y habilitar los módulos correspondientes.
@@ -134,65 +134,56 @@ La arquitectura contara con los siguientes módulos:
 
 
 \section{Requerimientos}
-Los requerimientos funcionales describen lo que el sistema debe hacer. Son declaraciones de los
-servicios que debe proporcionar el sistema, de la manera en que este debe reaccionar a entradas.\\
-particulares y de como se debe comportar en situaciones particulares.
+Los requerimientos funcionales describen lo que el sistema debe hacer. Son declaraciones de los servicios que debe proporcionar el sistema, de la manera en que este debe reaccionar a entradas particulares y de como se debe comportar en situaciones particulares.\\
 En la siguiente sección se especificaran los requerimientos con los que estará trabajando la aplicación.\\
-
-Requerimientos Funcionales:
-
 \begin{itemize}
-	\item RF1 - Registro de Usuario
-	La aplicación permitirá el registro de nuevos usuarios mediante el ingreso de su nombre, correo electrónico y contraseña.
+		\item RF1 - Registro de Usuario
+		La aplicación permitirá el registro de nuevos usuarios mediante el ingreso de su nombre, correo electrónico y contraseña.
+		
+		\item RF2 - Acceso al Sistema.
+		La aplicación permitira el acceso al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
+		
+		Los usuarios accederán al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
+		
+		\item RF3 - Agregar Paciente.
+		 
+		 La aplicación permitirá que tanto el doctor como el externo agreguen a los pacientes con los que están trabajando a la \textbf{lista de pacientes}.
+		 
+		El usuario doctor agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
+		El usuario externo agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
+		El usuario paciente agregara a un doctor a su \textbf{lista de doctores} ingresando el correo electrónico o nombre del paciente.
+		El usuario paciente agregara a un doctro a su \textbf{lista de externos} ingresando el correo electrónico o nombre del paciente.
 	
-	\item RF2 - Acceso al Sistema.
-	La aplicación permitira el acceso al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
-	
-	Los usuarios accederán al sistema proporcionando el correo electrónico y la contraseña con la que se registraron en la aplicación
-	
-	\item RF3 - Agregar Paciente.
-	 
-	 La aplicación permitirá que tanto el doctor como el externo agreguen a los pacientes con los que están trabajando a la \textbf{lista de pacientes}.
-	 
-	El usuario doctor agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
-	El usuario externo agregara a un paciente a su \textbf{lista de pacientes} ingresando el correo electrónico o nombre del paciente.
-	El usuario paciente agregara a un doctor a su \textbf{lista de doctores} ingresando el correo electrónico o nombre del paciente.
-	El usuario paciente agregara a un doctro a su \textbf{lista de externos} ingresando el correo electrónico o nombre del paciente.
-
-	\item RF4 - Agregar Doctor o Externo.
-	
-	La aplicación permitirá al Paciente agregar al Doctor que receto su tratamiento a su \textbf{lista de doctores} y en el caso de que sea necesario, agregar a la \textbf{lista de externos} a un externo para que sea el encargado de su tratamiento.
-	
-	\item RF5 - Alta de Invitación.
-	
-	Cuando un usuario haya agregado a otro usuario la aplicación mandara un correo con el cual se vincularan sus perfiles.
-	
-	\item RF6 - Agregar Tratamiento.
-	
-	La aplicación permitirá  ya sea al doctor, externo o paciente agregar el tratamiento expedido por el doctor al perfil del paciente en cuestión.
-	
-	\item RF7 - Creación de Recordatorios.
-	
-	La aplicación creara los recordatorios de los medicamentos a tomar  una vez que el tratamiento haya sido ingresado en el sistema.
-	
-	\item RF8 - Creación de alarmas.
-	
-	La aplicación permitirá al usuario configurar alarmas cuando el ingerir un medicamento sea de suma importancia.
-	
-	\item RF9 - Gestión de Contactos de emergencia.
-	
-	Cuando una notificación de un medicamento con un alta importancia no haya sido silenciada después de tres intentos, la aplicación mandara un mensaje a los contactos de emergencia.
-	
-	\item RF10 - Creación de reportes.
-	
-	La aplicación permitirá al usuario ingresar datos relevantes de su salud y creara un reporte con el avance de sus tratamientos los datos ingresados.
-	
-	
-	
-	
-	
-	
+		\item RF4 - Agregar Doctor o Externo.
+		
+		La aplicación permitirá al Paciente agregar al Doctor que receto su tratamiento a su \textbf{lista de doctores} y en el caso de que sea necesario, agregar a la \textbf{lista de externos} a un externo para que sea el encargado de su tratamiento.
+		
+		\item RF5 - Alta de Invitación.
+		
+		Cuando un usuario haya agregado a otro usuario la aplicación mandara un correo con el cual se vincularan sus perfiles.
+		
+		\item RF6 - Agregar Tratamiento.
+		
+		La aplicación permitirá  ya sea al doctor, externo o paciente agregar el tratamiento expedido por el doctor al perfil del paciente en cuestión.
+		
+		\item RF7 - Creación de Recordatorios.
+		
+		La aplicación creara los recordatorios de los medicamentos a tomar  una vez que el tratamiento haya sido ingresado en el sistema.
+		
+		\item RF8 - Creación de alarmas.
+		
+		La aplicación permitirá al usuario configurar alarmas cuando el ingerir un medicamento sea de suma importancia.
+		
+		\item RF9 - Gestión de Contactos de emergencia.
+		
+		Cuando una notificación de un medicamento con un alta importancia no haya sido silenciada después de tres intentos, la aplicación mandara un mensaje a los contactos de emergencia.
+		
+		\item RF10 - Creación de reportes.
+		
+		La aplicación permitirá al usuario ingresar datos relevantes de su salud y creara un reporte con el avance de sus tratamientos los datos ingresados.
 \end{itemize}
+
+
 Requerimientos No Funcionales
 \begin{itemize}
 	\item RNF-1 Creación de Usuario
@@ -212,6 +203,99 @@ Requerimientos No Funcionales
 	\item RNF-8	Protección de Información
 	La aplicación contara con un cifrado AES-128 para proporcionar toda la seguridad a la información del usuario.
 \end{itemize}
+
+
+
+
+
+	
+	\subsection{Modulo de Registro}
+RF1 - Registro de Usuario
+La aplicación permitirá el registro de nuevos usuarios mediante el ingreso de su nombre, correo electrónico y contraseña.
+	
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR1}{Registro de Usuario}{
+			El usuario requiere de un mecanismo que le permite registrarse en la aplicación}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR2}{Acceso al Sistem}{
+			El usuaio requiere de un mecanismo que le permita ingresar al sistema.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR3}{Recuperar Contraseña}{
+			El usuaio requiere de un mecanismo que le permita recuperar su contraseña o crear una contraseña nueva.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR4}{Consulta de Datos}{
+			El usuaio requiere de un mecanismo que le permita consultar los datos de su perfil medico como lo son, el peso, la altura, el azucar, etc...}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR3}{Agregar Paciente}{
+			El \textbf{Doctor} y el \textbf{Auxiliar} requieren de un mecanismo que les permita agregar a un paciente para añadirlo a su lista de pacientes.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR4}{Agregar Doctor}{
+			El \textbf{Paciente} requiere de un mecanismo que le permita agregar a un Doctor a su lista de Doctores.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR5}{Agregar Auxiliar}{
+			El \textbf{Paciente} requiere de un mecanismo que le permita agregar a un auxiliar a su lista de Auxiliares.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+	\begin{ReqUser}		
+		\reqUserItem{RU-MR6}{}{
+			El \textbf{Paciente} requiere de un mecanismo que le permita agregar a un auxiliar a su lista de Auxiliares.}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	\begin{ReqSist}
+		\reqSistItem{RS-MR1}{Activar Dispositivo}
+		{La aplicación debe activarse con la configuración propuesta del usuario si existe, deberá utilizar una configuración por defecto si nunca se ha configurado.}
+		{\alta}
+		{\refUserReq{RU-MR1}}
+		{Funcional}
+		
+	\end{ReqSist}
+	
+	
+	
+	
+
 
 \section{Procesos}
 
