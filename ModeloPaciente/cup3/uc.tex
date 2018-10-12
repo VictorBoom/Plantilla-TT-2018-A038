@@ -1,13 +1,13 @@
-\begin{UseCase}{CUR 1}{Iniciar sesión}
+\begin{UseCase}{CUR 3}{Registro de cuenta}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
+    	Cuando un usuario se quiere registrar en la aplicación seleccionara los roles a los cuales estará asociado y así se generaran las acciones con las que contara su perfil.
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
+    \UCitem{Operación}{Crear usuario}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,29 +89,34 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
+	\UCitem{Propósito}{Crear cuenta.}
 	\UCitem{Entradas}{
         \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
+           \UCli \textbf{Nombre}: \ioEscribir.
+           \UCli \textbf{Apellido paterno}: \ioEscribir.
+           \UCli \textbf{Apellido materno}: \ioEscribir.
+           \UCli \textbf{Fecha de nacimiento}.
+           \UCli \textbf{Numero de celular}
+           \UCli \textbf{Correo electronico}
+           \UCli \textbf{Contraseña}
+           \UCli \textbf{Rol del usuario}: Se selecciona de los checkbox
+           \UCli \textbf{Numero de Cédula profesional}: \ioEscribir.
         \end{UClist}}
 	\UCitem{Salidas}{Ninguna.}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		Ninguna.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	    {\bf Interna:} El actor podrá ingresar a la aplicación.	
 	}
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+	    	
+		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Crear cuenta} cuando el actor omitió un dato marcado como requerido.
 		
 	    \end{UClist}
 	}

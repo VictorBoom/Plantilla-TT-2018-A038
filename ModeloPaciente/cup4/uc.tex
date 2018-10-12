@@ -1,6 +1,9 @@
-\begin{UseCase}{CUR 1}{Iniciar sesión}
+\begin{UseCase}{CUR 4}{Consultar datos personales}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
+    	
+    	Un usuario contara con la facultad de consultar los datos con los que cuenta su perfil, como lo son,  información personal, tratamientos, doctores, auxiliares y demás.
+    	
+    	
     	
     }
     \UCitem{Versión}{1.0}
@@ -8,7 +11,7 @@
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
     \UCitem{Operación}{Inició de Sesión}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -89,30 +92,35 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
-	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
-        \end{UClist}}
-	\UCitem{Salidas}{Ninguna.}
+	\UCitem{Propósito}{Consultar información.}
+	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Foto de perfil.
+			\UCli Nombre.
+			\UCli Fecha de nacimiento.
+			\UCli Sexo.
+			\UCli Peso.
+			\UCli Altura
+			\UCli lista de Tratamientos activos.
+			\UCli lista de Auxiliares.
+			\UCli lista de Doctores.
+			
+		\end{UClist}
+	}
 	\UCitem{Precondiciones}{
 		{\bf Interna:} El actor debe estar registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	    Ninguna.
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
+           Ninguna.
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
-		
+	    \UCli \cdtIdRef{MSG5}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Menu principal} indicando que no se pudieron obtener los datos del usuario.
 	    \end{UClist}
 	}
 	\UCitem{Tipo}{Primario.}

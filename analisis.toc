@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivo}{2}{section.1.2}
@@ -23,82 +23,82 @@
 \contentsline {subsection}{\numberline {4.1.2}Descripci\IeC {\'o}n}{24}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Trayectorias del caso de uso}{24}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4}Puntos de extensi\IeC {\'o}n}{25}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}CUR 1 Iniciar sesi\IeC {\'o}n}{26}{section.4.2}
+\contentsline {section}{\numberline {4.2}CUR 2 Recuperar contrase\IeC {\~n}a}{26}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Resumen}{26}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Descripci\IeC {\'o}n}{26}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Trayectorias del caso de uso}{26}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Puntos de extensi\IeC {\'o}n}{27}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}CUR 1 Iniciar sesi\IeC {\'o}n}{28}{section.4.3}
+\contentsline {section}{\numberline {4.3}CUR 3 Registro de cuenta}{28}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Resumen}{28}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Descripci\IeC {\'o}n}{28}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Trayectorias del caso de uso}{28}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Puntos de extensi\IeC {\'o}n}{29}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}CUR 1 Iniciar sesi\IeC {\'o}n}{30}{section.4.4}
+\contentsline {section}{\numberline {4.4}CUR 4 Consultar datos personales}{30}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Resumen}{30}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Descripci\IeC {\'o}n}{30}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Trayectorias del caso de uso}{30}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Puntos de extensi\IeC {\'o}n}{31}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}CUR 1 Iniciar sesi\IeC {\'o}n}{32}{section.4.5}
+\contentsline {section}{\numberline {4.5}CUR 5 Editar datos personales}{32}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Resumen}{32}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Descripci\IeC {\'o}n}{32}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Trayectorias del caso de uso}{32}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Trayectorias del caso de uso}{33}{subsection.4.5.3}
 \contentsline {subsection}{\numberline {4.5.4}Puntos de extensi\IeC {\'o}n}{33}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}CUR 1 Iniciar sesi\IeC {\'o}n}{34}{section.4.6}
+\contentsline {section}{\numberline {4.6}CUR 6 Consultar Tratamiento}{34}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Resumen}{34}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Descripci\IeC {\'o}n}{34}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Trayectorias del caso de uso}{34}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.3}Trayectorias del caso de uso}{35}{subsection.4.6.3}
 \contentsline {subsection}{\numberline {4.6.4}Puntos de extensi\IeC {\'o}n}{35}{subsection.4.6.4}
-\contentsline {section}{\numberline {4.7}CUR 1 Iniciar sesi\IeC {\'o}n}{36}{section.4.7}
+\contentsline {section}{\numberline {4.7}CUR 7 Editar Tratamiento}{36}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Resumen}{36}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Descripci\IeC {\'o}n}{36}{subsection.4.7.2}
 \contentsline {subsection}{\numberline {4.7.3}Trayectorias del caso de uso}{36}{subsection.4.7.3}
 \contentsline {subsection}{\numberline {4.7.4}Puntos de extensi\IeC {\'o}n}{37}{subsection.4.7.4}
-\contentsline {section}{\numberline {4.8}CUR 1 Iniciar sesi\IeC {\'o}n}{38}{section.4.8}
+\contentsline {section}{\numberline {4.8}CUR 8 Agregar Tratamiento}{38}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}Resumen}{38}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}Descripci\IeC {\'o}n}{38}{subsection.4.8.2}
 \contentsline {subsection}{\numberline {4.8.3}Trayectorias del caso de uso}{38}{subsection.4.8.3}
 \contentsline {subsection}{\numberline {4.8.4}Puntos de extensi\IeC {\'o}n}{39}{subsection.4.8.4}
-\contentsline {section}{\numberline {4.9}CUR 1 Iniciar sesi\IeC {\'o}n}{40}{section.4.9}
+\contentsline {section}{\numberline {4.9}CUR 9 Agregar Medicamento}{40}{section.4.9}
 \contentsline {subsection}{\numberline {4.9.1}Resumen}{40}{subsection.4.9.1}
 \contentsline {subsection}{\numberline {4.9.2}Descripci\IeC {\'o}n}{40}{subsection.4.9.2}
 \contentsline {subsection}{\numberline {4.9.3}Trayectorias del caso de uso}{40}{subsection.4.9.3}
 \contentsline {subsection}{\numberline {4.9.4}Puntos de extensi\IeC {\'o}n}{41}{subsection.4.9.4}
-\contentsline {section}{\numberline {4.10}CUR 1 Iniciar sesi\IeC {\'o}n}{42}{section.4.10}
+\contentsline {section}{\numberline {4.10}CUR 10 Recibir notificacion}{42}{section.4.10}
 \contentsline {subsection}{\numberline {4.10.1}Resumen}{42}{subsection.4.10.1}
 \contentsline {subsection}{\numberline {4.10.2}Descripci\IeC {\'o}n}{42}{subsection.4.10.2}
 \contentsline {subsection}{\numberline {4.10.3}Trayectorias del caso de uso}{42}{subsection.4.10.3}
 \contentsline {subsection}{\numberline {4.10.4}Puntos de extensi\IeC {\'o}n}{43}{subsection.4.10.4}
-\contentsline {section}{\numberline {4.11}CUR 1 Iniciar sesi\IeC {\'o}n}{44}{section.4.11}
+\contentsline {section}{\numberline {4.11}CUR 11 Mandar alerta}{44}{section.4.11}
 \contentsline {subsection}{\numberline {4.11.1}Resumen}{44}{subsection.4.11.1}
 \contentsline {subsection}{\numberline {4.11.2}Descripci\IeC {\'o}n}{44}{subsection.4.11.2}
 \contentsline {subsection}{\numberline {4.11.3}Trayectorias del caso de uso}{44}{subsection.4.11.3}
 \contentsline {subsection}{\numberline {4.11.4}Puntos de extensi\IeC {\'o}n}{45}{subsection.4.11.4}
-\contentsline {section}{\numberline {4.12}CUR 1 Iniciar sesi\IeC {\'o}n}{46}{section.4.12}
+\contentsline {section}{\numberline {4.12}CUR 1 Agregar Doctor}{46}{section.4.12}
 \contentsline {subsection}{\numberline {4.12.1}Resumen}{46}{subsection.4.12.1}
 \contentsline {subsection}{\numberline {4.12.2}Descripci\IeC {\'o}n}{46}{subsection.4.12.2}
 \contentsline {subsection}{\numberline {4.12.3}Trayectorias del caso de uso}{46}{subsection.4.12.3}
 \contentsline {subsection}{\numberline {4.12.4}Puntos de extensi\IeC {\'o}n}{47}{subsection.4.12.4}
-\contentsline {section}{\numberline {4.13}CUR 1 Iniciar sesi\IeC {\'o}n}{48}{section.4.13}
+\contentsline {section}{\numberline {4.13}CUR 13 Consultar Doctor}{48}{section.4.13}
 \contentsline {subsection}{\numberline {4.13.1}Resumen}{48}{subsection.4.13.1}
 \contentsline {subsection}{\numberline {4.13.2}Descripci\IeC {\'o}n}{48}{subsection.4.13.2}
 \contentsline {subsection}{\numberline {4.13.3}Trayectorias del caso de uso}{48}{subsection.4.13.3}
 \contentsline {subsection}{\numberline {4.13.4}Puntos de extensi\IeC {\'o}n}{49}{subsection.4.13.4}
-\contentsline {section}{\numberline {4.14}CUR 1 Iniciar sesi\IeC {\'o}n}{50}{section.4.14}
+\contentsline {section}{\numberline {4.14}CUR 14 Agregar auxiliar}{50}{section.4.14}
 \contentsline {subsection}{\numberline {4.14.1}Resumen}{50}{subsection.4.14.1}
 \contentsline {subsection}{\numberline {4.14.2}Descripci\IeC {\'o}n}{50}{subsection.4.14.2}
 \contentsline {subsection}{\numberline {4.14.3}Trayectorias del caso de uso}{50}{subsection.4.14.3}
 \contentsline {subsection}{\numberline {4.14.4}Puntos de extensi\IeC {\'o}n}{51}{subsection.4.14.4}
-\contentsline {section}{\numberline {4.15}CUR 1 Iniciar sesi\IeC {\'o}n}{52}{section.4.15}
+\contentsline {section}{\numberline {4.15}CUR 15 Consultar auxiliar}{52}{section.4.15}
 \contentsline {subsection}{\numberline {4.15.1}Resumen}{52}{subsection.4.15.1}
 \contentsline {subsection}{\numberline {4.15.2}Descripci\IeC {\'o}n}{52}{subsection.4.15.2}
 \contentsline {subsection}{\numberline {4.15.3}Trayectorias del caso de uso}{52}{subsection.4.15.3}
 \contentsline {subsection}{\numberline {4.15.4}Puntos de extensi\IeC {\'o}n}{53}{subsection.4.15.4}
-\contentsline {section}{\numberline {4.16}CUR 1 Iniciar sesi\IeC {\'o}n}{54}{section.4.16}
+\contentsline {section}{\numberline {4.16}CUR 16 Agregar contactos de emergencia}{54}{section.4.16}
 \contentsline {subsection}{\numberline {4.16.1}Resumen}{54}{subsection.4.16.1}
 \contentsline {subsection}{\numberline {4.16.2}Descripci\IeC {\'o}n}{54}{subsection.4.16.2}
 \contentsline {subsection}{\numberline {4.16.3}Trayectorias del caso de uso}{54}{subsection.4.16.3}
 \contentsline {subsection}{\numberline {4.16.4}Puntos de extensi\IeC {\'o}n}{55}{subsection.4.16.4}
-\contentsline {section}{\numberline {4.17}CUR 1 Iniciar sesi\IeC {\'o}n}{56}{section.4.17}
+\contentsline {section}{\numberline {4.17}CUR 17 Consultar contactos de emergencia}{56}{section.4.17}
 \contentsline {subsection}{\numberline {4.17.1}Resumen}{56}{subsection.4.17.1}
 \contentsline {subsection}{\numberline {4.17.2}Descripci\IeC {\'o}n}{56}{subsection.4.17.2}
 \contentsline {subsection}{\numberline {4.17.3}Trayectorias del caso de uso}{56}{subsection.4.17.3}

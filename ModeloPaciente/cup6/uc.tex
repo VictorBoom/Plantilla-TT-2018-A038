@@ -1,13 +1,15 @@
-\begin{UseCase}{CUR 1}{Iniciar sesión}
+\begin{UseCase}{CUR 6}{Consultar Tratamiento}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
+    	
+    	Un paciente tendrá una lista con todos sus tratamientos, tantos los que están en estado activo, incompleto, interrumpido y terminado. De esta manera tendrá un control de cuantos y cuales son sus tratamientos, su estado y la información como nombre de tratamiento, doctor que expidió, fecha de expedición y numero de medicamentos
+    	
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
+    \UCitem{Operación}{Consulta de Tratamiento}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,18 +91,25 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
+	\UCitem{Propósito}{Consultar tratamientos.}
 	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
-        \end{UClist}}
-	\UCitem{Salidas}{Ninguna.}
+        Ninguna.
+    }
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Nombre de tratamiento.
+			\UCli Nombre de doctor que expidió el tratamiento
+			\UCli Fecha en que se expidió el tratamiento.
+			\UCli Estado del tratamiento.
+			\UCli Numero de medicamentos.
+		\end{UClist}
+	}
 	\UCitem{Precondiciones}{
 		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El actor debe tener al menos un tratamiento agregado.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	    {\bf Interna:} El actor podrá consultar la información completa del tratamiento.	
 	}
     \UCitem{Reglas de negocio}{
 
