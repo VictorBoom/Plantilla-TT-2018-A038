@@ -4,7 +4,6 @@
 \BOOKMARK [1][-]{section.1.3}{Problem\341tica}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.4}{Soluci\363n propuesta por otras aplicaciones}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.5}{Soluci\363n propuesta}{chapter.1}% 6
-<<<<<<< HEAD
 \BOOKMARK [1][-]{section.1.6}{An\341lisis de factibilidad}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.6.1}{Econ\363mica}{section.1.6}% 8
 \BOOKMARK [1][-]{section.1.7}{Referencias}{chapter.1}% 9
@@ -15,102 +14,90 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{M\363dulo de Registro}{section.2.3}% 14
 \BOOKMARK [1][-]{section.2.4}{Procesos}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.5}{Casos de uso}{chapter.2}% 16
-=======
-\BOOKMARK [1][-]{section.1.6}{Referencias}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Sistema de Seguimiento de Tratamientos M\351dicos por medio de un Dispositivo M\363vil}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Arquitectura}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{M\363dulos}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Requerimientos}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{M\363dulo de Registro}{section.2.3}% 12
-\BOOKMARK [1][-]{section.2.4}{Procesos}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{Casos de uso}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.6}{Modelo Relacional}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{An\341lisis de Factibilidad}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Econ\363mica}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{Modelo de comportamiento del paciente: Casos de Uso del paciente }{}% 18
-\BOOKMARK [1][-]{section.4.1}{CUR 1 Iniciar sesi\363n}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.1.1}{Resumen}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.2}{Descripci\363n}{section.4.1}% 21
-\BOOKMARK [2][-]{subsection.4.1.3}{Trayectorias del caso de uso}{section.4.1}% 22
-\BOOKMARK [2][-]{subsection.4.1.4}{Puntos de extensi\363n}{section.4.1}% 23
-\BOOKMARK [1][-]{section.4.2}{CUR 2 Recuperar contrase\361a}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.2.1}{Resumen}{section.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.2.2}{Descripci\363n}{section.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.2.3}{Trayectorias del caso de uso}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.4}{Puntos de extensi\363n}{section.4.2}% 28
-\BOOKMARK [1][-]{section.4.3}{CUR 3 Registro de cuenta}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Resumen}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{Descripci\363n}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.3}{Trayectorias del caso de uso}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.4}{Puntos de extensi\363n}{section.4.3}% 33
-\BOOKMARK [1][-]{section.4.4}{CUR 4 Consultar datos personales}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.1}{Resumen}{section.4.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.2}{Descripci\363n}{section.4.4}% 36
-\BOOKMARK [2][-]{subsection.4.4.3}{Trayectorias del caso de uso}{section.4.4}% 37
-\BOOKMARK [2][-]{subsection.4.4.4}{Puntos de extensi\363n}{section.4.4}% 38
-\BOOKMARK [1][-]{section.4.5}{CUR 5 Editar datos personales}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.5.1}{Resumen}{section.4.5}% 40
-\BOOKMARK [2][-]{subsection.4.5.2}{Descripci\363n}{section.4.5}% 41
-\BOOKMARK [2][-]{subsection.4.5.3}{Trayectorias del caso de uso}{section.4.5}% 42
-\BOOKMARK [2][-]{subsection.4.5.4}{Puntos de extensi\363n}{section.4.5}% 43
-\BOOKMARK [1][-]{section.4.6}{CUR 6 Consultar Tratamiento}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.6.1}{Resumen}{section.4.6}% 45
-\BOOKMARK [2][-]{subsection.4.6.2}{Descripci\363n}{section.4.6}% 46
-\BOOKMARK [2][-]{subsection.4.6.3}{Trayectorias del caso de uso}{section.4.6}% 47
-\BOOKMARK [2][-]{subsection.4.6.4}{Puntos de extensi\363n}{section.4.6}% 48
-\BOOKMARK [1][-]{section.4.7}{CUR 7 Editar Tratamiento}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.7.1}{Resumen}{section.4.7}% 50
-\BOOKMARK [2][-]{subsection.4.7.2}{Descripci\363n}{section.4.7}% 51
-\BOOKMARK [2][-]{subsection.4.7.3}{Trayectorias del caso de uso}{section.4.7}% 52
-\BOOKMARK [2][-]{subsection.4.7.4}{Puntos de extensi\363n}{section.4.7}% 53
-\BOOKMARK [1][-]{section.4.8}{CUR 8 Agregar Tratamiento}{chapter.4}% 54
-\BOOKMARK [2][-]{subsection.4.8.1}{Resumen}{section.4.8}% 55
-\BOOKMARK [2][-]{subsection.4.8.2}{Descripci\363n}{section.4.8}% 56
-\BOOKMARK [2][-]{subsection.4.8.3}{Trayectorias del caso de uso}{section.4.8}% 57
-\BOOKMARK [2][-]{subsection.4.8.4}{Puntos de extensi\363n}{section.4.8}% 58
-\BOOKMARK [1][-]{section.4.9}{CUR 9 Agregar Medicamento}{chapter.4}% 59
-\BOOKMARK [2][-]{subsection.4.9.1}{Resumen}{section.4.9}% 60
-\BOOKMARK [2][-]{subsection.4.9.2}{Descripci\363n}{section.4.9}% 61
-\BOOKMARK [2][-]{subsection.4.9.3}{Trayectorias del caso de uso}{section.4.9}% 62
-\BOOKMARK [2][-]{subsection.4.9.4}{Puntos de extensi\363n}{section.4.9}% 63
-\BOOKMARK [1][-]{section.4.10}{CUR 10 Recibir notificacion}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.10.1}{Resumen}{section.4.10}% 65
-\BOOKMARK [2][-]{subsection.4.10.2}{Descripci\363n}{section.4.10}% 66
-\BOOKMARK [2][-]{subsection.4.10.3}{Trayectorias del caso de uso}{section.4.10}% 67
-\BOOKMARK [2][-]{subsection.4.10.4}{Puntos de extensi\363n}{section.4.10}% 68
-\BOOKMARK [1][-]{section.4.11}{CUR 11 Mandar alerta}{chapter.4}% 69
-\BOOKMARK [2][-]{subsection.4.11.1}{Resumen}{section.4.11}% 70
-\BOOKMARK [2][-]{subsection.4.11.2}{Descripci\363n}{section.4.11}% 71
-\BOOKMARK [2][-]{subsection.4.11.3}{Trayectorias del caso de uso}{section.4.11}% 72
-\BOOKMARK [2][-]{subsection.4.11.4}{Puntos de extensi\363n}{section.4.11}% 73
-\BOOKMARK [1][-]{section.4.12}{CUR 1 Agregar Doctor}{chapter.4}% 74
-\BOOKMARK [2][-]{subsection.4.12.1}{Resumen}{section.4.12}% 75
-\BOOKMARK [2][-]{subsection.4.12.2}{Descripci\363n}{section.4.12}% 76
-\BOOKMARK [2][-]{subsection.4.12.3}{Trayectorias del caso de uso}{section.4.12}% 77
-\BOOKMARK [2][-]{subsection.4.12.4}{Puntos de extensi\363n}{section.4.12}% 78
-\BOOKMARK [1][-]{section.4.13}{CUR 13 Consultar Doctor}{chapter.4}% 79
-\BOOKMARK [2][-]{subsection.4.13.1}{Resumen}{section.4.13}% 80
-\BOOKMARK [2][-]{subsection.4.13.2}{Descripci\363n}{section.4.13}% 81
-\BOOKMARK [2][-]{subsection.4.13.3}{Trayectorias del caso de uso}{section.4.13}% 82
-\BOOKMARK [2][-]{subsection.4.13.4}{Puntos de extensi\363n}{section.4.13}% 83
-\BOOKMARK [1][-]{section.4.14}{CUR 14 Agregar auxiliar}{chapter.4}% 84
-\BOOKMARK [2][-]{subsection.4.14.1}{Resumen}{section.4.14}% 85
-\BOOKMARK [2][-]{subsection.4.14.2}{Descripci\363n}{section.4.14}% 86
-\BOOKMARK [2][-]{subsection.4.14.3}{Trayectorias del caso de uso}{section.4.14}% 87
-\BOOKMARK [2][-]{subsection.4.14.4}{Puntos de extensi\363n}{section.4.14}% 88
-\BOOKMARK [1][-]{section.4.15}{CUR 15 Consultar auxiliar}{chapter.4}% 89
-\BOOKMARK [2][-]{subsection.4.15.1}{Resumen}{section.4.15}% 90
-\BOOKMARK [2][-]{subsection.4.15.2}{Descripci\363n}{section.4.15}% 91
-\BOOKMARK [2][-]{subsection.4.15.3}{Trayectorias del caso de uso}{section.4.15}% 92
-\BOOKMARK [2][-]{subsection.4.15.4}{Puntos de extensi\363n}{section.4.15}% 93
-\BOOKMARK [1][-]{section.4.16}{CUR 16 Agregar contactos de emergencia}{chapter.4}% 94
-\BOOKMARK [2][-]{subsection.4.16.1}{Resumen}{section.4.16}% 95
-\BOOKMARK [2][-]{subsection.4.16.2}{Descripci\363n}{section.4.16}% 96
-\BOOKMARK [2][-]{subsection.4.16.3}{Trayectorias del caso de uso}{section.4.16}% 97
-\BOOKMARK [2][-]{subsection.4.16.4}{Puntos de extensi\363n}{section.4.16}% 98
-\BOOKMARK [1][-]{section.4.17}{CUR 17 Consultar contactos de emergencia}{chapter.4}% 99
-\BOOKMARK [2][-]{subsection.4.17.1}{Resumen}{section.4.17}% 100
-\BOOKMARK [2][-]{subsection.4.17.2}{Descripci\363n}{section.4.17}% 101
-\BOOKMARK [2][-]{subsection.4.17.3}{Trayectorias del caso de uso}{section.4.17}% 102
-\BOOKMARK [2][-]{subsection.4.17.4}{Puntos de extensi\363n}{section.4.17}% 103
->>>>>>> 301f8cd09dc1ca14d515fd7747e549ce89b1e6f1
+\BOOKMARK [1][-]{section.2.6}{Modelo Relacional}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Modelo de comportamiento del paciente: Casos de Uso del paciente }{}% 18
+\BOOKMARK [1][-]{section.3.1}{CUR 1 Iniciar sesi\363n}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{Resumen}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.2}{Descripci\363n}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.3}{Trayectorias del caso de uso}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.4}{Puntos de extensi\363n}{section.3.1}% 23
+\BOOKMARK [1][-]{section.3.2}{CUR 2 Recuperar contrase\361a}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Resumen}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{Descripci\363n}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.3}{Trayectorias del caso de uso}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.4}{Puntos de extensi\363n}{section.3.2}% 28
+\BOOKMARK [1][-]{section.3.3}{CUR 3 Registro de cuenta}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.1}{Resumen}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.2}{Descripci\363n}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.3}{Trayectorias del caso de uso}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.4}{Puntos de extensi\363n}{section.3.3}% 33
+\BOOKMARK [1][-]{section.3.4}{CUR 4 Consultar datos personales}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.4.1}{Resumen}{section.3.4}% 35
+\BOOKMARK [2][-]{subsection.3.4.2}{Descripci\363n}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.3}{Trayectorias del caso de uso}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.4}{Puntos de extensi\363n}{section.3.4}% 38
+\BOOKMARK [1][-]{section.3.5}{CUR 5 Editar datos personales}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.5.1}{Resumen}{section.3.5}% 40
+\BOOKMARK [2][-]{subsection.3.5.2}{Descripci\363n}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.3}{Trayectorias del caso de uso}{section.3.5}% 42
+\BOOKMARK [2][-]{subsection.3.5.4}{Puntos de extensi\363n}{section.3.5}% 43
+\BOOKMARK [1][-]{section.3.6}{CUR 6 Consultar Tratamiento}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.6.1}{Resumen}{section.3.6}% 45
+\BOOKMARK [2][-]{subsection.3.6.2}{Descripci\363n}{section.3.6}% 46
+\BOOKMARK [2][-]{subsection.3.6.3}{Trayectorias del caso de uso}{section.3.6}% 47
+\BOOKMARK [2][-]{subsection.3.6.4}{Puntos de extensi\363n}{section.3.6}% 48
+\BOOKMARK [1][-]{section.3.7}{CUR 7 Editar Tratamiento}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.7.1}{Resumen}{section.3.7}% 50
+\BOOKMARK [2][-]{subsection.3.7.2}{Descripci\363n}{section.3.7}% 51
+\BOOKMARK [2][-]{subsection.3.7.3}{Trayectorias del caso de uso}{section.3.7}% 52
+\BOOKMARK [2][-]{subsection.3.7.4}{Puntos de extensi\363n}{section.3.7}% 53
+\BOOKMARK [1][-]{section.3.8}{CUR 8 Agregar Tratamiento}{chapter.3}% 54
+\BOOKMARK [2][-]{subsection.3.8.1}{Resumen}{section.3.8}% 55
+\BOOKMARK [2][-]{subsection.3.8.2}{Descripci\363n}{section.3.8}% 56
+\BOOKMARK [2][-]{subsection.3.8.3}{Trayectorias del caso de uso}{section.3.8}% 57
+\BOOKMARK [2][-]{subsection.3.8.4}{Puntos de extensi\363n}{section.3.8}% 58
+\BOOKMARK [1][-]{section.3.9}{CUR 9 Agregar Medicamento}{chapter.3}% 59
+\BOOKMARK [2][-]{subsection.3.9.1}{Resumen}{section.3.9}% 60
+\BOOKMARK [2][-]{subsection.3.9.2}{Descripci\363n}{section.3.9}% 61
+\BOOKMARK [2][-]{subsection.3.9.3}{Trayectorias del caso de uso}{section.3.9}% 62
+\BOOKMARK [2][-]{subsection.3.9.4}{Puntos de extensi\363n}{section.3.9}% 63
+\BOOKMARK [1][-]{section.3.10}{CUR 10 Recibir notificacion}{chapter.3}% 64
+\BOOKMARK [2][-]{subsection.3.10.1}{Resumen}{section.3.10}% 65
+\BOOKMARK [2][-]{subsection.3.10.2}{Descripci\363n}{section.3.10}% 66
+\BOOKMARK [2][-]{subsection.3.10.3}{Trayectorias del caso de uso}{section.3.10}% 67
+\BOOKMARK [2][-]{subsection.3.10.4}{Puntos de extensi\363n}{section.3.10}% 68
+\BOOKMARK [1][-]{section.3.11}{CUR 11 Mandar alerta}{chapter.3}% 69
+\BOOKMARK [2][-]{subsection.3.11.1}{Resumen}{section.3.11}% 70
+\BOOKMARK [2][-]{subsection.3.11.2}{Descripci\363n}{section.3.11}% 71
+\BOOKMARK [2][-]{subsection.3.11.3}{Trayectorias del caso de uso}{section.3.11}% 72
+\BOOKMARK [2][-]{subsection.3.11.4}{Puntos de extensi\363n}{section.3.11}% 73
+\BOOKMARK [1][-]{section.3.12}{CUR 1 Agregar Doctor}{chapter.3}% 74
+\BOOKMARK [2][-]{subsection.3.12.1}{Resumen}{section.3.12}% 75
+\BOOKMARK [2][-]{subsection.3.12.2}{Descripci\363n}{section.3.12}% 76
+\BOOKMARK [2][-]{subsection.3.12.3}{Trayectorias del caso de uso}{section.3.12}% 77
+\BOOKMARK [2][-]{subsection.3.12.4}{Puntos de extensi\363n}{section.3.12}% 78
+\BOOKMARK [1][-]{section.3.13}{CUR 13 Consultar Doctor}{chapter.3}% 79
+\BOOKMARK [2][-]{subsection.3.13.1}{Resumen}{section.3.13}% 80
+\BOOKMARK [2][-]{subsection.3.13.2}{Descripci\363n}{section.3.13}% 81
+\BOOKMARK [2][-]{subsection.3.13.3}{Trayectorias del caso de uso}{section.3.13}% 82
+\BOOKMARK [2][-]{subsection.3.13.4}{Puntos de extensi\363n}{section.3.13}% 83
+\BOOKMARK [1][-]{section.3.14}{CUR 14 Agregar auxiliar}{chapter.3}% 84
+\BOOKMARK [2][-]{subsection.3.14.1}{Resumen}{section.3.14}% 85
+\BOOKMARK [2][-]{subsection.3.14.2}{Descripci\363n}{section.3.14}% 86
+\BOOKMARK [2][-]{subsection.3.14.3}{Trayectorias del caso de uso}{section.3.14}% 87
+\BOOKMARK [2][-]{subsection.3.14.4}{Puntos de extensi\363n}{section.3.14}% 88
+\BOOKMARK [1][-]{section.3.15}{CUR 15 Consultar auxiliar}{chapter.3}% 89
+\BOOKMARK [2][-]{subsection.3.15.1}{Resumen}{section.3.15}% 90
+\BOOKMARK [2][-]{subsection.3.15.2}{Descripci\363n}{section.3.15}% 91
+\BOOKMARK [2][-]{subsection.3.15.3}{Trayectorias del caso de uso}{section.3.15}% 92
+\BOOKMARK [2][-]{subsection.3.15.4}{Puntos de extensi\363n}{section.3.15}% 93
+\BOOKMARK [1][-]{section.3.16}{CUR 16 Agregar contactos de emergencia}{chapter.3}% 94
+\BOOKMARK [2][-]{subsection.3.16.1}{Resumen}{section.3.16}% 95
+\BOOKMARK [2][-]{subsection.3.16.2}{Descripci\363n}{section.3.16}% 96
+\BOOKMARK [2][-]{subsection.3.16.3}{Trayectorias del caso de uso}{section.3.16}% 97
+\BOOKMARK [2][-]{subsection.3.16.4}{Puntos de extensi\363n}{section.3.16}% 98
+\BOOKMARK [1][-]{section.3.17}{CUR 17 Consultar contactos de emergencia}{chapter.3}% 99
+\BOOKMARK [2][-]{subsection.3.17.1}{Resumen}{section.3.17}% 100
+\BOOKMARK [2][-]{subsection.3.17.2}{Descripci\363n}{section.3.17}% 101
+\BOOKMARK [2][-]{subsection.3.17.3}{Trayectorias del caso de uso}{section.3.17}% 102
+\BOOKMARK [2][-]{subsection.3.17.4}{Puntos de extensi\363n}{section.3.17}% 103
