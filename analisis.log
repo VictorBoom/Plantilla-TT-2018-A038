@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  16 OCT 2018 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  16 OCT 2018 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,767 +1773,792 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 129.
  [13]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 143.
+<images/cap2/modelorelacional.jpeg, id=688, 415.5525pt x 595.32413pt>
+File: images/cap2/modelorelacional.jpeg Graphic file (type jpg)
+<use images/cap2/modelorelacional.jpeg>
+Package pdftex.def Info: images/cap2/modelorelacional.jpeg  used on input line 
+147.
+(pdftex.def)             Requested size: 487.93903pt x 699.05174pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--221
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 147--148
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 139.9177pt on input line 149.
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 154.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 154.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 154.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 154.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 154.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 154.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--231
 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 228--228
+Overfull \hbox (47.73958pt too wide) in alignment at lines 238--238
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 228--228
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 238--238
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 228--233
+Overfull \hbox (47.73958pt too wide) in alignment at lines 238--243
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 235--235
+Overfull \hbox (47.73958pt too wide) in alignment at lines 245--245
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 235--235
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 245--245
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--235
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 235--240
+Overfull \hbox (47.73958pt too wide) in alignment at lines 245--250
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 243--243
+Overfull \hbox (47.73958pt too wide) in alignment at lines 253--253
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 243--243
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 253--253
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
 []|[]\OT1/cmbr/m/sc/10 Req. del
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--247
-[]|\OT1/cmbr/m/sc/10 Recuperar Con-tra-
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 243--248
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 250--250
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 250--250
-[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
-[]|[]\OT1/cmbr/m/sc/10 Req. del
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 250--255
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 257--257
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 257--257
-[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]|\OT1/cmbr/m/sc/10 Recuperar Con-tra-
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 253--258
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 260--260
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 260--260
+[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 257--262
+Overfull \hbox (47.73958pt too wide) in alignment at lines 260--265
  [] [] [] [] [] [] 
  []
 
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 262.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 265.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 262.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 265.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 262.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 265.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 265.
 [14]
-Overfull \hbox (47.73958pt too wide) in alignment at lines 265--265
+Overfull \hbox (47.73958pt too wide) in alignment at lines 267--267
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 265--265
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 267--267
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 265--270
+Overfull \hbox (47.73958pt too wide) in alignment at lines 267--272
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 272--272
+Overfull \hbox (47.73958pt too wide) in alignment at lines 275--275
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 272--272
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 275--275
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
-[]|\OT1/cmbr/m/sc/10 Agregar Con-tac-tos
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 272--277
+Overfull \hbox (47.73958pt too wide) in alignment at lines 275--280
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 279--279
+Overfull \hbox (47.73958pt too wide) in alignment at lines 282--282
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 279--279
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 282--282
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []|[]\OT1/cmbr/m/sc/10 Req. del
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 279--284
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 286--286
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 286--286
-[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 286--286
-[]|[]\OT1/cmbr/m/sc/10 Req. del
+[]|\OT1/cmbr/m/sc/10 Agregar Con-tac-tos
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 286--291
+Overfull \hbox (47.73958pt too wide) in alignment at lines 282--287
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 293--293
+Overfull \hbox (47.73958pt too wide) in alignment at lines 289--289
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 293--293
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 289--289
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 293--298
+Overfull \hbox (47.73958pt too wide) in alignment at lines 289--294
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 300--300
+Overfull \hbox (47.73958pt too wide) in alignment at lines 296--296
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 300--300
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 296--296
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--300
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 300--305
+Overfull \hbox (47.73958pt too wide) in alignment at lines 296--301
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 303--303
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 303--303
+[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]|[]\OT1/cmbr/m/sc/10 Req. del
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 303--308
  [] [] [] [] [] [] 
  []
 
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 305.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 308.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 305.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 308.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 305.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 308.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 308.
 [15]
-Overfull \hbox (47.73958pt too wide) in alignment at lines 307--307
+Overfull \hbox (47.73958pt too wide) in alignment at lines 310--310
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 307--307
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 310--310
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--307
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 307--312
+Overfull \hbox (47.73958pt too wide) in alignment at lines 310--315
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 314--314
+Overfull \hbox (47.73958pt too wide) in alignment at lines 317--317
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 314--314
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 317--317
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 314--319
+Overfull \hbox (47.73958pt too wide) in alignment at lines 317--322
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 321--321
+Overfull \hbox (47.73958pt too wide) in alignment at lines 324--324
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 321--321
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 324--324
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--321
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 321--326
+Overfull \hbox (47.73958pt too wide) in alignment at lines 324--329
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 328--328
+Overfull \hbox (47.73958pt too wide) in alignment at lines 331--331
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 328--328
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 331--331
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 328--333
+Overfull \hbox (47.73958pt too wide) in alignment at lines 331--336
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 335--335
+Overfull \hbox (47.73958pt too wide) in alignment at lines 338--338
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 335--335
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 338--338
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 335--340
+Overfull \hbox (47.73958pt too wide) in alignment at lines 338--343
  [] [] [] [] [] [] 
  []
 
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 340.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 343.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 340.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 343.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 340.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 343.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 [16]
-Overfull \hbox (47.73958pt too wide) in alignment at lines 346--346
+Overfull \hbox (47.73958pt too wide) in alignment at lines 345--345
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 346--346
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 345--345
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 346--349
+Overfull \hbox (47.73958pt too wide) in alignment at lines 345--350
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 351--351
+Overfull \hbox (47.73958pt too wide) in alignment at lines 356--356
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 351--351
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 356--356
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 351--358
+Overfull \hbox (47.73958pt too wide) in alignment at lines 356--359
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 360--360
+Overfull \hbox (47.73958pt too wide) in alignment at lines 361--361
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 360--360
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 361--361
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 360--367
+Overfull \hbox (47.73958pt too wide) in alignment at lines 361--368
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 369--369
+Overfull \hbox (47.73958pt too wide) in alignment at lines 370--370
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 369--369
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 370--370
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 375--375
+Overfull \hbox (47.73958pt too wide) in alignment at lines 370--377
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 379--379
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 379--379
+[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+[]|[]\OT1/cmbr/m/sc/10 Req. del
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 385--385
 []|\OT1/cmbr/m/sc/10 La apli-ca-ci^^Son crea-ra las alar-mas
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 369--376
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 378--378
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 378--378
-[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|[]\OT1/cmbr/m/sc/10 Req. del
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 384--384
-[]|\OT1/cmbr/m/sc/10 Interfaz Com-pren-si-
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 378--385
+Overfull \hbox (47.73958pt too wide) in alignment at lines 379--386
  [] [] [] [] [] [] 
  []
 
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 385.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 386.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 385.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 386.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 385.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 386.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 386.
 [17]
-Overfull \hbox (47.73958pt too wide) in alignment at lines 387--387
+Overfull \hbox (47.73958pt too wide) in alignment at lines 388--388
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 387--387
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 388--388
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 387--394
+Underfull \hbox (badness 2762) in paragraph at lines 394--394
+[]|\OT1/cmbr/m/sc/10 Interfaz Com-pren-si-
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 388--395
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 396--396
+Overfull \hbox (47.73958pt too wide) in alignment at lines 397--397
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 396--396
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 397--397
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 396--403
+Overfull \hbox (47.73958pt too wide) in alignment at lines 397--404
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 405--405
+Overfull \hbox (47.73958pt too wide) in alignment at lines 406--406
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 405--405
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 406--406
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 411--411
+Overfull \hbox (47.73958pt too wide) in alignment at lines 406--413
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 415--415
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 415--415
+[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+[]|[]\OT1/cmbr/m/sc/10 Req. del
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 421--421
 []|\OT1/cmbr/m/sc/10 Desarrollo Mul-ti-pla-
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 405--412
+Overfull \hbox (47.73958pt too wide) in alignment at lines 415--422
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 414--414
+Overfull \hbox (47.73958pt too wide) in alignment at lines 424--424
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 414--414
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 424--424
 []|[]\OT1/cmbr/m/sc/10 Prioridad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 []|[]\OT1/cmbr/m/sc/10 Req. del
  []
 
 
-Overfull \hbox (47.73958pt too wide) in alignment at lines 414--421
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 423--423
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.16763pt too wide) in paragraph at lines 423--423
-[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
-[]|[]\OT1/cmbr/m/sc/10 Req. del
- []
-
-
-Overfull \hbox (47.73958pt too wide) in alignment at lines 423--430
+Overfull \hbox (47.73958pt too wide) in alignment at lines 424--431
  [] [] [] [] [] [] 
  []
 
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 430.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 431.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 430.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 431.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 430.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 431.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 431.
 [18]
+Overfull \hbox (47.73958pt too wide) in alignment at lines 433--433
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.16763pt too wide) in paragraph at lines 433--433
+[]|[]\OT1/cmbr/m/sc/10 Prioridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+[]|[]\OT1/cmbr/m/sc/10 Req. del
+ []
+
+
+Overfull \hbox (47.73958pt too wide) in alignment at lines 433--440
+ [] [] [] [] [] [] 
+ []
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 447.
 <images/cap2/Proceso1.jpg, id=775, 1710.39pt x 297.11pt>
 File: images/cap2/Proceso1.jpg Graphic file (type jpg)
 <use images/cap2/Proceso1.jpg>
-Package pdftex.def Info: images/cap2/Proceso1.jpg  used on input line 445.
+Package pdftex.def Info: images/cap2/Proceso1.jpg  used on input line 455.
 (pdftex.def)             Requested size: 487.93903pt x 84.75882pt.
 
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 445--446
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 455--456
  [][] 
  []
 
@@ -2541,20 +2566,20 @@ Overfull \hbox (44.36055pt too wide) in paragraph at lines 445--446
 File: images/cap2/AdquiereTratamientoP1.jpg Graphic file (type jpg)
 <use images/cap2/AdquiereTratamientoP1.jpg>
 Package pdftex.def Info: images/cap2/AdquiereTratamientoP1.jpg  used on input l
-ine 451.
+ine 461.
 (pdftex.def)             Requested size: 487.93903pt x 53.75667pt.
 
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 451--452
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 461--462
  [][] 
  []
 
 <images/cap2/Proceso2.jpg, id=779, 2475.2475pt x 467.7475pt>
 File: images/cap2/Proceso2.jpg Graphic file (type jpg)
 <use images/cap2/Proceso2.jpg>
-Package pdftex.def Info: images/cap2/Proceso2.jpg  used on input line 459.
+Package pdftex.def Info: images/cap2/Proceso2.jpg  used on input line 469.
 (pdftex.def)             Requested size: 487.93903pt x 92.20602pt.
 
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 459--460
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 469--470
  [][] 
  []
 
@@ -2562,162 +2587,109 @@ Overfull \hbox (44.36055pt too wide) in paragraph at lines 459--460
 File: images/cap2/AdquiereTratamientoP2.jpg Graphic file (type jpg)
 <use images/cap2/AdquiereTratamientoP2.jpg>
 Package pdftex.def Info: images/cap2/AdquiereTratamientoP2.jpg  used on input l
-ine 465.
+ine 475.
 (pdftex.def)             Requested size: 487.93903pt x 83.7938pt.
-
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 465--466
- [][] 
- []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 470.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 470.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 470.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 470.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 470.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 470.
-<images/cap2/casosdeuso.jpg, id=782, 917.4275pt x 979.66pt>
-File: images/cap2/casosdeuso.jpg Graphic file (type jpg)
-<use images/cap2/casosdeuso.jpg>
-Package pdftex.def Info: images/cap2/casosdeuso.jpg  used on input line 475.
-(pdftex.def)             Requested size: 487.93903pt x 521.04105pt.
 
 Overfull \hbox (44.36055pt too wide) in paragraph at lines 475--476
  [][] 
  []
 
-File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
-<use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 487.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
-<use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 487.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-File: cdt/theme/pleca.png Graphic file (type png)
-<use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 487.
-(pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 487.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 487.
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-}) has been already used, duplicate ignored
+(babel)             in language  on input line 480.
+<images/cap2/casosdeuso.jpg, id=782, 917.4275pt x 979.66pt>
+File: images/cap2/casosdeuso.jpg Graphic file (type jpg)
+<use images/cap2/casosdeuso.jpg>
+Package pdftex.def Info: images/cap2/casosdeuso.jpg  used on input line 485.
+(pdftex.def)             Requested size: 487.93903pt x 521.04105pt.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.487 		\item C
-               UP5: Editar Datos personales.pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.2.3}) has been already used, duplicate ig
-nored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.487 		\item C
-               UP5: Editar Datos personales. <./images/cap2/Proceso1.jpg> <./im
-ages/cap2/AdquiereTratamientoP1.jpg>]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 555.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 555.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 555.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 555.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 555.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 555.
-<images/cap2/modelorelacional.jpeg, id=789, 415.5525pt x 595.32413pt>
-File: images/cap2/modelorelacional.jpeg Graphic file (type jpg)
-<use images/cap2/modelorelacional.jpeg>
-Package pdftex.def Info: images/cap2/modelorelacional.jpeg  used on input line 
-559.
-(pdftex.def)             Requested size: 487.93903pt x 699.05174pt.
-
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 559--560
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 485--486
  [][] 
  []
 
-
-LaTeX Warning: Float too large for page by 139.9177pt on input line 561.
-
-)
-File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-<use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 97.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 507.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
-<use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 97.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 507.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 97.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 507.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 97.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.97 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.97 
-      <./images/cap2/Proceso2.jpg> <./images/cap2/AdquiereTratamientoP2.jpg>]
+(babel)             in language  on input line 507.
+[19])
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 105.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 105.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+File: cdt/theme/pleca.png Graphic file (type png)
+<use cdt/theme/pleca.png>
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 105.
+(pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 105.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 105.
+ [20]
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 105.
@@ -2754,8 +2726,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 105.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 105.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
 
-[21]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \chapter
+              {Modelo de comportamiento del paciente: Casos de Uso del pacie...
+ <./images/cap2/modelorelacional.jpeg>]
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 105.
@@ -2793,13 +2771,35 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 105.
  [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-6}) has been already used, duplicate ignored
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.105 \chapter
               {Modelo de comportamiento del paciente: Casos de Uso del pacie...
- <./images/cap2/casosdeuso.jpg>]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \chapter
+              {Modelo de comportamiento del paciente: Casos de Uso del pacie...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \chapter
+              {Modelo de comportamiento del paciente: Casos de Uso del pacie...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \chapter
+              {Modelo de comportamiento del paciente: Casos de Uso del pacie...
+ <./images/cap2/Proceso1.jpg> <./images/cap2/AdquiereTratamientoP1.jpg> <./imag
+es/cap2/Proceso2.jpg> <./images/cap2/AdquiereTratamientoP2.jpg>]
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 105.
@@ -2843,7 +2843,7 @@ Package babel Info: Redefining spanish shorthand "?
                                                   \fi \fi 
 l.105 \chapter
               {Modelo de comportamiento del paciente: Casos de Uso del pacie...
- <./images/cap2/modelorelacional.jpeg>]
+ <./images/cap2/casosdeuso.jpg>]
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 105.
@@ -6253,7 +6253,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `analisis.out' has not changed.
-(rerunfilecheck)             Checksum: 83A4941FCB8029F93CE40BD5D4E4695B;7360.
+(rerunfilecheck)             Checksum: 1580EDFAF5C58494D58737338E45440E;7360.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -6338,7 +6338,7 @@ e/2018/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/hfbright/hfbrsl9.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on analisis.pdf (68 pages, 1318313 bytes).
+Output written on analisis.pdf (68 pages, 1322720 bytes).
 PDF statistics:
  1772 PDF objects out of 2073 (max. 8388607)
  1651 compressed objects within 17 object streams

@@ -10,10 +10,10 @@
 \BOOKMARK [0][-]{chapter.2}{Sistema de Seguimiento de Tratamientos M\351dicos por medio de un Dispositivo M\363vil}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Arquitectura}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.2}{M\363dulos}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Requerimientos}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{Procesos}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.5}{Casos de uso}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.6}{Modelo Relacional}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Modelo Relacional}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Requerimientos}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Procesos}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.6}{Casos de uso}{chapter.2}% 16
 \BOOKMARK [0][-]{chapter.3}{Modelo de comportamiento del paciente: Casos de Uso del paciente }{}% 17
 \BOOKMARK [1][-]{section.3.1}{CUR 1 Iniciar sesi\363n}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.1.1}{Resumen}{section.3.1}% 19

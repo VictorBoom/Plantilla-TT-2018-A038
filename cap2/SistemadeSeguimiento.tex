@@ -50,7 +50,7 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con cuatro role
 		\item Editar sus datos.
 	\end{itemize}
 
-	\item Médico: \\ \textbf{Médico} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente.
+	\item Doctor: \\ \textbf{Doctor} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente.
 	Las acciones con las que cuenta su rol son:
 		\begin{itemize}
 			
@@ -139,6 +139,16 @@ La arquitectura contará con los siguientes módulos:
 %	\item Módulo de reportes: El modulo de reportes sirve para notificar al medico y al paciente que tan constante ha sido con su tratamiento.
 %	\item Módulo de estadísticas: 
 \end{itemize}
+
+\section{Modelo Relacional}
+En la siguiente figura \ref{fig:modelorelacional} se muestra el modelo relacional con el que trabajara la aplicación mostrando así los datos que estarán proporcionando cada una de las partes responsables para que funcionen de manera correcta todos los módulos.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1.1\textwidth]{images/cap2/modelorelacional}
+	\caption{modelo relacional de rem-pills} \label{fig:modelorelacional}
+\end{figure} 
+
+
 
 
 \section{Requerimientos}
@@ -479,27 +489,30 @@ En el análisis realizado para la aplicación Rem-Pills se identificaron los sig
 La aplicación cuenta con los siguientes casos de uso:
 \begin{itemize}
 	\item Paciente:
-	\begin{itemize}
-		\item CUP1: Iniciar Sesión.
-		\item CUP2: Recuperar contraseña.
-		\item CUP3: Registro de cuenta.
-		\item CUP4: Consultar Datos personales.
-		\item CUP5: Editar Datos personales.
-		\item CUP6: Consultar Tratamientos.
-		\item CUP7: Consultar Información de Tratamientos.
-		\item CUP8: Editar Tratamientos
-		\item CUP9: Agregar Tratamiento.
-		\item CUP10: Agregar Medicamento.
-		\item CUP11: Recibir Notificación
-		\item CUP12: Mandar Alerta
-		\item CUP13: Agregar Doctor
-		\item CUP14: Consultar Doctor
-		\item CUP15: Agregar Auxiliar
-		\item CUP16: Consultar Auxiliar
-		\item CUP17: Agregar Contactos de Emergencia
-		\item CUP18: Consultar Contactos de Emergencia
-	\end{itemize}
+		\begin{itemize}
+			\item CUP1: Iniciar Sesión.
+			\item CUP2: Recuperar contraseña.
+			\item CUP3: Registro de cuenta.
+			\item CUP4: Consultar Datos personales.
+			\item CUP5: Editar Datos personales.
+			\item CUP6: Consultar Tratamientos.
+			\item CUP7: Consultar Información de Tratamientos.
+			\item CUP8: Editar Tratamientos
+			\item CUP9: Agregar Tratamiento.
+			\item CUP10: Agregar Medicamento.
+			\item CUP11: Recibir Notificación
+			\item CUP12: Mandar Alerta
+			\item CUP13: Agregar Doctor
+			\item CUP14: Consultar Doctor
+			\item CUP15: Agregar Auxiliar
+			\item CUP16: Consultar Auxiliar
+			\item CUP17: Agregar Contactos de Emergencia
+			\item CUP18: Consultar Contactos de Emergencia
+		\end{itemize}
 	\item Doctor:
+		\begin{itemize}
+			\item 
+		\end{itemize}
 	\item Auxiliar:
 	\item Administrador:
 \end{itemize}
@@ -551,11 +564,3 @@ La aplicación cuenta con los siguientes casos de uso:
 %		\item Consultar medicamento:
 %	\end{itemize}
 %\end{itemize}
-
-\section{Modelo Relacional}
-En la siguiente figura \ref{fig:modelorelacional} se muestra el modelo relacional con el que trabajara la aplicación mostrando así los datos que estarán proporcionando cada una de las partes responsables para que funcione de manera correcta todos los módulos.
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=1.1\textwidth]{images/cap2/modelorelacional}
-	\caption{modelo relacional de rem-pills} \label{fig:modelorelacional}
-\end{figure} 
