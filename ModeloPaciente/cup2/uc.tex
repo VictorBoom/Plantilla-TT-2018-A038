@@ -1,17 +1,14 @@
 \begin{UseCase}{CUR 2}{Recuperar contraseña}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
-    	Cuando un usuario de la aplicación no es capaz de ingresar al sistema por que olvido su contraseña o no ingresa la contraseña correcta el sistema recuperara su la contraseña de su usuario para que este se pueda logear en el sistema.
-    	
-
-    	
+    	En el momento en que un usuario de la aplicación no puede ingresar al sistema por que olvido su contraseña o no esta ingresando la contraseña correcta, la aplicación podrá recuperar su contraseña cuando el usuario proporcione su correo electrónico o su numero celular.
+   	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
     \UCitem{Operación}{Recuperar contraseña}
-    \UCccitem{Prioridad}{Media}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -95,8 +92,11 @@
 	\UCitem{Propósito}{Recuperar contraseña.}
 	\UCitem{Entradas}{
 		\textbf{Correo Electrónico}: \ioEscribir.
+		\textbf{Numero celular}: \ioEscribir.
 }
-	\UCitem{Salidas}{\cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando se mando el correo para recuperar la contraseña.}
+	\UCitem{Salidas}{
+		\cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando se mando el correo para recuperar la contraseña.
+	}
 	\UCitem{Precondiciones}{
 		{\bf Interna:} El actor debe estar registrado en el sistema.
 		}
@@ -110,9 +110,8 @@
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG4}{correo electrónico no existente}: Se muestra en la pantalla 
-		Se muestra en la pantalla \textbf{Recuperar contraseña} indicando que el correo electrónico ingresado no existe.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG4}{correo electrónico no existente}: Se muestra en la pantalla \textbf{Recuperar contraseña} indicando que el correo electrónico ingresado no existe.
 		
 	    \end{UClist}
 	}
@@ -123,44 +122,35 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+ 	
+ 	
+ 	\UCpaso [\UCactor] Presiona el hipervinculo \underline{Olvidaste tu contraseña} de la pantalla \textbf{Iniciar sesión}.
+ 	\UCpaso Muestra la pantalla \textbf{Recuperar contraseña}.
+ 	\UCpaso [\UCactor] Ingresa el correo electrónico. \label{cur2:correo}
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Recuperar contraseña}.
+	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN1}{Información correcta}. \refTray{A}
+	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN2}{Usuario Existente}. \refTray{B}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Iniciar sesión} 
+ 	
  	
     
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{Recuperar contraseña}
+   \UCpaso[] Continúa en el paso \ref{cur2:correo} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el correo ingresado.}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{correo electrónico no existente} en la pantalla \textbf{Recuperar contraseña}.
+    \UCpaso[] Continúa con el paso \ref{cur2:correo} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
 
 
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
 
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
  
 

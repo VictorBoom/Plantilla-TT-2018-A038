@@ -1,7 +1,7 @@
 \begin{UseCase}{CUR 6}{Consultar Tratamiento}
     {
     	
-    	Un paciente tendrá una lista con todos sus tratamientos, tantos los que están en estado activo, incompleto, interrumpido y terminado. De esta manera tendrá un control de cuantos y cuales son sus tratamientos, su estado y la información como nombre de tratamiento, doctor que expidió, fecha de expedición y numero de medicamentos
+    	Un paciente tendrá una lista con todos sus tratamientos, tantos los que están en estado activo, incompleto, interrumpido y terminado. De esta manera sabrá cuantos y cuales son sus tratamientos, su estado y la información de estos, como nombre de tratamiento, doctor que expidió, fecha de expedición y numero de medicamentos
     	
     	
     }
@@ -101,7 +101,7 @@
 			\UCli Nombre de doctor que expidió el tratamiento
 			\UCli Fecha en que se expidió el tratamiento.
 			\UCli Estado del tratamiento.
-			\UCli Numero de medicamentos.
+			\UCli Numero de medicamentos del tratamiento.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -112,17 +112,10 @@
 	    {\bf Interna:} El actor podrá consultar la información completa del tratamiento.	
 	}
     \UCitem{Reglas de negocio}{
-
-            \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
+    	Ninguna.
     }
 	\UCitem{Errores}{
-	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
-		
-	    \end{UClist}
+		Ninguno.
 	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
@@ -131,44 +124,45 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+ 	\UCpaso [\UCactor] Da click sobre el icono \textbf{Tratamientos} en la pantalla \textbf{Menu Principal}.
+ 	
+ 	\UCpaso Muestra la pantalla Tratamientos. \label{cup6:tratamientos}
+ 	
+ 	\UCpaso [\UCactor] Da click sobre el icono \textbf{Consultar Tratamientos} en la pantalla \textbf{Tratamientos}.
+ 	
+ 	\UCpaso Muestra la pantalla \textbf{Consultar Tratamientos}.\refTray{A}
+ 	
+ 	\UCpaso Muestra primero los tratamientos activos, le siguen los incompletos, después los interrumpidos y al final los completados.
  	
     
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{A}{El actor no cuenta con un tratamiento.}
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG9}{No hay tratamientos} en la pantalla \textbf{Tratamientos}
+ 	
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar Nuevo Tratamiento} del mensaje. \refTray{B}
+
+   	\UCpaso Extiende al caso de uso \textbf{C8: Agregar Tratamiento}.
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{B}{El actor no desea agregar un nuevo tratamiento.}
+    \UCpaso[\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG9}{No hay tratamientos}.
+    \UCpaso[] Muestra la pantalla \textbf{Tratamientos}
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
-
-
  
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
+{El actor requiere agregar un nuevo tratamiento}
+{ Paso \ref{cur6:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUP8 }{Agregar Tratamiento}}
+
 
 \UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
+{El actor requiere editar un tratamiento}
+{ Paso \ref{cur6:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUP7 }{Editar Tratamiento}}
+
  
 

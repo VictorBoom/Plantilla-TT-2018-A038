@@ -1,6 +1,9 @@
 \begin{UseCase}{CUR 3}{Registro de cuenta}
     {
-    	Cuando un usuario se quiere registrar en la aplicación seleccionara los roles a los cuales estará asociado y así se generaran las acciones con las que contara su perfil.
+
+    	
+    	El registro de la cuenta del usuario consiste en que el usuario debe de ingresar todos los datos correspondientes a su perfil y seleccionar los roles a los cuales estará asociado, para que se le puedan asignar las acciones a las que podra acceder.
+    
     	
     }
     \UCitem{Versión}{1.0}
@@ -99,7 +102,7 @@
            \UCli \textbf{Numero de celular}
            \UCli \textbf{Correo electronico}
            \UCli \textbf{Contraseña}
-           \UCli \textbf{Rol del usuario}: Se selecciona de los checkbox
+           \UCli \textbf{Rol del usuario}: Se selecciona de checkbox
            \UCli \textbf{Numero de Cédula profesional}: \ioEscribir.
         \end{UClist}}
 	\UCitem{Salidas}{Ninguna.}
@@ -116,7 +119,7 @@
 	\UCitem{Errores}{
 	    \begin{UClist}
 	    	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Crear cuenta} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Crear cuenta} cuando el actor omitió un dato marcado como requerido.
 		
 	    \end{UClist}
 	}
@@ -127,44 +130,72 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
- 	
-    
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear cuenta} de la pantalla \textbf{Iniciar sesión}.
+	 \UCpaso Muestra la pantalla \textbf{Creación de cuenta}.
+	 \UCpaso [\UCactor] Ingresa Nombre.
+	 \UCpaso [\UCactor] Ingresa Apellido paterno.
+	 \UCpaso [\UCactor] Ingresa Apellido materno.
+	 \UCpaso [\UCactor] Ingresa Fecha de nacimiento.
+	 \UCpaso [\UCactor] Presiona el boton \cdtButton{Obtener numero} \refTray{A}
+	 \UCpaso Muestra el mensaje \textbf{MSG5{Obtener datos}}.
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} en el mensaje.
+	 \UCpaso Obtiene el numero celular del celular del usuario
+	 \UCpaso La casilla \textbf{Celular} se rellena con la información obtenida del paso anterior.
+	 \UCpaso [\UCactor] Ingresa su contraseña.\label{cur5:Celular}
+	 \UCpaso [\UCactor] Selecciona los roles a los que estará asociado.\refTray{B}
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Siguiente}. \label{cur3:Doctor}
+	 \UCpaso Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN1}{Información correcta}. \refTray{C}
+	 \UCpaso Verifica que la contraseña sea correcta como lo indica la regla de negocio \cdtIdRef{RN3}{Contraseña}. \refTray{D}.
+	 \UCpaso Muestra la pantalla \textbf{Creación de cuenta fotografia}.
+	 \UCpaso [\UCactor] Da click en el icono \textbf{Tomar foto}. \refTray{E}
+	 \UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia}.
+	 \UCpaso [\UCactor] Presiona el boton \cdtButton{Aceptar} del mensaje.
+	 \UCpaso Abre la camara del celular.
+	 \UCpaso Obtiene la fotografia tomada.
+	 \UCpaso Muesta el mensaje \cdtIdRef{MSG7}{Obtener otra foto} en la pantalla \textbf{Creación de cuenta fotografia}.
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{No}.
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear Cuenta}.\label{cur3:foto}
+	 \UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Iniciar sesión}.
+	 
+
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{A}{El actor no desea que la aplicación se comunique con su sistema operativo.}
+ 	\UCpaso [\UCactor] Ingresa su numero celular.
+ 	Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
+    
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{B}{El actor tendrá un rol que requiere un dato extra.}
+ 	\UCpaso [\UCactor] Selecciona la opción Doctor de la lista de checkbox.
+ 	\UCpaso Muestra la casilla \textbf{Cédula profesional} en la pantalla \textbf{Creación de cuenta}.
+ 	\UCpaso [\UCactor] Ingresa su cédula profesional.
+ 	\UCpaso Continúa con el paso \ref{cur3:Doctor} de la trayectoria principal.
+ 	
+   
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
+\begin{UCtrayectoriaA}{C}{El actor no ingresó alguno de los datos requeridos.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{Creación de cuenta}
+	\UCpaso[] Continúa en el paso donde no haya llenado el campo de la trayectoria principal.
+\end{UCtrayectoriaA}
 
+\begin{UCtrayectoriaA}{D}{El actor no ingreso la contraseña de forma correcta.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Faltan datos en la contraseña} en la pantalla \textbf{Creación de cuenta}
+	\UCpaso[] Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
+\end{UCtrayectoriaA}
 
+\begin{UCtrayectoriaA}{E}{El actor no quiere tomar una foto.}
+	\UCpaso [\UCactor] Da click sobre el icono \textbf{Seleccionar de fototeca}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia} la primera vez que esto sucede.
+	\UCpaso [\UCactor] Presiona el boton \cdtButton{Aceptar} del mensaje.
+	\UCpaso Muestra las fotos del celular.
+	\UCpaso Obtiene la foto seleccionada.
+	\UCpaso Continúa en el paso \ref{cur3:foto} de la trayectoria principal.
+	
+\end{UCtrayectoriaA}
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
-
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
  
 

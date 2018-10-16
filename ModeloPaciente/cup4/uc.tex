@@ -1,9 +1,6 @@
 \begin{UseCase}{CUR 4}{Consultar datos personales}
     {
-    	
-    	Un usuario contara con la facultad de consultar los datos con los que cuenta su perfil, como lo son,  información personal, tratamientos, doctores, auxiliares y demás.
-    	
-    	
+    	Un usuario podrá consultar sus tratamientos, doctores, auxiliares y su información personal para que tenga una vista de la información con la que cuenta. 
     	
     }
     \UCitem{Versión}{1.0}
@@ -120,7 +117,7 @@
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG5}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Menu principal} indicando que no se pudieron obtener los datos del usuario.
+	    \UCli \cdtIdRef{MSG8}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Menu principal} indicando que no se pudieron obtener los datos del usuario.
 	    \end{UClist}
 	}
 	\UCitem{Tipo}{Primario.}
@@ -130,44 +127,28 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+ 	
+ 	
+ 	\UCpaso[\UCactor] Da click sobre el icono \textbf{Datos personales} de la pantalla \textbf{Menu principal}. \label{cur4:editar}
+ 	\UCpaso Obtiene los datos del usuario. \refTray{A}
+ 	\UCpaso Muestra la pantalla \textbf{Datos personales}.
+
  	
     
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
+\begin{UCtrayectoriaA}{A}{El sistema no pudo obtener los datos requeridos.}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG8}{No se pudieron obtener los datos} en la pantalla \textbf{Menu principal}
+	
+	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu principal}
 
+\end{UCtrayectoriaA}
 
  
 \subsection{Puntos de extensión}
-
 \UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
-
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
+{El actor requiere editar sus datos personales}
+{ Paso \ref{cur4:editar} de la trayectoria principal}
+{\cdtIdRef{CUP 5}{Editar datos personales}}
  
 

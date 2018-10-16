@@ -101,13 +101,8 @@
 		\begin{UClist}
 			\UCli Foto de perfil.
 			\UCli Nombre.
-			\UCli Fecha de nacimiento.
-			\UCli Sexo.
 			\UCli Peso.
 			\UCli Altura
-			\UCli lista de Tratamientos activos.
-			\UCli lista de Auxiliares.
-			\UCli lista de Doctores.
 			
 		\end{UClist}
 	}
@@ -115,7 +110,7 @@
 		{\bf Interna:} El actor debe tener estos datos agregados.
 		}
 	\UCitem{Postcondiciones}{
-	    Ninguna.
+	   {\bf Interna:} Los datos serán actualizados.
 	}
     \UCitem{Reglas de negocio}{
 
@@ -124,7 +119,7 @@
 	\UCitem{Errores}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Consultar datos} cuando se actualizaron de forma correcta los datos.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
 		
 	    \end{UClist}
 	}
@@ -135,44 +130,42 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+ 	\UCpaso [\UCactor] Da click sobre el icono de \textbf{Editar} en la pantalla \textbf{Datos personales}.
+ 	\UCpaso Se habilitan las casillas que son modificables.
+ 	\UCpaso [\UCactor] Da click en el icono \textbf{Tomar foto}. \refTray{A}
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia}.
+ 	\UCpaso Abre la camara del celular.
+ 	\UCpaso Obtiene la fotografia tomada.
+ 	\UCpaso Muesta el mensaje \cdtIdRef{MSG7}{Obtener otra foto} en la pantalla \textbf{Creación de cuenta fotografia}.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{No}.
+ 	\UCpaso [\UCactor] Ingresa su nuevo peso.\label{cur5:foto}
+ 	\UCpaso [\UCactor] Ingresa su nueva altura.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Guardar cambios}.
+ 	\UCpaso Actualiza los datos del usuario.
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Consultar datos personales}.
+ 	
+ 	
+ 	
+ 	
+ 	
  	
     
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
+ \begin{UCtrayectoriaA}{A}{El actor no quiere tomar una foto.}
+ 	\UCpaso [\UCactor] Da click sobre el icono \textbf{Seleccionar de fototeca}.
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia} la primera vez que esto sucede.
+ 	\UCpaso [\UCactor] Presiona el boton \cdtButton{Aceptar} del mensaje.
+ 	\UCpaso Muestra las fotos del celular.
+ 	\UCpaso Obtiene la foto seleccionada.
+ 	\UCpaso Continúa en el paso \ref{cur5:foto} de la trayectoria principal.
+ 	
  \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
-
 
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
 
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
+
  
 
