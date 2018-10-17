@@ -75,7 +75,7 @@
 \contentsline {subsection}{\numberline {3.11.2}Descripci\IeC {\'o}n}{49}{subsection.3.11.2}
 \contentsline {subsection}{\numberline {3.11.3}Trayectorias del caso de uso}{49}{subsection.3.11.3}
 \contentsline {subsection}{\numberline {3.11.4}Puntos de extensi\IeC {\'o}n}{50}{subsection.3.11.4}
-\contentsline {section}{\numberline {3.12}CUR 1 Agregar Doctor}{51}{section.3.12}
+\contentsline {section}{\numberline {3.12}CUR 12 Agregar Doctor}{51}{section.3.12}
 \contentsline {subsection}{\numberline {3.12.1}Resumen}{51}{subsection.3.12.1}
 \contentsline {subsection}{\numberline {3.12.2}Descripci\IeC {\'o}n}{51}{subsection.3.12.2}
 \contentsline {subsection}{\numberline {3.12.3}Trayectorias del caso de uso}{51}{subsection.3.12.3}
@@ -90,7 +90,7 @@
 \contentsline {subsection}{\numberline {3.14.2}Descripci\IeC {\'o}n}{55}{subsection.3.14.2}
 \contentsline {subsection}{\numberline {3.14.3}Trayectorias del caso de uso}{55}{subsection.3.14.3}
 \contentsline {subsection}{\numberline {3.14.4}Puntos de extensi\IeC {\'o}n}{56}{subsection.3.14.4}
-\contentsline {section}{\numberline {3.15}CUR 15 Consultar auxiliar}{57}{section.3.15}
+\contentsline {section}{\numberline {3.15}CUR 15 Consultar Auxiliar}{57}{section.3.15}
 \contentsline {subsection}{\numberline {3.15.1}Resumen}{57}{subsection.3.15.1}
 \contentsline {subsection}{\numberline {3.15.2}Descripci\IeC {\'o}n}{57}{subsection.3.15.2}
 \contentsline {subsection}{\numberline {3.15.3}Trayectorias del caso de uso}{57}{subsection.3.15.3}
