@@ -4,14 +4,14 @@
 \contentsline {section}{\numberline {1.2}Objetivo}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Problem\IeC {\'a}tica}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Soluci\IeC {\'o}n propuesta por otras aplicaciones}{5}{section.1.5}
-\contentsline {section}{\numberline {1.6}Soluci\IeC {\'o}n propuesta}{6}{section.1.6}
+\contentsline {section}{\numberline {1.5}Soluci\IeC {\'o}n propuesta por otras aplicaciones}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}Soluci\IeC {\'o}n propuesta}{7}{section.1.6}
 \contentsline {section}{\numberline {1.7}An\IeC {\'a}lisis de factibilidad}{7}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Econ\IeC {\'o}mica}{7}{subsection.1.7.1}
-\contentsline {subsubsection}{Gastos tecnol\IeC {\'o}gicos}{7}{section*.3}
+\contentsline {subsection}{\numberline {1.7.1}Econ\IeC {\'o}mica}{8}{subsection.1.7.1}
+\contentsline {subsubsection}{Gastos tecnol\IeC {\'o}gicos}{8}{section*.3}
 \contentsline {subsubsection}{Gastos de Servicios}{8}{section*.4}
-\contentsline {subsubsection}{Sueldos}{8}{section*.5}
-\contentsline {section}{\numberline {1.8}Referencias}{9}{section.1.8}
+\contentsline {subsubsection}{Sueldos}{9}{section*.5}
+\contentsline {section}{\numberline {1.8}Referencias}{10}{section.1.8}
 \contentsline {chapter}{\numberline {2}Sistema de Seguimiento de Tratamientos M\IeC {\'e}dicos por medio de un Dispositivo M\IeC {\'o}vil}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Arquitectura}{13}{section.2.1}
 \contentsline {section}{\numberline {2.2}M\IeC {\'o}dulos}{15}{section.2.2}
