@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {2.3}Modelo Relacional}{16}{section.2.3}
 \contentsline {section}{\numberline {2.4}Requerimientos}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}Procesos}{21}{section.2.5}
-\contentsline {section}{\numberline {2.6}Casos de uso}{22}{section.2.6}
+\contentsline {section}{\numberline {2.6}Casos de uso}{21}{section.2.6}
 \contentsline {chapter}{\numberline {3}Modelo de comportamiento del paciente: Casos de Uso del paciente }{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}CUR 1 Iniciar sesi\IeC {\'o}n}{26}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Resumen}{26}{subsection.3.1.1}
