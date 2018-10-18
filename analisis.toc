@@ -95,7 +95,7 @@
 \contentsline {subsection}{\numberline {3.15.2}Descripci\IeC {\'o}n}{55}{subsection.3.15.2}
 \contentsline {subsection}{\numberline {3.15.3}Trayectorias del caso de uso}{55}{subsection.3.15.3}
 \contentsline {subsection}{\numberline {3.15.4}Puntos de extensi\IeC {\'o}n}{56}{subsection.3.15.4}
-\contentsline {section}{\numberline {3.16}CUR 16 Agregar contactos de emergencia}{57}{section.3.16}
+\contentsline {section}{\numberline {3.16}CUR 16 Agregar Contactos de Emergencia}{57}{section.3.16}
 \contentsline {subsection}{\numberline {3.16.1}Resumen}{57}{subsection.3.16.1}
 \contentsline {subsection}{\numberline {3.16.2}Descripci\IeC {\'o}n}{57}{subsection.3.16.2}
 \contentsline {subsection}{\numberline {3.16.3}Trayectorias del caso de uso}{57}{subsection.3.16.3}
