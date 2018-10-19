@@ -97,14 +97,19 @@
     }
     
     \UCitem{Salidas}{
-    	
+    	\begin{UClist}
+    		\UCli Nombre del medicamento
+    		\UCli Hora de la toma del medicamento
+    		\UCli Tratamiento al que pertenece
+    		\UCli Cantidad restante del medicamento
+    	\end{UClist}
     }
     
     \UCitem{Precondiciones}{
-    	{\bf Interna:} El actor debe estar registrado en el sistema.
+    	{\bf Interna:} El actor debe tener mínimo un tratamiento activo.
     }
     \UCitem{Postcondiciones}{
-    	{\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+    	{\bf Interna:} Se contara la toma del medicamento en el tratamiento.	
     }
     \UCitem{Reglas de negocio}{
     	
@@ -126,42 +131,34 @@
 
 \begin{UCtrayectoria}
 
-\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
-w 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
-\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
-\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
-\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
-\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
-\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+
+\UCpaso Muestra la pantalla \textbf{Recibir Notificación}.
+\UCpaso [\UCactor] Presiona el botón \cdtButton{Entendido}
+\UCpaso Muestra la pantalla \textbf{Recibir Notificación 2}
+\UCpaso [\UCpaso] Presiona el botón \cdtButton{Tomar}. \refTray{A} \label{tomar}
+\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
+
+
+
+
 
 
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-\UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
+\begin{UCtrayectoriaA}{A}{El actor no tomara el medicamento en ese momento.}
+	
+\UCpaso [\UCactor] Presiona el botón \cdtButton{Posponer}
+\UCpaso Muestra la pantalla \textbf{Recibir Notificación 3}
+\UCpaso [\UCactor] Selecciona el tiempo en que quiere que le avise la aplicación.
+\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar}. \refTray{B}
+\UCpaso Pasando el tiempo ingresado por el usuario Muestra la pantalla \textbf{Recibir Notificación 4}
+\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-\UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
+\begin{UCtrayectoriaA}{B}{El actor cancela la operación}
+	\UCpaso Continua en el paso \ref{tomar} de la trayectoria principal
 \end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-\UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
-\end{UCtrayectoriaA} 
 
 
 
 \subsection{Puntos de extensión}
-
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
-
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
