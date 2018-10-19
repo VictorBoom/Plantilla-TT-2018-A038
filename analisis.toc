@@ -113,7 +113,7 @@
 \contentsline {subsection}{\numberline {3.19.1}Resumen}{65}{subsection.3.19.1}
 \contentsline {subsection}{\numberline {3.19.2}Descripci\IeC {\'o}n}{65}{subsection.3.19.2}
 \contentsline {subsection}{\numberline {3.19.3}Trayectorias del caso de uso}{66}{subsection.3.19.3}
-\contentsline {section}{\numberline {3.20}CUR 24 Eliminar Contactos de Emergencia}{67}{section.3.20}
-\contentsline {subsection}{\numberline {3.20.1}Resumen}{67}{subsection.3.20.1}
-\contentsline {subsection}{\numberline {3.20.2}Descripci\IeC {\'o}n}{67}{subsection.3.20.2}
+\contentsline {section}{\numberline {3.20}CUR 24 Eliminar Contactos de Emergencia}{68}{section.3.20}
+\contentsline {subsection}{\numberline {3.20.1}Resumen}{68}{subsection.3.20.1}
+\contentsline {subsection}{\numberline {3.20.2}Descripci\IeC {\'o}n}{68}{subsection.3.20.2}
 \contentsline {subsection}{\numberline {3.20.3}Trayectorias del caso de uso}{68}{subsection.3.20.3}

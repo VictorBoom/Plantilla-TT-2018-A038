@@ -1,13 +1,14 @@
 \begin{UseCase}{CUR 22}{Editar Contactos de Emergencia}
     {
-    	Este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo contacto de emergencia para que éste pueda ser notificado en caso de que el actor no consuma algún medicamento de alta importancia.  
+    	Este caso de uso permite al \textbf{Paciente} editar los datos de un contacto de emergencia en caso de que haya registrado un dato incorrecto para que éste pueda ser notificado en caso de que el actor no consuma algún medicamento de alta importancia.  
     	
+
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Agregar Contacto de Emergencia}
+    \UCitem{Operación}{Editar Contacto de Emergencia}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,7 +90,7 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Agregar Contactos de Emergencia}
+	\UCitem{Propósito}{Editar Contactos de Emergencia}
 	\UCitem{Entradas}{
         \begin{UClist} 
            \UCli \textbf{Nombre}: \ioEscribir.
@@ -104,11 +105,11 @@
 			\UCli Apellido materno del contacto de emergencia.
 			\UCli Teléfono del contacto de emergencia.
 			\UCli Correo electrónico del contacto de emergencia
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando se agrego el contacto de emergencia de manera exitosa.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando se editó el contacto de emergencia de manera exitosa.
 	\end{UClist}}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Registrará los datos del contacto de emergencia en la aplicación.
+	    {\bf Interna:} Editará los datos del contacto de emergencia en la aplicación.
 	}
     \UCitem{Reglas de negocio}{
 
@@ -132,28 +133,29 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Contacto de Emergencia} de la pantalla \textbf{Contactos de Emergencia}.
- 	\UCpaso Muestra la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
- 	\UCpaso [\UCactor] Proporciona la información solicitada por la pantalla.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar}.
+ 	\UCpaso [\UCactor] Presiona el ícono \textbf{Editar Contacto de Emergencia} asociado al contacto de emergencia que desea editar en la pantalla \textbf{Contactos de Emergencia}.
+ 	\UCpaso Muestra la pantalla \textbf{Editar Contacto de Emergencia}.
+ 	\UCpaso [\UCactor] Edita la información que deseas editar en la pantalla \textbf{Editar Contacto de Emergencia}.
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Aceptar}.
 	\UCpaso Verifica que no haga falta ningún dato requerido con base a la regla de negocio \textbf{RN Datos Requeridos}.
 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base a la regla de negocio \textbf{RN Formato de Correo Electrónico}.
+	\UCpaso Actualiza los datos del contacto que fueron editados.
 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Contactos de Emergencia}.
     
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
-    \UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón Cancelar en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+    \UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón Cancelar en la pantalla \textbf{Editar Contacto de Emergencia}.
    \UCpaso Regresa a la pantalla \textbf{Contactos de Emergencia}.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Editar Contacto de Emergencia}.
     \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia} indicando que el usuario y/o contraseña son incorrectos.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Editar Contacto de Emergencia} indicando que el usuario y/o contraseña son incorrectos.
     \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
  \end{UCtrayectoriaA} 
 
