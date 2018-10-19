@@ -1,12 +1,12 @@
-\begin{UseCase}{CUR 7}{Consultar Información de Tratamiento}
+\begin{UseCase}{CUR 23}{Consultar Contacto de Emergencia}
     {
-    	Un paciente podra consultar la informacion de un tratamiento que se encuentre en estado activo, en donde se mostrara el doctor que lo expidió, la fecha en que se expidió, el estado y una vista de las semanas en que ese tratamiento ha estado en función.
+    	Este caso de uso permite al \textbf{Paciente} consultar los contactos de emergencia que tiene asociados a su cuenta a los cuales se les podrá enviar una alerta en caso de que el paciente no se haya tomado un medicamento de importancia.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Consulta de información de tratamiento}
+    \UCitem{Operación}{Consulta de Contactos de Emergencia}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -88,24 +88,19 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Consultar la Información de los tratamientos}
+	\UCitem{Propósito}{Consultar los contactos de emergencia que se tienen asociados a la cuenta del Paciente}
 	\UCitem{Entradas}{Ninguna.}
-	\UCitem{Salidas}{
-		\begin{UClist}
-			\UCli Nombre del tratamiento
-			\UCli Fecha de expedición.
-			\UCli Estado del tratamiento.
-			\UCli Semana en la que se encuentra.
-			\UCli Medicamentos del tratamiento
-			\UCli Tratamientos previamente registrados.
-		\end{UClist}
-	}
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Nombre del contacto de emergencia.
+			\UCli Teléfono del contacto de emergencia.
+			\UCli Correo electrónico del contacto de emergencia
+	\end{UClist} }
 	\UCitem{Precondiciones}{
-		{\bf Interna:} Que exista el tratamiento al que se esta accediendo.
-		{\bf Interna:} Que el tratamiento al que se esta accediendo este en estado activo.
-		
+		{\bf Interna:} El actor debe estar registrado en el sistema.
+		}
+	\UCitem{Postcondiciones}{
+	    {\bf Interna:} El actor podrá consultar la información de los contactos de emergencia asociados a su cuenta.	
 	}
-	\UCitem{Postcondiciones}{Ninguna.}
     \UCitem{Reglas de negocio}{Ninguna.}
 	\UCitem{Errores}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
@@ -113,24 +108,33 @@
 	}
  \end{UseCase}
 
- \begin{UCtrayectoria}
- 	
- 	\UCpaso [\UCactor] Selecciona un \textbf{Tratamiento} con estado \textbf{Activo} de la pantalla \textbf{Consulta Tratamientos}.
- 	\UCpaso	Obtiene el nombre del tratamiento.
- 	\UCpaso	Obtiene el nombre del doctor que expidió el tratamiento.
- 	\UCpaso	Obtiene la fecha de expedición del tratamiento.
- 	\UCpaso	Obtiene el estado del tratamiento. 
- 	\UCpaso	Obtiene los medicamentos que contiene ese tratamiento.
- 	\UCpaso	Muestra la pantalla \textbf{Consultar información de Tratamiento}.
- 	    
- \end{UCtrayectoria}
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Da click sobre el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Datos Personales}.
+	
+	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
+	
+	\UCpaso [\UCactor] Visualiza la información de los contactos de emergencia asociados a tu cuenta.
+	
+	\UCpaso [\UCactor] Da clic en el botón \textbf{Regresar}.
+	
+	\UCpaso Muestra la pantalla \textbf{Datos Personales}.
+	
+	
+\end{UCtrayectoria}
 
-
+ \begin{UCtrayectoriaA}{A}{El actor no tiene contactos de emergencia asociados a su cuenta.}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay contactos de emergencia} en la pantalla \textbf{Contactos de Emergencia}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay contactos de emergencia}.
+	
+	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
+	
+\end{UCtrayectoriaA}
  
 \subsection{Puntos de extensión}
 
-
-
-
- 
+\UCExtensionPoint
+{El actor requiere registrar un nuevo contacto de emergencia}
+{ Paso \ref{cur1:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 16}{Agregar Contactos de Emergencia}}
 

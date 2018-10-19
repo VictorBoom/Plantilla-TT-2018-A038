@@ -1,19 +1,19 @@
-\begin{UseCase}{CUR 14}{Agregar auxiliar}
+\begin{UseCase}{CUR 14}{Consultar Doctor}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
+    	Este caso de uso permite al \textbf{Paciente} consultar los doctores que tiene asociados a su cuenta y a la vez, consultar a qué tratamiento está asociado cada doctor.
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Consulta de doctor}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
     \UCitem{Estatus}{Terminado}
-    \UCitem{Fecha del último estatus}{05 de Octubre del 2018}
+    \UCitem{Fecha del último estatus}{16 de Octubre del 2018}
 
 %% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
 %% Esta sección la debe llenar solo el Revisor
@@ -89,32 +89,20 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
-	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
-        \end{UClist}}
-	\UCitem{Salidas}{Ninguna.}
+	\UCitem{Propósito}{Consultar los doctores que se tienen asociados a la cuenta del Paciente.}
+	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Nombre de doctor.
+			\UCli Nombre de tratamiento del que es responsable.
+		\end{UClist}}
 	\UCitem{Precondiciones}{
 		{\bf Interna:} El actor debe estar registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	{\bf Interna:} El actor podrá consultar la información de los doctores asociados a su cuenta.
 	}
-    \UCitem{Reglas de negocio}{
-
-            \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
-    }
-	\UCitem{Errores}{
-	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
-		
-	    \end{UClist}
-	}
+    \UCitem{Reglas de negocio}{Ninguna.}
+	\UCitem{Errores}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -122,44 +110,36 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
- 	
-    
+	 \UCpaso [\UCactor] Da click sobre el icono \textbf{Doctores} en la pantalla \textbf{Menu Principal}.
+	 
+	 \UCpaso Muestra la pantalla \textbf{Doctor}.
+	 
+	 \UCpaso [\UCactor] Da click sobre el icono \textbf{Consultar Doctor} en la pantalla \textbf{Doctor}.
+	 
+	 \UCpaso  Muestra la pantalla \textbf{Doctores}.\refTray{A}
+	 
+	 \UCpaso [\UCactor] Da clic en el botón \textbf{Regresar}.
+	 
+	 \UCpaso Muestra la pantalla Doctor.
+	 
+   
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
+ \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
+    \UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay doctores} en la pantalla \textbf{Doctor}.
+   \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay Doctor}.
+   
+   \UCpaso Muestra la pantalla \textbf{Doctor}.
  
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
-
+\end{UCtrayectoriaA}
 
  
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint
-{El actor requiere recuperar su contraseña}
+{El actor requiere registrar un nuevo doctor}
 { Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
+{\cdtIdRef{CUR 12}{Agregar Doctor}}
 
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
  
 
