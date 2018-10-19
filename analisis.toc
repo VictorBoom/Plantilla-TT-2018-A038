@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivo}{3}{section.1.2}
@@ -66,77 +66,77 @@
 \contentsline {section}{\numberline {3.10}CUR 10 Agregar Medicamento}{47}{section.3.10}
 \contentsline {subsection}{\numberline {3.10.1}Resumen}{47}{subsection.3.10.1}
 \contentsline {subsection}{\numberline {3.10.2}Descripci\IeC {\'o}n}{47}{subsection.3.10.2}
-\contentsline {subsection}{\numberline {3.10.3}Trayectorias del caso de uso}{47}{subsection.3.10.3}
-\contentsline {subsection}{\numberline {3.10.4}Puntos de extensi\IeC {\'o}n}{48}{subsection.3.10.4}
-\contentsline {section}{\numberline {3.11}CUR 11 Agregar Doctor}{49}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}Resumen}{49}{subsection.3.11.1}
-\contentsline {subsection}{\numberline {3.11.2}Descripci\IeC {\'o}n}{49}{subsection.3.11.2}
-\contentsline {subsection}{\numberline {3.11.3}Trayectorias del caso de uso}{49}{subsection.3.11.3}
-\contentsline {subsection}{\numberline {3.11.4}Puntos de extensi\IeC {\'o}n}{50}{subsection.3.11.4}
-\contentsline {section}{\numberline {3.12}CUR 12 Editar Doctor}{51}{section.3.12}
-\contentsline {subsection}{\numberline {3.12.1}Resumen}{51}{subsection.3.12.1}
-\contentsline {subsection}{\numberline {3.12.2}Descripci\IeC {\'o}n}{51}{subsection.3.12.2}
-\contentsline {subsection}{\numberline {3.12.3}Trayectorias del caso de uso}{51}{subsection.3.12.3}
-\contentsline {subsection}{\numberline {3.12.4}Puntos de extensi\IeC {\'o}n}{52}{subsection.3.12.4}
-\contentsline {section}{\numberline {3.13}CUR 13 Eliminar Doctor}{53}{section.3.13}
-\contentsline {subsection}{\numberline {3.13.1}Resumen}{53}{subsection.3.13.1}
-\contentsline {subsection}{\numberline {3.13.2}Descripci\IeC {\'o}n}{53}{subsection.3.13.2}
-\contentsline {subsection}{\numberline {3.13.3}Trayectorias del caso de uso}{53}{subsection.3.13.3}
-\contentsline {subsection}{\numberline {3.13.4}Puntos de extensi\IeC {\'o}n}{54}{subsection.3.13.4}
-\contentsline {section}{\numberline {3.14}CUR 14 Consultar Doctor}{55}{section.3.14}
-\contentsline {subsection}{\numberline {3.14.1}Resumen}{55}{subsection.3.14.1}
-\contentsline {subsection}{\numberline {3.14.2}Descripci\IeC {\'o}n}{55}{subsection.3.14.2}
-\contentsline {subsection}{\numberline {3.14.3}Trayectorias del caso de uso}{55}{subsection.3.14.3}
-\contentsline {subsection}{\numberline {3.14.4}Puntos de extensi\IeC {\'o}n}{56}{subsection.3.14.4}
-\contentsline {section}{\numberline {3.15}CUR 15 Recibir Notificaci\IeC {\'o}n}{57}{section.3.15}
-\contentsline {subsection}{\numberline {3.15.1}Resumen}{57}{subsection.3.15.1}
-\contentsline {subsection}{\numberline {3.15.2}Descripci\IeC {\'o}n}{57}{subsection.3.15.2}
-\contentsline {subsection}{\numberline {3.15.3}Trayectorias del caso de uso}{57}{subsection.3.15.3}
-\contentsline {subsection}{\numberline {3.15.4}Puntos de extensi\IeC {\'o}n}{58}{subsection.3.15.4}
-\contentsline {section}{\numberline {3.16}CUR 16 Mandar Alerta}{59}{section.3.16}
-\contentsline {subsection}{\numberline {3.16.1}Resumen}{59}{subsection.3.16.1}
-\contentsline {subsection}{\numberline {3.16.2}Descripci\IeC {\'o}n}{59}{subsection.3.16.2}
-\contentsline {subsection}{\numberline {3.16.3}Trayectorias del caso de uso}{59}{subsection.3.16.3}
-\contentsline {subsection}{\numberline {3.16.4}Puntos de extensi\IeC {\'o}n}{60}{subsection.3.16.4}
-\contentsline {section}{\numberline {3.17}CUR 17 Agregar Auxiliar}{61}{section.3.17}
-\contentsline {subsection}{\numberline {3.17.1}Resumen}{61}{subsection.3.17.1}
-\contentsline {subsection}{\numberline {3.17.2}Descripci\IeC {\'o}n}{61}{subsection.3.17.2}
-\contentsline {subsection}{\numberline {3.17.3}Trayectorias del caso de uso}{61}{subsection.3.17.3}
-\contentsline {subsection}{\numberline {3.17.4}Puntos de extensi\IeC {\'o}n}{62}{subsection.3.17.4}
-\contentsline {section}{\numberline {3.18}CUR 18 Editar Auxiliar}{63}{section.3.18}
-\contentsline {subsection}{\numberline {3.18.1}Resumen}{63}{subsection.3.18.1}
-\contentsline {subsection}{\numberline {3.18.2}Descripci\IeC {\'o}n}{63}{subsection.3.18.2}
-\contentsline {subsection}{\numberline {3.18.3}Trayectorias del caso de uso}{63}{subsection.3.18.3}
-\contentsline {subsection}{\numberline {3.18.4}Puntos de extensi\IeC {\'o}n}{64}{subsection.3.18.4}
-\contentsline {section}{\numberline {3.19}CUR 19 Consultar Auxiliar}{65}{section.3.19}
-\contentsline {subsection}{\numberline {3.19.1}Resumen}{65}{subsection.3.19.1}
-\contentsline {subsection}{\numberline {3.19.2}Descripci\IeC {\'o}n}{65}{subsection.3.19.2}
-\contentsline {subsection}{\numberline {3.19.3}Trayectorias del caso de uso}{65}{subsection.3.19.3}
-\contentsline {subsection}{\numberline {3.19.4}Puntos de extensi\IeC {\'o}n}{66}{subsection.3.19.4}
-\contentsline {section}{\numberline {3.20}CUR 20 Eliminar Auxiliar}{67}{section.3.20}
-\contentsline {subsection}{\numberline {3.20.1}Resumen}{67}{subsection.3.20.1}
-\contentsline {subsection}{\numberline {3.20.2}Descripci\IeC {\'o}n}{67}{subsection.3.20.2}
-\contentsline {subsection}{\numberline {3.20.3}Trayectorias del caso de uso}{67}{subsection.3.20.3}
-\contentsline {subsection}{\numberline {3.20.4}Puntos de extensi\IeC {\'o}n}{68}{subsection.3.20.4}
-\contentsline {section}{\numberline {3.21}CUR 21 Agregar Contacto de Emergencia}{69}{section.3.21}
-\contentsline {subsection}{\numberline {3.21.1}Resumen}{69}{subsection.3.21.1}
-\contentsline {subsection}{\numberline {3.21.2}Descripci\IeC {\'o}n}{69}{subsection.3.21.2}
-\contentsline {subsection}{\numberline {3.21.3}Trayectorias del caso de uso}{70}{subsection.3.21.3}
-\contentsline {section}{\numberline {3.22}CUR 22 Editar Contacto de Emergencia}{71}{section.3.22}
-\contentsline {subsection}{\numberline {3.22.1}Resumen}{71}{subsection.3.22.1}
-\contentsline {subsection}{\numberline {3.22.2}Descripci\IeC {\'o}n}{71}{subsection.3.22.2}
-\contentsline {subsection}{\numberline {3.22.3}Trayectorias del caso de uso}{72}{subsection.3.22.3}
-\contentsline {section}{\numberline {3.23}CUR 23 Consultar Contacto de Emergencia}{74}{section.3.23}
-\contentsline {subsection}{\numberline {3.23.1}Resumen}{74}{subsection.3.23.1}
-\contentsline {subsection}{\numberline {3.23.2}Descripci\IeC {\'o}n}{74}{subsection.3.23.2}
-\contentsline {subsection}{\numberline {3.23.3}Trayectorias del caso de uso}{74}{subsection.3.23.3}
-\contentsline {subsection}{\numberline {3.23.4}Puntos de extensi\IeC {\'o}n}{75}{subsection.3.23.4}
-\contentsline {section}{\numberline {3.24}CUR 24 Eliminar Contacto de Emergencia}{76}{section.3.24}
-\contentsline {subsection}{\numberline {3.24.1}Resumen}{76}{subsection.3.24.1}
-\contentsline {subsection}{\numberline {3.24.2}Descripci\IeC {\'o}n}{76}{subsection.3.24.2}
-\contentsline {subsection}{\numberline {3.24.3}Trayectorias del caso de uso}{76}{subsection.3.24.3}
-\contentsline {section}{\numberline {3.25}CUR 25 Cambiar Contrase\IeC {\~n}a}{78}{section.3.25}
-\contentsline {subsection}{\numberline {3.25.1}Resumen}{78}{subsection.3.25.1}
-\contentsline {subsection}{\numberline {3.25.2}Descripci\IeC {\'o}n}{78}{subsection.3.25.2}
-\contentsline {subsection}{\numberline {3.25.3}Trayectorias del caso de uso}{78}{subsection.3.25.3}
-\contentsline {subsection}{\numberline {3.25.4}Puntos de extensi\IeC {\'o}n}{79}{subsection.3.25.4}
+\contentsline {subsection}{\numberline {3.10.3}Trayectorias del caso de uso}{48}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Puntos de extensi\IeC {\'o}n}{49}{subsection.3.10.4}
+\contentsline {section}{\numberline {3.11}CUR 11 Agregar Doctor}{50}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Resumen}{50}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Descripci\IeC {\'o}n}{50}{subsection.3.11.2}
+\contentsline {subsection}{\numberline {3.11.3}Trayectorias del caso de uso}{50}{subsection.3.11.3}
+\contentsline {subsection}{\numberline {3.11.4}Puntos de extensi\IeC {\'o}n}{51}{subsection.3.11.4}
+\contentsline {section}{\numberline {3.12}CUR 12 Editar Doctor}{52}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Resumen}{52}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}Descripci\IeC {\'o}n}{52}{subsection.3.12.2}
+\contentsline {subsection}{\numberline {3.12.3}Trayectorias del caso de uso}{52}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}Puntos de extensi\IeC {\'o}n}{53}{subsection.3.12.4}
+\contentsline {section}{\numberline {3.13}CUR 13 Eliminar Doctor}{54}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}Resumen}{54}{subsection.3.13.1}
+\contentsline {subsection}{\numberline {3.13.2}Descripci\IeC {\'o}n}{54}{subsection.3.13.2}
+\contentsline {subsection}{\numberline {3.13.3}Trayectorias del caso de uso}{54}{subsection.3.13.3}
+\contentsline {subsection}{\numberline {3.13.4}Puntos de extensi\IeC {\'o}n}{55}{subsection.3.13.4}
+\contentsline {section}{\numberline {3.14}CUR 14 Consultar Doctor}{56}{section.3.14}
+\contentsline {subsection}{\numberline {3.14.1}Resumen}{56}{subsection.3.14.1}
+\contentsline {subsection}{\numberline {3.14.2}Descripci\IeC {\'o}n}{56}{subsection.3.14.2}
+\contentsline {subsection}{\numberline {3.14.3}Trayectorias del caso de uso}{56}{subsection.3.14.3}
+\contentsline {subsection}{\numberline {3.14.4}Puntos de extensi\IeC {\'o}n}{57}{subsection.3.14.4}
+\contentsline {section}{\numberline {3.15}CUR 15 Recibir Notificaci\IeC {\'o}n}{58}{section.3.15}
+\contentsline {subsection}{\numberline {3.15.1}Resumen}{58}{subsection.3.15.1}
+\contentsline {subsection}{\numberline {3.15.2}Descripci\IeC {\'o}n}{58}{subsection.3.15.2}
+\contentsline {subsection}{\numberline {3.15.3}Trayectorias del caso de uso}{59}{subsection.3.15.3}
+\contentsline {subsection}{\numberline {3.15.4}Puntos de extensi\IeC {\'o}n}{59}{subsection.3.15.4}
+\contentsline {section}{\numberline {3.16}CUR 16 Mandar Alerta}{60}{section.3.16}
+\contentsline {subsection}{\numberline {3.16.1}Resumen}{60}{subsection.3.16.1}
+\contentsline {subsection}{\numberline {3.16.2}Descripci\IeC {\'o}n}{60}{subsection.3.16.2}
+\contentsline {subsection}{\numberline {3.16.3}Trayectorias del caso de uso}{60}{subsection.3.16.3}
+\contentsline {subsection}{\numberline {3.16.4}Puntos de extensi\IeC {\'o}n}{61}{subsection.3.16.4}
+\contentsline {section}{\numberline {3.17}CUR 17 Agregar Auxiliar}{62}{section.3.17}
+\contentsline {subsection}{\numberline {3.17.1}Resumen}{62}{subsection.3.17.1}
+\contentsline {subsection}{\numberline {3.17.2}Descripci\IeC {\'o}n}{62}{subsection.3.17.2}
+\contentsline {subsection}{\numberline {3.17.3}Trayectorias del caso de uso}{62}{subsection.3.17.3}
+\contentsline {subsection}{\numberline {3.17.4}Puntos de extensi\IeC {\'o}n}{63}{subsection.3.17.4}
+\contentsline {section}{\numberline {3.18}CUR 18 Editar Auxiliar}{64}{section.3.18}
+\contentsline {subsection}{\numberline {3.18.1}Resumen}{64}{subsection.3.18.1}
+\contentsline {subsection}{\numberline {3.18.2}Descripci\IeC {\'o}n}{64}{subsection.3.18.2}
+\contentsline {subsection}{\numberline {3.18.3}Trayectorias del caso de uso}{64}{subsection.3.18.3}
+\contentsline {subsection}{\numberline {3.18.4}Puntos de extensi\IeC {\'o}n}{65}{subsection.3.18.4}
+\contentsline {section}{\numberline {3.19}CUR 19 Consultar Auxiliar}{66}{section.3.19}
+\contentsline {subsection}{\numberline {3.19.1}Resumen}{66}{subsection.3.19.1}
+\contentsline {subsection}{\numberline {3.19.2}Descripci\IeC {\'o}n}{66}{subsection.3.19.2}
+\contentsline {subsection}{\numberline {3.19.3}Trayectorias del caso de uso}{66}{subsection.3.19.3}
+\contentsline {subsection}{\numberline {3.19.4}Puntos de extensi\IeC {\'o}n}{67}{subsection.3.19.4}
+\contentsline {section}{\numberline {3.20}CUR 20 Eliminar Auxiliar}{68}{section.3.20}
+\contentsline {subsection}{\numberline {3.20.1}Resumen}{68}{subsection.3.20.1}
+\contentsline {subsection}{\numberline {3.20.2}Descripci\IeC {\'o}n}{68}{subsection.3.20.2}
+\contentsline {subsection}{\numberline {3.20.3}Trayectorias del caso de uso}{68}{subsection.3.20.3}
+\contentsline {subsection}{\numberline {3.20.4}Puntos de extensi\IeC {\'o}n}{69}{subsection.3.20.4}
+\contentsline {section}{\numberline {3.21}CUR 21 Agregar Contacto de Emergencia}{70}{section.3.21}
+\contentsline {subsection}{\numberline {3.21.1}Resumen}{70}{subsection.3.21.1}
+\contentsline {subsection}{\numberline {3.21.2}Descripci\IeC {\'o}n}{70}{subsection.3.21.2}
+\contentsline {subsection}{\numberline {3.21.3}Trayectorias del caso de uso}{71}{subsection.3.21.3}
+\contentsline {section}{\numberline {3.22}CUR 22 Editar Contacto de Emergencia}{72}{section.3.22}
+\contentsline {subsection}{\numberline {3.22.1}Resumen}{72}{subsection.3.22.1}
+\contentsline {subsection}{\numberline {3.22.2}Descripci\IeC {\'o}n}{72}{subsection.3.22.2}
+\contentsline {subsection}{\numberline {3.22.3}Trayectorias del caso de uso}{73}{subsection.3.22.3}
+\contentsline {section}{\numberline {3.23}CUR 23 Consultar Contacto de Emergencia}{75}{section.3.23}
+\contentsline {subsection}{\numberline {3.23.1}Resumen}{75}{subsection.3.23.1}
+\contentsline {subsection}{\numberline {3.23.2}Descripci\IeC {\'o}n}{75}{subsection.3.23.2}
+\contentsline {subsection}{\numberline {3.23.3}Trayectorias del caso de uso}{75}{subsection.3.23.3}
+\contentsline {subsection}{\numberline {3.23.4}Puntos de extensi\IeC {\'o}n}{76}{subsection.3.23.4}
+\contentsline {section}{\numberline {3.24}CUR 24 Eliminar Contacto de Emergencia}{77}{section.3.24}
+\contentsline {subsection}{\numberline {3.24.1}Resumen}{77}{subsection.3.24.1}
+\contentsline {subsection}{\numberline {3.24.2}Descripci\IeC {\'o}n}{77}{subsection.3.24.2}
+\contentsline {subsection}{\numberline {3.24.3}Trayectorias del caso de uso}{77}{subsection.3.24.3}
+\contentsline {section}{\numberline {3.25}CUR 25 Cambiar Contrase\IeC {\~n}a}{79}{section.3.25}
+\contentsline {subsection}{\numberline {3.25.1}Resumen}{79}{subsection.3.25.1}
+\contentsline {subsection}{\numberline {3.25.2}Descripci\IeC {\'o}n}{79}{subsection.3.25.2}
+\contentsline {subsection}{\numberline {3.25.3}Trayectorias del caso de uso}{79}{subsection.3.25.3}
+\contentsline {subsection}{\numberline {3.25.4}Puntos de extensi\IeC {\'o}n}{80}{subsection.3.25.4}
