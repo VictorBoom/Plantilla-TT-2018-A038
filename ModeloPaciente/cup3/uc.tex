@@ -115,6 +115,7 @@
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
+            \cdtIdRef{RN3}{Contraseña invalida}: Verifica que la contraseña escrita cuente con la estructura correcta.
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
@@ -153,8 +154,8 @@
 	 \UCpaso Abre la camara del celular.
 	 \UCpaso Obtiene la fotografia tomada.
 	 \UCpaso Muesta el mensaje \cdtIdRef{MSG7}{Obtener otra foto} en la pantalla \textbf{Creación de cuenta fotografia}.
-	 \UCpaso [\UCactor] Presiona el botón \cdtButton{No}.
-	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear Cuenta}.\label{cur3:foto}
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{No} del mensaje.
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear Cuenta} de la pantalla.\label{cur3:foto}
 	 \UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Iniciar sesión}.
 	 
 
@@ -162,7 +163,7 @@
 
  \begin{UCtrayectoriaA}{A}{El actor no desea que la aplicación se comunique con su sistema operativo.}
  	\UCpaso [\UCactor] Ingresa su numero celular.
- 	Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
+ 	\UCpaso Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
     
  \end{UCtrayectoriaA}
  

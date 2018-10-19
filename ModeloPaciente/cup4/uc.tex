@@ -1,7 +1,8 @@
 \begin{UseCase}{CUR 4}{Consultar datos personales}
     {
-    	Un usuario podrá consultar sus tratamientos, doctores, auxiliares y su información personal para que tenga una vista de la información con la que cuenta. 
-    	
+
+    	Un usuario necesita saber cual es su categoría, su información personal, los roles a los que pertenece y sus contactos de emergencia, de esta manera el tendrá un conocimiento de todos los datos que tiene asociados a su cuenta.
+
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -93,16 +94,16 @@
 	\UCitem{Entradas}{Ninguna.}
 	\UCitem{Salidas}{
 		\begin{UClist}
+			\UCli Nombre del usuario
+			\UCli Rol utilizado en ese momento.
 			\UCli Foto de perfil.
-			\UCli Nombre.
+			\UCli Categoría a la que pertenece.
 			\UCli Fecha de nacimiento.
 			\UCli Sexo.
 			\UCli Peso.
 			\UCli Altura
-			\UCli lista de Tratamientos activos.
-			\UCli lista de Auxiliares.
-			\UCli lista de Doctores.
-			
+			\UCli Correo electrónico.
+			\UCli Contraseña.	
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
@@ -129,8 +130,18 @@
  	
  	
  	
- 	\UCpaso[\UCactor] Da click sobre el icono \textbf{Datos personales} de la pantalla \textbf{Menu principal}. \label{cur4:editar}
- 	\UCpaso Obtiene los datos del usuario. \refTray{A}
+ 	\UCpaso[\UCactor] Da click sobre el icono \textbf{Datos personales} de la pantalla \textbf{Menu principal}. \label{cur:ep}
+ 	\UCpaso Obtiene el nombre del usuario.\refTray{A}
+ 	\UCpaso Obtiene el rol al que esta asociado el usuario en ese momento.\refTray{A}
+ 	\UCpaso Obtiene la imagen del usuario.\refTray{A}
+ 	\UCpaso Obtiene la categoria del usuario.\refTray{A}
+ 	\UCpaso Obtiene los datos del usuario.\refTray{A}
+ 	\UCpaso Obtiene los roles del usuario a los que pertence.\refTray{A}
+ 	\UCpaso Obtiene el correo electronico del usuario.\refTray{A}
+ 	\UCpaso Obtiene la contraseña del usuario.\refTray{A}
+ 	\UCpaso Muestra en la pantalla los datos obtenidos previamente.
+ 	
+ 	\UCpaso Obtiene los datos del usuario.
  	\UCpaso Muestra la pantalla \textbf{Datos personales}.
 
  	
@@ -148,7 +159,12 @@
 \subsection{Puntos de extensión}
 \UCExtensionPoint
 {El actor requiere editar sus datos personales}
-{ Paso \ref{cur4:editar} de la trayectoria principal}
+{ Paso \ref{cur:ep} de la trayectoria principal}
 {\cdtIdRef{CUP 5}{Editar datos personales}}
+
+\UCExtensionPoint
+{El actor requiere consultar sus contactos de emergencia}
+{ Paso \ref{cur:ep} de la trayectoria principal}
+{\cdtIdRef{CUP23}{Consultar contacto de emergencia}}
  
 
