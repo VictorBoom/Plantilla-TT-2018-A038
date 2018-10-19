@@ -60,10 +60,10 @@
 \contentsline {subsection}{\numberline {3.8.2}Descripci\IeC {\'o}n}{43}{subsection.3.8.2}
 \contentsline {subsection}{\numberline {3.8.3}Trayectorias del caso de uso}{43}{subsection.3.8.3}
 \contentsline {subsection}{\numberline {3.8.4}Puntos de extensi\IeC {\'o}n}{44}{subsection.3.8.4}
-\contentsline {section}{\numberline {3.9}CUR 8 Agregar Tratamiento}{45}{section.3.9}
+\contentsline {section}{\numberline {3.9}CUR 9 Agregar Tratamiento}{45}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Resumen}{45}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Descripci\IeC {\'o}n}{45}{subsection.3.9.2}
-\contentsline {subsection}{\numberline {3.9.3}Trayectorias del caso de uso}{45}{subsection.3.9.3}
+\contentsline {subsection}{\numberline {3.9.3}Trayectorias del caso de uso}{46}{subsection.3.9.3}
 \contentsline {subsection}{\numberline {3.9.4}Puntos de extensi\IeC {\'o}n}{46}{subsection.3.9.4}
 \contentsline {section}{\numberline {3.10}CUR 9 Agregar Medicamento}{47}{section.3.10}
 \contentsline {subsection}{\numberline {3.10.1}Resumen}{47}{subsection.3.10.1}

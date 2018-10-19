@@ -1,6 +1,6 @@
 \begin{UseCase}{CUR 7}{Consultar Información de Tratamiento}
     {
-    	Este caso de uso permite al \textbf{Paciente} consultar los tratamientos que ha registrado en la aplicación.
+    	Un paciente podra consultar la informacion de un tratamiento que se encuentre en estado activo, en donde se mostrara el doctor que lo expidió, la fecha en que se expidió, el estado y una vista de las semanas en que ese tratamiento ha estado en función.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -90,11 +90,21 @@
 	\UCitem{Actor}{\textbf{Paciente}}
 	\UCitem{Propósito}{Consultar la Información de los tratamientos}
 	\UCitem{Entradas}{Ninguna.}
-	\UCitem{Salidas}{\begin{UClist} 
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Nombre del tratamiento
+			\UCli Fecha de expedición.
+			\UCli Estado del tratamiento.
+			\UCli Semana en la que se encuentra.
+			\UCli Medicamentos del tratamiento
 			\UCli Tratamientos previamente registrados.
 		\end{UClist}
 	}
-	\UCitem{Precondiciones}{{\bf Interna:} Tratamientos registrados en el sistema.}
+	\UCitem{Precondiciones}{
+		{\bf Interna:} Que exista el tratamiento al que se esta accediendo.
+		{\bf Interna:} Que el tratamiento al que se esta accediendo este en estado activo.
+		
+	}
 	\UCitem{Postcondiciones}{Ninguna.}
     \UCitem{Reglas de negocio}{Ninguna.}
 	\UCitem{Errores}{Ninguno.}
@@ -105,38 +115,21 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Oprime el icono \textbf{Tratamientos} de la pantalla \textbf{Menú Principal}.
- 	\UCpaso Muestra la pantalla \textbf{Tratamientos}.
- 	\UCpaso [\UCactor] Oprime el icono \textbf{Consultar Tratamiento} de la pantalla \textbf{Tratamientos}.
- 	\UCpaso Ordena los tratamientos tomando en cuenta el número del tratamiento.
- 	\UCpaso Muestra la pantalla \textbf{Tratamientos}.
- 	\UCpaso [\UCactor] Selecciona el tratamiento que deseas consultar su información.
+ 	\UCpaso [\UCactor] Selecciona un \textbf{Tratamiento} con estado \textbf{Activo} de la pantalla \textbf{Consulta Tratamientos}.
  	\UCpaso	Obtiene el nombre del tratamiento.
  	\UCpaso	Obtiene el nombre del doctor que expidió el tratamiento.
  	\UCpaso	Obtiene la fecha de expedición del tratamiento.
- 	\UCpaso	Obtiene el estado del tratamiento.
+ 	\UCpaso	Obtiene el estado del tratamiento. 
  	\UCpaso	Obtiene los medicamentos que contiene ese tratamiento.
- 	\UCpaso	Muestra la pantalla \textbf{Tratamiento}.
- 	\UCpaso [\UCactor] Consulta la información del tratamiento seleccionado.
- 	\UCpaso [\UCactor] Da clic en el botón \textbf{Regresar.}
- 	\UCpaso Muestra la pantalla \textbf{Tratamientos}.
+ 	\UCpaso	Muestra la pantalla \textbf{Consultar información de Tratamiento}.
  	    
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no tiene tratamientos registrados en su cuenta.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay tratamientos} en la pantalla \textbf{Tratamientos}.
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay contactos tratamientos}.
-	
-	\UCpaso Muestra la pantalla \textbf{Tratamientos}.
-	
-\end{UCtrayectoriaA}
+
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere editar su tratamiento}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 8}{Editar Tratamiento}}
+
 
 
  

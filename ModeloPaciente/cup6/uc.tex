@@ -126,13 +126,23 @@
  	
  	\UCpaso [\UCactor] Da click sobre el icono \textbf{Tratamientos} en la pantalla \textbf{Menu Principal}.
  	
- 	\UCpaso Muestra la pantalla Tratamientos. \label{cup6:tratamientos}
+ 	\UCpaso Muestra la pantalla Tratamientos. 
  	
  	\UCpaso [\UCactor] Da click sobre el icono \textbf{Consultar Tratamientos} en la pantalla \textbf{Tratamientos}.
  	
+ 	\UCpaso Obtiene el nombre del tratamiento.
+ 	
+ 	\UCpaso Obtiene el nombre del doctor que expidio el tratamiento
+ 	
+ 	\UCpaso Obtiene la fecha de expedicion del tratamiento.
+ 	
+ 	\UCpaso Obtiene el estado del tratamiento.
+ 	
+ 	\UCpaso Obtiene el numero de medicamentos.
+ 	
  	\UCpaso Muestra la pantalla \textbf{Consultar Tratamientos}.\refTray{A}
  	
- 	\UCpaso Muestra primero los tratamientos activos, le siguen los incompletos, después los interrumpidos y al final los completados.
+ 	\UCpaso Muestra primero los tratamientos activos, le siguen los incompletos, después los interrumpidos y al final los completados.\label{cup6:Acciones}
  	
     
  \end{UCtrayectoria}
@@ -145,18 +155,10 @@
    	\UCpaso Extiende al caso de uso \textbf{C8: Agregar Tratamiento}.
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{B}{El actor no desea agregar un nuevo tratamiento.}
-    \UCpaso[\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG9}{No hay tratamientos}.
-    \UCpaso[] Muestra la pantalla \textbf{Tratamientos}
- \end{UCtrayectoriaA}
+
  
  
 \subsection{Puntos de extensión}
-
-\UCExtensionPoint
-{El actor requiere agregar un nuevo tratamiento}
-{ Paso \ref{cur6:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP8 }{Agregar Tratamiento}}
 
 
 \UCExtensionPoint
