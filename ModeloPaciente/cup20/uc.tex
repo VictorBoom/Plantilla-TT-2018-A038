@@ -1,13 +1,12 @@
 \begin{UseCase}{CUR 20}{Eliminar Auxiliar}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
-    	
+    	Este caso de uso permite al \textbf{Paciente} eliminar un auxiliar en caso de que el actor ya no necesite un auxiliar que lo esté apoyando con el proceso de su tratamiento médico. 
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Eliminar Auxiliar}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,77 +88,36 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
-	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
-        \end{UClist}}
-	\UCitem{Salidas}{Ninguna.}
-	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
-		}
+	\UCitem{Propósito}{Eliminar auxiliar.}
+	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli \cdtIdRef{MSG}{Eliminar Elemento}: Se muestra en la pantalla \textbf{Auxiliares} cuando el actor solicita eliminar un auxiliar.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se eliminó el auxiliar de manera exitosa.
+	\end{UClist}}
+	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	    {\bf Interna:} Eliminará el auxiliar de la cuenta del paciente.	
 	}
-    \UCitem{Reglas de negocio}{
-
-            \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
-    }
-	\UCitem{Errores}{
-	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
-		
-	    \end{UClist}
-	}
+    \UCitem{Reglas de negocio}{Ninguna.}
+	\UCitem{Errores}{Ninguno}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
  \end{UseCase}
 
- \begin{UCtrayectoria}
- 	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
- 	
-    
- \end{UCtrayectoria}
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Auxiliar} asociado al Auxiliar que desea eliminar en la pantalla \textbf{Auxiliares}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Eliminar Elemento} en la pantalla \textbf{Auxiliares}.
+	\UCpaso [\UCactor] Confirma eliminar el auxiliar a través del botón \textbf{Eliminar}.
+	\UCpaso Elimina el auxiliar de la aplicación.
+	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Auxiliares}.
+	
+\end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
-   \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
+\begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
+	\UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón \textbf{Cancelar} en el mensaje \cdtIdRef{MSG}{Eliminar Elemento}.
+	\UCpaso Muestra a la pantalla \textbf{Auxiliares}.
+\end{UCtrayectoriaA}
 
-
- 
-\subsection{Puntos de extensión}
-
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
-
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
- 
 
