@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.30)  19 OCT 2018 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.30)  21 OCT 2018 09:37
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -1679,91 +1679,91 @@ LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
 (Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 446.
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 445--447
-[]\OT1/cmbr/m/sc/10 Rafael M y H.D. She-ra-li, \OT1/cmbr/m/sl/10 http://www.mil
-enio.com/ciencia-y-salud/mexico-4-10-abandonan-
- []
-
-
-Underfull \hbox (badness 3219) in paragraph at lines 453--454
-[]\OT1/cmbr/m/sc/10 Pablo He-rre-ra Sa-li-nas . (2015) . ?`POR QU[]E NO SE-GUI-
-MOS LOS TRA-TA-MIEN-TOS
- []
-
-
-Underfull \hbox (badness 5036) in paragraph at lines 453--454
-\OT1/cmbr/m/sc/10 M[]EDI-COS E IN-DI-CA-CIO-NES DE SA-LUD?. 2018, de CE-RES DES
-A-RRO-LLO HU-MA-
- []
-
-
-Underfull \hbox (badness 7504) in paragraph at lines 453--454
-\OT1/cmbr/m/sc/10 NOY LA SEC-CI[]ON EN ES-PA[]NOL DEL BRI-TISH GES-TALT JOUR-NA
-L Si-tio web:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
-\OT1/cmbr/m/sl/10 https://www.britishgestaltjournal.com/features/2015/1/19/por-
-qu-no-seguimos-los-tratamientos-
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 455--456
+Underfull \hbox (badness 1194) in paragraph at lines 446--447
 []\OT1/cmbr/m/sc/10 CedimCat (Cen-tre d'Informacio de Me-di-ca-ments de Ca-ta-
 lun-ya) \OT1/cmbr/m/sl/10 CON-CEP-TO DE ME-DI-CA-
  []
 
 
-Overfull \hbox (7.28827pt too wide) in paragraph at lines 457--458
+Overfull \hbox (7.28827pt too wide) in paragraph at lines 448--449
 \OT1/cmbr/m/sl/10 http://www.conamed.gob.mx/comisiones[]estatales/coesamed[]nay
 arit/publicaciones/pdf/glosario.pdf 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 []\OT1/cmbr/m/sc/10 eumed.net En-ci-clo-pe-dia vir-tual \OT1/cmbr/m/sl/10 CON-C
 EP-TO DE APLI-CA-CI[]ON M[]OVIL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--467
-[]\OT1/cmbr/m/sc/10 Generacion Goo-gleins-tein \OT1/cmbr/m/sl/10 CON-CEP-TO DE 
-DE-PRE-CIA-CI[]ON
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+[]\OT1/cmbr/m/sc/10 Abalit Tech-no-lo-gies \OT1/cmbr/m/sl/10 ?`Que im-pac-to s
+o-cial tie-nen las apli-ca-cio-nes movi-les?
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 463--465
+[]\OT1/cmbr/m/sc/10 Rafael M y H.D. She-ra-li, \OT1/cmbr/m/sl/10 http://www.mil
+enio.com/ciencia-y-salud/mexico-4-10-abandonan-
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 471--472
+[]\OT1/cmbr/m/sc/10 Pablo He-rre-ra Sa-li-nas . (2015) . ?`POR QU[]E NO SE-GUI-
+MOS LOS TRA-TA-MIEN-
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 471--472
+\OT1/cmbr/m/sc/10 TOS M[]EDI-COS E IN-DI-CA-CIO-NES DE SA-LUD?. 2018, de CE-RES
+ DESA-RRO-LLO HU-
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 471--472
+\OT1/cmbr/m/sc/10 MA-NOY LA SEC-CI[]ON EN ES-PA[]NOL DEL BRI-TISH GES-TALT JOUR
+-NAL Si-tio web:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+\OT1/cmbr/m/sl/10 https://www.britishgestaltjournal.com/features/2015/1/19/por-
+qu-no-seguimos-los-tratamientos-
  []
 
 File: cdt/theme/pleca.png Graphic file (type png)
 <use cdt/theme/pleca.png>
-Package pdftex.def Info: cdt/theme/pleca.png  used on input line 470.
+Package pdftex.def Info: cdt/theme/pleca.png  used on input line 472.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 472.
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
-[]\OT1/cmbr/m/sc/10 Abalit Tech-no-lo-gies \OT1/cmbr/m/sl/10 ?`Que im-pac-to s
-o-cial tie-nen las apli-ca-cio-nes movi-les?
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+[]\OT1/cmbr/m/sc/10 Generacion Goo-gleins-tein \OT1/cmbr/m/sl/10 CON-CEP-TO DE 
+DE-PRE-CIA-CI[]ON
  []
 
 )
@@ -8418,9 +8418,9 @@ mbr9.pk> <C:\Users\Daniel Fuentes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publ
 ic\cmbright\dpi864\cmbr10.pk> <C:\Users\Daniel Fuentes\AppData\Local\MiKTeX\2.9
 \fonts\pk\ljfour\public\cmbright\dpi864\cmbr17.pk><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/marvosym/marvosym.pfb>
-Output written on analisis.pdf (92 pages, 1857168 bytes).
+Output written on analisis.pdf (92 pages, 1856806 bytes).
 PDF statistics:
- 2855 PDF objects out of 2984 (max. 8388607)
+ 2854 PDF objects out of 2984 (max. 8388607)
  853 named destinations out of 1000 (max. 500000)
  1173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
