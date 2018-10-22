@@ -135,3 +135,11 @@
 \contentsline {subsection}{\numberline {3.25.1}Resumen}{81}{subsection.3.25.1}
 \contentsline {subsection}{\numberline {3.25.2}Descripci\IeC {\'o}n}{81}{subsection.3.25.2}
 \contentsline {subsection}{\numberline {3.25.3}Trayectorias del caso de uso}{82}{subsection.3.25.3}
+\contentsline {section}{\numberline {3.26}CUR 26 Consultar Recordatorios}{84}{section.3.26}
+\contentsline {subsection}{\numberline {3.26.1}Resumen}{84}{subsection.3.26.1}
+\contentsline {subsection}{\numberline {3.26.2}Descripci\IeC {\'o}n}{84}{subsection.3.26.2}
+\contentsline {subsection}{\numberline {3.26.3}Trayectorias del caso de uso}{84}{subsection.3.26.3}
+\contentsline {section}{\numberline {3.27}CUR 25 Consultar alarmas}{86}{section.3.27}
+\contentsline {subsection}{\numberline {3.27.1}Resumen}{86}{subsection.3.27.1}
+\contentsline {subsection}{\numberline {3.27.2}Descripci\IeC {\'o}n}{86}{subsection.3.27.2}
+\contentsline {subsection}{\numberline {3.27.3}Trayectorias del caso de uso}{86}{subsection.3.27.3}

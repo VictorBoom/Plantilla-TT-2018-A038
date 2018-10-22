@@ -1,0 +1,71 @@
+\begin{UseCase}{CUR 25}{Consultar alarmas}
+    {
+    	Un paciente debe de estar conciente de cuales son los medicamentos que son de vital importancia consumir, es por eso que debe de contar con una visualización de estos.
+    }
+    \UCitem{Versión}{1.0}
+    \UCccsection{Paciente}
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Consultar alarmas}
+    \UCccitem{Prioridad}{Baja}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja}
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{Terminado}
+    \UCitem{Fecha del último estatus}{05 de Octubre del 2018}
+
+
+%--------------------------------------------------------
+
+	\UCsection{Atributos}
+	\UCitem{Actor}{\textbf{Paciente}}
+	\UCitem{Propósito}{Consultar alarmas.}
+	\UCitem{Entradas}{
+        Ninguna
+    }
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Nombre del medicamento.
+			\UCli Tratamiento al que pertenece
+			\UCli Contacto de emergencia a quien contactar
+	\end{UClist}}
+	\UCitem{Precondiciones}{
+		{\bf Interna:} Que exista un medicamento con clasificación \textbf{Importante}.
+	}
+	\UCitem{Postcondiciones}{
+	    Ninguna.	
+	}
+    \UCitem{Reglas de negocio}{
+
+            Ninguno.
+    }
+	\UCitem{Errores}{
+	    \begin{UClist}
+	    \UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
+		\UCli \cdtIdRef {MSG}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
+		
+	    \end{UClist}
+	}
+	\UCitem{Tipo}{Primario.}
+	\UCitem{Fuente}{
+	}
+ \end{UseCase}
+
+ \begin{UCtrayectoria}
+ 	
+ 	
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Alarmas} en la pantalla \textbf{Gestión recordatorios}
+ 	\UCpaso Verifica que haya alarmas. \refTray{A}
+ 	\UCpaso Obtiene el nombre del medicamento.
+ 	\UCpaso Obtiene el tratamiento al que pertenece.
+ 	\UCpaso Obtiene el contacto de emergencia que tiene que contactar.
+ 	\UCpaso Muestra la pantalla \textbf{Consultar Alarmas}
+     
+ \end{UCtrayectoria}
+
+ \begin{UCtrayectoriaA}{A}{El actor no tiene alarmas.}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay alarmas}.
+	\UCpaso Muestra la pantalla \textbf{Gestión de Recordatorios}.
+	
+\end{UCtrayectoriaA}
+
