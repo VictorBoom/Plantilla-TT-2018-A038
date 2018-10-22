@@ -1,13 +1,14 @@
 \begin{UseCase}{CUR 23}{Consultar Contacto de Emergencia}
     {
-    	Este caso de uso permite al \textbf{Paciente} consultar los contactos de emergencia que tiene asociados a su cuenta a los cuales se les podrá enviar una alerta en caso de que el paciente no se haya tomado un medicamento de importancia.
+    	
+    	Un contacto de emergencia es la persona a la cual se contactara cuando un \textbf{Paciente} no este realizando la toma de un medicamento que tenga una clasificación \textbf{Importante}, es por eso que un paciente podrá visualizar la información de los contactos de emergencia.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
     \UCitem{Operación}{Consulta de Contactos de Emergencia}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -88,18 +89,19 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Consultar los contactos de emergencia que se tienen asociados a la cuenta del Paciente}
+	\UCitem{Propósito}{Consultar información}
 	\UCitem{Entradas}{Ninguna.}
 	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Imagen de perfil de contacto de emergencia.
 			\UCli Nombre del contacto de emergencia.
 			\UCli Teléfono del contacto de emergencia.
 			\UCli Correo electrónico del contacto de emergencia
 	\end{UClist} }
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El paciente debe de tener contactos de emergencia.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá consultar la información de los contactos de emergencia asociados a su cuenta.	
+	    Ninguna.	
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
 	\UCitem{Errores}{Ninguno.}
@@ -110,15 +112,20 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Da click sobre el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Datos Personales}.
+	\UCpaso [\UCactor] Presiona el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Consultar Datos Personales}.
+	
+	\UCpaso Obtiene la foto de perfil de los contactos de emergencia.
+	
+	\UCpaso Obtiene el nombre de los contactos de emergencia.
+	
+	\UCpaso Obtiene el celular de los contactos de emergencia.
+	
+	\UCpaso Obtiene el correo electronico de los contactos de emergencia.
+	
+	\UCpaso Ordena los contactos de emergencia por orden alfabético.
 	
 	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
 	
-	\UCpaso [\UCactor] Visualiza la información de los contactos de emergencia asociados a tu cuenta.
-	
-	\UCpaso [\UCactor] Da clic en el botón \textbf{Regresar}.
-	
-	\UCpaso Muestra la pantalla \textbf{Datos Personales}.
 	
 	
 \end{UCtrayectoria}
