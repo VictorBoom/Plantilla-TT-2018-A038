@@ -1,14 +1,14 @@
 \begin{UseCase}{CUR 12}{Editar Doctor}
     {
-    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
+    	Un paciente al momento de hacer el registro de un doctor, puede llegar a equivocarse en los datos personales del doctor o quiera agregar un dato extra, es por eso que el usuario debe de contar con una herramienta que le permita editar a los doctores que están a cargo de sus tratamientos
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
-    \UCccitem{Prioridad}{Alta}
+    \UCitem{Operación}{Editar Doctor}
+    \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -89,29 +89,32 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Acceder al sistema.}
+	\UCitem{Propósito}{Editar un doctor.}
 	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Correo Electrónico}: \ioEscribir.
-           \UCli \textbf{Contraseña}: \ioEscribir.
+        \begin{UClist}
+        	 
+          \UCli \textbf{Nombre}: \ioEscribir.
+          \UCli \textbf{Apellido Paterno}: \ioEscribir.
+          \UCli \textbf{Apellido Materno}: \ioEscribir.
+          \UCli \textbf{Correo electrónico}: \ioEscribir
+          
         \end{UClist}}
 	\UCitem{Salidas}{Ninguna.}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El doctor debe existir en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá realizar las funciones correspondientes a su rol.	
+	    {\bf Interna:} Los datos del doctor se actualizaran.	
 	}
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-            \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
 		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+
 		
 	    \end{UClist}
 	}
@@ -122,13 +125,16 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Ingresa correo electrónico y contraseña.
- 	\UCpaso [\UCactor] Selecciona el checkbox de \textbf{Mantener Sesión Abierta}.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Iniciar Sesión}.
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Consultar Doctor}.
+ 	\UCpaso Obtiene los doctores ya registrados en la aplicación.
+ 	\UCpaso Ordena a los doctores por su nombre de manera ascendente.
+ 	\UCpaso Muestra la pantalla \textbf{Consulta de doctores}.
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Editar}
+ 	\UCpaso Muestra una pantalla emergente con los datos del doctor.
+ 	\UCpaso [\UCactor] Modifica los datos del doctor que requiere.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Guardar cambios}.
  	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
- 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN-S1}{Usuario Existente}. \refTray{B} 
- 	\UCpaso[\UCsist] Verifica que el nombre de usuario coincida con la contraseña registrada en el sistema. \refTray{C}
- 	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu Principal} con las acciones de su rol.
+ 	
  	
     
  \end{UCtrayectoria}
@@ -138,28 +144,10 @@
    \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
- \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA}
- 
- \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
- \end{UCtrayectoriaA} 
 
 
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere recuperar su contraseña}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 2}{Recuperar contraseña}}
 
-\UCExtensionPoint
-{El actor requiere crear una cuenta}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUP 3}{Registro de cuenta}}
- 
 

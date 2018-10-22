@@ -1,6 +1,6 @@
 \begin{UseCase}{CUR 14}{Consultar Doctor}
     {
-    	Este caso de uso permite al \textbf{Paciente} consultar los doctores que tiene asociados a su cuenta y a la vez, consultar a qué tratamiento está asociado cada doctor.
+    	Un paciente contara con la facultad de consultar los doctores que son o fueron responsables de sus tratamientos y asi poder tener un conocimiento de estos. 
     	
     }
     \UCitem{Versión}{1.0}
@@ -96,10 +96,10 @@
 			\UCli Nombre de tratamiento del que es responsable.
 		\end{UClist}}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		Ninguna.
 		}
 	\UCitem{Postcondiciones}{
-	{\bf Interna:} El actor podrá consultar la información de los doctores asociados a su cuenta.
+		Ninguna.
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
 	\UCitem{Errores}{Ninguno.}
@@ -110,26 +110,25 @@
 
  \begin{UCtrayectoria}
  	
-	 \UCpaso [\UCactor] Da click sobre el icono \textbf{Doctores} en la pantalla \textbf{Menu Principal}.
+	 \UCpaso [\UCactor] Presiona el icono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
 	 
-	 \UCpaso Muestra la pantalla \textbf{Doctor}.
+	 \UCpaso Obtiene los doctores ya registrados en la aplicación. \refTray{A}
 	 
-	 \UCpaso [\UCactor] Da click sobre el icono \textbf{Consultar Doctor} en la pantalla \textbf{Doctor}.
+	 \UCpaso Ordena a los doctores por su nombre de manera ascendente.
 	 
-	 \UCpaso  Muestra la pantalla \textbf{Doctores}.\refTray{A}
+	 \UCpaso Muestra la pantalla \textbf{Consultar Doctor}.
 	 
-	 \UCpaso [\UCactor] Da clic en el botón \textbf{Regresar}.
-	 
-	 \UCpaso Muestra la pantalla Doctor.
 	 
    
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
-    \UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay doctores} en la pantalla \textbf{Doctor}.
-   \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay Doctor}.
+    
+   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay doctores} en la pantalla \textbf{Gestión Doctor}.
+    
+    \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay Doctor}.
    
-   \UCpaso Muestra la pantalla \textbf{Doctor}.
+   	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}.
  
 \end{UCtrayectoriaA}
 
