@@ -7,7 +7,7 @@
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
     \UCitem{Operación}{Eliminar Auxiliar}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -94,7 +94,9 @@
 			\UCli \cdtIdRef{MSG}{Eliminar Elemento}: Se muestra en la pantalla \textbf{Auxiliares} cuando el actor solicita eliminar un auxiliar.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se eliminó el auxiliar de manera exitosa.
 	\end{UClist}}
-	\UCitem{Precondiciones}{Ninguna.}
+	\UCitem{Precondiciones}{
+		{\bf Interna:} Debe de existir un auxiliar agregado al paciente.
+	}
 	\UCitem{Postcondiciones}{
 	    {\bf Interna:} Eliminará el auxiliar de la cuenta del paciente.	
 	}
@@ -107,9 +109,9 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Auxiliar} asociado al Auxiliar que desea eliminar en la pantalla \textbf{Auxiliares}.
+	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Auxiliar} asociado al Auxiliar que desea eliminar en la pantalla \textbf{Consulta de Auxiliares}.
 	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Eliminar Elemento} en la pantalla \textbf{Auxiliares}.
-	\UCpaso [\UCactor] Confirma eliminar el auxiliar a través del botón \textbf{Eliminar}.
+	\UCpaso [\UCactor] Confirma eliminar el auxiliar a través del botón \textbf{Eliminar}. \refTray{A}
 	\UCpaso Elimina el auxiliar de la aplicación.
 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Auxiliares}.
 	

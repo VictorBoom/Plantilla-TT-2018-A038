@@ -1,13 +1,13 @@
 \begin{UseCase}{CUR 18}{Editar Auxiliar}
     {
-    	Este caso de uso permite al \textbf{Paciente} editar los datos de un Auxiliar en caso de que haya registrado un dato incorrecto o desee cambiar su teléfono o correo electrónico.
+    	Este caso de uso permite al \textbf{Paciente} editar los datos de un Auxiliar en caso de que haya registrado un dato incorrecto o desee actualizar su teléfono o correo electrónico.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
     \UCitem{Operación}{Editar Auxiliar}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -96,6 +96,7 @@
         	\UCli \textbf{Apellido Materno}: \ioEscribir.
         	\UCli \textbf{Teléfono}: \ioEscribir.
         	\UCli \textbf{Correo Electrónico}: \ioEscribir.
+        	\UCli \textbf{Tratamientos}: Se seleccionan de una lista de checkbox.
     \end{UClist}}
 	\UCitem{Salidas}{\begin{UClist} 
 			\UCli Nombre del auxiliar.
@@ -103,11 +104,12 @@
 			\UCli Apellido materno del auxiliar.
 			\UCli Teléfono del auxiliar.
 			\UCli Correo electrónico del auxiliar.
+			\UCli Tratamientos de los que se encarga el auxiliar.
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se agregó el auxiliar de manera exitosa.
 	\end{UClist}}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{
-	     {\bf Interna:} Editará los datos del Auxiliar en la aplicación.	
+	     {\bf Interna:} Actualizara los datos del Auxiliar en la aplicación.	
 	}
     \UCitem{Reglas de negocio}{
 

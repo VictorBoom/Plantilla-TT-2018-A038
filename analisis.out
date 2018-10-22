@@ -93,42 +93,41 @@
 \BOOKMARK [2][-]{subsection.3.16.1}{Resumen}{section.3.16}% 93
 \BOOKMARK [2][-]{subsection.3.16.2}{Descripci\363n}{section.3.16}% 94
 \BOOKMARK [2][-]{subsection.3.16.3}{Trayectorias del caso de uso}{section.3.16}% 95
-\BOOKMARK [2][-]{subsection.3.16.4}{Puntos de extensi\363n}{section.3.16}% 96
-\BOOKMARK [1][-]{section.3.17}{CUR 17 Agregar Auxiliar}{chapter.3}% 97
-\BOOKMARK [2][-]{subsection.3.17.1}{Resumen}{section.3.17}% 98
-\BOOKMARK [2][-]{subsection.3.17.2}{Descripci\363n}{section.3.17}% 99
-\BOOKMARK [2][-]{subsection.3.17.3}{Trayectorias del caso de uso}{section.3.17}% 100
-\BOOKMARK [1][-]{section.3.18}{CUR 18 Editar Auxiliar}{chapter.3}% 101
-\BOOKMARK [2][-]{subsection.3.18.1}{Resumen}{section.3.18}% 102
-\BOOKMARK [2][-]{subsection.3.18.2}{Descripci\363n}{section.3.18}% 103
-\BOOKMARK [2][-]{subsection.3.18.3}{Trayectorias del caso de uso}{section.3.18}% 104
-\BOOKMARK [1][-]{section.3.19}{CUR 19 Consultar Auxiliar}{chapter.3}% 105
-\BOOKMARK [2][-]{subsection.3.19.1}{Resumen}{section.3.19}% 106
-\BOOKMARK [2][-]{subsection.3.19.2}{Descripci\363n}{section.3.19}% 107
-\BOOKMARK [2][-]{subsection.3.19.3}{Trayectorias del caso de uso}{section.3.19}% 108
-\BOOKMARK [2][-]{subsection.3.19.4}{Puntos de extensi\363n}{section.3.19}% 109
-\BOOKMARK [1][-]{section.3.20}{CUR 20 Eliminar Auxiliar}{chapter.3}% 110
-\BOOKMARK [2][-]{subsection.3.20.1}{Resumen}{section.3.20}% 111
-\BOOKMARK [2][-]{subsection.3.20.2}{Descripci\363n}{section.3.20}% 112
-\BOOKMARK [2][-]{subsection.3.20.3}{Trayectorias del caso de uso}{section.3.20}% 113
-\BOOKMARK [1][-]{section.3.21}{CUR 21 Agregar Contacto de Emergencia}{chapter.3}% 114
-\BOOKMARK [2][-]{subsection.3.21.1}{Resumen}{section.3.21}% 115
-\BOOKMARK [2][-]{subsection.3.21.2}{Descripci\363n}{section.3.21}% 116
-\BOOKMARK [2][-]{subsection.3.21.3}{Trayectorias del caso de uso}{section.3.21}% 117
-\BOOKMARK [1][-]{section.3.22}{CUR 22 Editar Contacto de Emergencia}{chapter.3}% 118
-\BOOKMARK [2][-]{subsection.3.22.1}{Resumen}{section.3.22}% 119
-\BOOKMARK [2][-]{subsection.3.22.2}{Descripci\363n}{section.3.22}% 120
-\BOOKMARK [2][-]{subsection.3.22.3}{Trayectorias del caso de uso}{section.3.22}% 121
-\BOOKMARK [1][-]{section.3.23}{CUR 23 Consultar Contacto de Emergencia}{chapter.3}% 122
-\BOOKMARK [2][-]{subsection.3.23.1}{Resumen}{section.3.23}% 123
-\BOOKMARK [2][-]{subsection.3.23.2}{Descripci\363n}{section.3.23}% 124
-\BOOKMARK [2][-]{subsection.3.23.3}{Trayectorias del caso de uso}{section.3.23}% 125
-\BOOKMARK [2][-]{subsection.3.23.4}{Puntos de extensi\363n}{section.3.23}% 126
-\BOOKMARK [1][-]{section.3.24}{CUR 24 Eliminar Contacto de Emergencia}{chapter.3}% 127
-\BOOKMARK [2][-]{subsection.3.24.1}{Resumen}{section.3.24}% 128
-\BOOKMARK [2][-]{subsection.3.24.2}{Descripci\363n}{section.3.24}% 129
-\BOOKMARK [2][-]{subsection.3.24.3}{Trayectorias del caso de uso}{section.3.24}% 130
-\BOOKMARK [1][-]{section.3.25}{CUR 25 Cambiar Contrase\361a}{chapter.3}% 131
-\BOOKMARK [2][-]{subsection.3.25.1}{Resumen}{section.3.25}% 132
-\BOOKMARK [2][-]{subsection.3.25.2}{Descripci\363n}{section.3.25}% 133
-\BOOKMARK [2][-]{subsection.3.25.3}{Trayectorias del caso de uso}{section.3.25}% 134
+\BOOKMARK [1][-]{section.3.17}{CUR 17 Agregar Auxiliar}{chapter.3}% 96
+\BOOKMARK [2][-]{subsection.3.17.1}{Resumen}{section.3.17}% 97
+\BOOKMARK [2][-]{subsection.3.17.2}{Descripci\363n}{section.3.17}% 98
+\BOOKMARK [2][-]{subsection.3.17.3}{Trayectorias del caso de uso}{section.3.17}% 99
+\BOOKMARK [1][-]{section.3.18}{CUR 18 Editar Auxiliar}{chapter.3}% 100
+\BOOKMARK [2][-]{subsection.3.18.1}{Resumen}{section.3.18}% 101
+\BOOKMARK [2][-]{subsection.3.18.2}{Descripci\363n}{section.3.18}% 102
+\BOOKMARK [2][-]{subsection.3.18.3}{Trayectorias del caso de uso}{section.3.18}% 103
+\BOOKMARK [1][-]{section.3.19}{CUR 19 Consultar Auxiliar}{chapter.3}% 104
+\BOOKMARK [2][-]{subsection.3.19.1}{Resumen}{section.3.19}% 105
+\BOOKMARK [2][-]{subsection.3.19.2}{Descripci\363n}{section.3.19}% 106
+\BOOKMARK [2][-]{subsection.3.19.3}{Trayectorias del caso de uso}{section.3.19}% 107
+\BOOKMARK [2][-]{subsection.3.19.4}{Puntos de extensi\363n}{section.3.19}% 108
+\BOOKMARK [1][-]{section.3.20}{CUR 20 Eliminar Auxiliar}{chapter.3}% 109
+\BOOKMARK [2][-]{subsection.3.20.1}{Resumen}{section.3.20}% 110
+\BOOKMARK [2][-]{subsection.3.20.2}{Descripci\363n}{section.3.20}% 111
+\BOOKMARK [2][-]{subsection.3.20.3}{Trayectorias del caso de uso}{section.3.20}% 112
+\BOOKMARK [1][-]{section.3.21}{CUR 21 Agregar Contacto de Emergencia}{chapter.3}% 113
+\BOOKMARK [2][-]{subsection.3.21.1}{Resumen}{section.3.21}% 114
+\BOOKMARK [2][-]{subsection.3.21.2}{Descripci\363n}{section.3.21}% 115
+\BOOKMARK [2][-]{subsection.3.21.3}{Trayectorias del caso de uso}{section.3.21}% 116
+\BOOKMARK [1][-]{section.3.22}{CUR 22 Editar Contacto de Emergencia}{chapter.3}% 117
+\BOOKMARK [2][-]{subsection.3.22.1}{Resumen}{section.3.22}% 118
+\BOOKMARK [2][-]{subsection.3.22.2}{Descripci\363n}{section.3.22}% 119
+\BOOKMARK [2][-]{subsection.3.22.3}{Trayectorias del caso de uso}{section.3.22}% 120
+\BOOKMARK [1][-]{section.3.23}{CUR 23 Consultar Contacto de Emergencia}{chapter.3}% 121
+\BOOKMARK [2][-]{subsection.3.23.1}{Resumen}{section.3.23}% 122
+\BOOKMARK [2][-]{subsection.3.23.2}{Descripci\363n}{section.3.23}% 123
+\BOOKMARK [2][-]{subsection.3.23.3}{Trayectorias del caso de uso}{section.3.23}% 124
+\BOOKMARK [2][-]{subsection.3.23.4}{Puntos de extensi\363n}{section.3.23}% 125
+\BOOKMARK [1][-]{section.3.24}{CUR 24 Eliminar Contacto de Emergencia}{chapter.3}% 126
+\BOOKMARK [2][-]{subsection.3.24.1}{Resumen}{section.3.24}% 127
+\BOOKMARK [2][-]{subsection.3.24.2}{Descripci\363n}{section.3.24}% 128
+\BOOKMARK [2][-]{subsection.3.24.3}{Trayectorias del caso de uso}{section.3.24}% 129
+\BOOKMARK [1][-]{section.3.25}{CUR 25 Cambiar Contrase\361a}{chapter.3}% 130
+\BOOKMARK [2][-]{subsection.3.25.1}{Resumen}{section.3.25}% 131
+\BOOKMARK [2][-]{subsection.3.25.2}{Descripci\363n}{section.3.25}% 132
+\BOOKMARK [2][-]{subsection.3.25.3}{Trayectorias del caso de uso}{section.3.25}% 133

@@ -135,8 +135,8 @@
  	
  	\UCpaso [\UCactor] Presiona el ícono \textbf{Editar Contacto de Emergencia} asociado al contacto de emergencia que desea editar en la pantalla \textbf{Contactos de Emergencia}.
  	\UCpaso Muestra la pantalla \textbf{Editar Contacto de Emergencia}.
- 	\UCpaso [\UCactor] Edita la información que deseas editar en la pantalla \textbf{Editar Contacto de Emergencia}.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Aceptar}.
+ 	\UCpaso [\UCactor] Edita la información que desea editar en la pantalla \textbf{Editar Contacto de Emergencia}. \label{info}
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar}.
 	\UCpaso Verifica que no haga falta ningún dato requerido con base a la regla de negocio \textbf{RN Datos Requeridos}.
 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base a la regla de negocio \textbf{RN Formato de Correo Electrónico}.
 	\UCpaso Actualiza los datos del contacto que fueron editados.
@@ -151,12 +151,12 @@
  
  \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
     \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Editar Contacto de Emergencia}.
-    \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
+    \UCpaso[] Continúa con el paso \ref{info} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
     \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Editar Contacto de Emergencia} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
+    \UCpaso[] Continúa con el paso \ref{info} de la trayectoria principal.
  \end{UCtrayectoriaA} 
 
 

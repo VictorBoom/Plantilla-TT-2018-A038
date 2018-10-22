@@ -1,13 +1,13 @@
 \begin{UseCase}{CUR 17}{Agregar Auxiliar}
     {
-   		Un Auxiliar, dentro de la aplicación, es la persona que puede ayudar a los pacientes que cuentan con poca o nula experiencia con los dispositivos móviles o que por factores ajenos a la aplicación como lo son la edad o alguna enfermedad, les sea imposible utilizar la aplicación por si mismos. Es por eso que este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo Auxiliar el cuál estará a cargo del tratamieto médico del paciente.
+   		Este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo Auxiliar el cuál estará a cargo de un tratamiento médico del paciente.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
     \UCitem{Operación}{Agregar Auxiliar.}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -96,18 +96,14 @@
 			\UCli \textbf{Apellido Materno}: \ioEscribir.
 			\UCli \textbf{Teléfono}: \ioEscribir.
 			\UCli \textbf{Correo Electrónico}: \ioEscribir.
+			\UCli \textbf{Tratamientos}: Se seleccionan de una lista de checkbox
 	\end{UClist}}
-	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Nombre del auxiliar.
-			\UCli Apellido paterno del auxiliar.
-			\UCli Apellido materno del auxiliar.
-			\UCli Teléfono del auxiliar.
-			\UCli Correo electrónico del auxiliar.
+	\UCitem{Salidas}{ 
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se agregó el auxiliar de manera exitosa.
-	\end{UClist}}
+		}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{   
-	{\bf Interna:} Registrará los datos del Auxiliar en la aplicación.
+		{\bf Interna:} Registrará los datos del Auxiliar en la aplicación.
 	}
     \UCitem{Reglas de negocio}{
 
@@ -126,11 +122,14 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el ícono \textbf{Auxiliares} de la pantalla \textbf{Menu Principal} del paciente
- 	\UCpaso Muestra la pantalla \textbf{Auxiliar}.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Auxiliar} de la pantalla \textbf{Auxiliar}.
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Auxiliar} de la pantalla \textbf{Gestion Auxiliares}.
  	\UCpaso Muestra la pantalla \textbf{Agregar Nuevo Auxiliar}.
- 	\UCpaso [\UCactor] Proporciona la información solicitada por la pantalla.
+ 	\UCpaso [\UCactor] Ingresa el nombre del auxiliar.
+ 	\UCpaso [\UCactor] Ingresa el apellido paterno del auxiliar.
+ 	\UCpaso [\UCactor] Ingresa el apellido materno del auxiliar.
+ 	\UCpaso [\UCactor] Ingresa el teléfono del auxiliar.
+ 	\UCpaso [\UCactor] Ingresa el correo electrónico del auxiliar.
+ 	\UCpaso [\UCactor] Selecciona los tratamientos con los que estará trabajando el auxiliar.
  	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Nuevo Auxiliar}.
  	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}.
  	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.
@@ -145,10 +144,10 @@
 
 \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
 	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Auxiliar}.
-	\UCpaso Continúa con el paso 5 de la trayectoria principal.
+	\UCpaso Continúa en el paso en donde no haya ingresado el dato requerido de la trayectoria principal.
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
+\begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico con un formato incorrecto.}
 	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Auxiliar} indicando que el usuario y/o contraseña son incorrectos.
 	\UCpaso Continúa con el paso 5 de la trayectoria principal.
 \end{UCtrayectoriaA} 

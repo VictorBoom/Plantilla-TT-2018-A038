@@ -112,11 +112,17 @@
  	
 	 \UCpaso [\UCactor] Presiona el icono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
 	 
-	 \UCpaso Obtiene los doctores ya registrados en la aplicación. \refTray{A}
+	 \UCpaso Verifica que el paciente cuente con doctores agregados a su usuario.\refTray{A}
+	 
+	 \UCpaso Obtiene el nombre de los doctores registrados en la aplicación.
+	 
+	 \UCpaso Obtiene la fotografía de los doctores.
+	 
+	 \UCpaso Obtiene los tratamientos que expidieron los doctores.
 	 
 	 \UCpaso Ordena a los doctores por su nombre de manera ascendente.
 	 
-	 \UCpaso Muestra la pantalla \textbf{Consultar Doctor}.
+	 \UCpaso Muestra la pantalla \textbf{Consultar Doctor}. \label{acciones}
 	 
 	 
    
@@ -124,12 +130,21 @@
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
     
-   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay doctores} en la pantalla \textbf{Gestión Doctor}.
+   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay Doctores} en la pantalla \textbf{Gestión Doctor}.
     
-    \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay Doctor}.
+    \UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar doctor} del mensaje {MSG}{No hay Doctores}. \refTray{B} 
+    
+    \UCpaso Extiende al caso de uso \cdtIdRef{CU12}{Agregar doctor}. \label{agregar}
    
-   	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}.
  
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}{B}{El actor no quiere agregar un doctor}
+	
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar} del mensaje {MSG}{No hay Doctores}.
+	
+	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}
+	
 \end{UCtrayectoriaA}
 
  
@@ -137,8 +152,18 @@
 
 \UCExtensionPoint
 {El actor requiere registrar un nuevo doctor}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
+{ Paso \ref{agregar} de la trayectoria principal}
 {\cdtIdRef{CUR 12}{Agregar Doctor}}
 
+
+\UCExtensionPoint
+{El actor requiere editar un doctor}
+{ Paso \ref{acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 13}{Editar Doctor}}
  
+ 
+\UCExtensionPoint
+{El actor requiere eliminar un doctor}
+{ Paso \ref{acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 14}{Eliminar Doctor}}
 

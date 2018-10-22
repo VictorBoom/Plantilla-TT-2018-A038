@@ -7,7 +7,7 @@
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
     \UCitem{Operación}{Agregar Contacto de Emergencia}
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -98,16 +98,11 @@
            \UCli \textbf{Correo Electrónico}: \ioEscribir.
         \end{UClist}}
 	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Nombre del contacto de emergencia.
-			\UCli Apellido paterno del contacto de emergencia.
-			\UCli Apellido materno del contacto de emergencia.
-			\UCli Teléfono del contacto de emergencia.
-			\UCli Correo electrónico del contacto de emergencia
 			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando se agregó el contacto de emergencia de manera exitosa.
 	\end{UClist}}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Registrará los datos del contacto de emergencia en la aplicación.
+	    {\bf Interna:} Agregara al contacto de emergencia en la aplicación.
 	}
     \UCitem{Reglas de negocio}{
 
@@ -131,12 +126,16 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Contacto de Emergencia} de la pantalla \textbf{Contactos de Emergencia}.
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Agregar Contacto de Emergencia} de la pantalla \textbf{Contactos de Emergencia}.
  	\UCpaso Muestra la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
- 	\UCpaso [\UCactor] Proporciona la información solicitada por la pantalla.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar}.
-	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}.
-	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.
+ 	\UCpaso [\UCactor] Ingresa el Nombre del contacto de emergencia. \label{datos}
+ 	\UCpaso [\UCactor] Ingresa el apellido paterno del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el apellido materno del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el telefono del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el correo electronico del contacto de emergencia.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar}. \refTray{A}
+	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}. \refTray{B}
+	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.\refTray{C}
 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Contactos de Emergencia}.
     
  \end{UCtrayectoria}
@@ -148,12 +147,12 @@
  
  \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
     \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
-    \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
+    \UCpaso[] Continúa con el paso \ref{datos} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
     \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia} indicando que el usuario y/o contraseña son incorrectos.
-    \UCpaso[] Continúa con el paso 3 de la trayectoria principal.
+    \UCpaso[] Continúa con el paso \ref{datos} de la trayectoria principal.
  \end{UCtrayectoriaA} 
 
 
