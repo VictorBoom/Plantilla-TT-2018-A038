@@ -1,4 +1,4 @@
-\begin{UseCase}{CUR 20}{Eliminar Auxiliar}
+\begin{UseCase}{CUP23}{Eliminar Auxiliar}
     {
     	Este caso de uso permite al \textbf{Paciente} eliminar un auxiliar en caso de que el actor ya no necesite un auxiliar que lo esté apoyando con el proceso de su tratamiento médico. 
     }
@@ -101,7 +101,7 @@
 	    {\bf Interna:} Eliminará el auxiliar de la cuenta del paciente.	
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno}
+	\UCitem{Mensajes}{Ninguno}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -110,7 +110,7 @@
 \begin{UCtrayectoria}
 	
 	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Auxiliar} asociado al Auxiliar que desea eliminar en la pantalla \textbf{Consulta de Auxiliares}.
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Eliminar Elemento} en la pantalla \textbf{Auxiliares}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG22}{Eliminar Elemento} en la pantalla \textbf{Auxiliares}.
 	\UCpaso [\UCactor] Confirma eliminar el auxiliar a través del botón \textbf{Eliminar}. \refTray{A}
 	\UCpaso Elimina el auxiliar de la aplicación.
 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Auxiliares}.
@@ -118,7 +118,7 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
-	\UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón \textbf{Cancelar} en el mensaje \cdtIdRef{MSG}{Eliminar Elemento}.
+	\UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón \textbf{Cancelar} en el mensaje \cdtIdRef{MSG22}{Eliminar Elemento}.
 	\UCpaso Muestra a la pantalla \textbf{Auxiliares}.
 \end{UCtrayectoriaA}
 

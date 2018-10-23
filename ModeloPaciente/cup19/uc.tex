@@ -1,6 +1,6 @@
-\begin{UseCase}{CUR 25}{Consultar alarmas}
+\begin{UseCase}{CUP19}{Consultar Alertas}
     {
-    	Un paciente debe de estar conciente de cuales son los medicamentos que son de vital importancia consumir, es por eso que debe de contar con una visualización de estos.
+    	Un paciente debe de estár conciente de cuáles son los medicamentos que son de vital importancia consumir, es por eso que debe de contar con una visualización de estos.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -36,13 +36,13 @@
 	}
     \UCitem{Reglas de negocio}{
 
-            Ninguno.
+            Ninguna.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
-		\UCli \cdtIdRef {MSG}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
+		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
+		\UCli \cdtIdRef {MSG24}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
 		
 	    \end{UClist}
 	}
@@ -54,7 +54,7 @@
  \begin{UCtrayectoria}
  	
  	
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Alarmas} en la pantalla \textbf{Gestión recordatorios}
+ 	\UCpaso [\UCactor] Presiona el ícono \textbf{Consultar Alarmas} en la pantalla \textbf{Gestión recordatorios}
  	\UCpaso Verifica que haya alarmas. \refTray{A}
  	\UCpaso Obtiene el nombre del medicamento.
  	\UCpaso Obtiene el tratamiento al que pertenece.
@@ -64,7 +64,7 @@
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene alarmas.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay alarmas}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG26}{No hay alertas}.
 	\UCpaso Muestra la pantalla \textbf{Gestión de Recordatorios}.
 	
 \end{UCtrayectoriaA}

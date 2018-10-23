@@ -1,6 +1,6 @@
-\begin{UseCase}{CUR 17}{Agregar Auxiliar}
+\begin{UseCase}{CUP20}{Agregar Auxiliar}
     {
-   		Este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo Auxiliar el cuál estará a cargo de un tratamiento médico del paciente.
+   		Este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo Auxiliar el cual estará a cargo de un tratamiento médico del paciente.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -98,22 +98,21 @@
 			\UCli \textbf{Correo Electrónico}: \ioEscribir.
 			\UCli \textbf{Tratamientos}: Se seleccionan de una lista de checkbox
 	\end{UClist}}
-	\UCitem{Salidas}{ 
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se agregó el auxiliar de manera exitosa.
-		}
+	\UCitem{Salidas}{Ninguna.}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{   
 		{\bf Interna:} Registrará los datos del Auxiliar en la aplicación.
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RN}{Datos Requeridos}:Verifica que todos los datos requeridos, sean proporcionados.
+            \cdtIdRef{RN9}{Datos Requeridos}:Verifica que todos los datos requeridos, sean proporcionados.
             
-            \cdtIdRef{RN}{Formato de Correo Electrónico}:Verifica que el correo electrónico cumpla con el formato correcto.
+            \cdtIdRef{RN12}{Formato de Correo Electrónico}:Verifica que el correo electrónico cumpla con el formato correcto.
     }
-	\UCitem{Errores}{	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Agregar Nuevo Auxiliar} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Agregar Nuevo Auxiliar} indicando que el correo electrónico y/o contraseña son incorrectos.
+	\UCitem{Mensajes}{	
+		\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se agregó el auxiliar de manera exitosa.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Agregar Nuevo Auxiliar} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Agregar Nuevo Auxiliar} indicando que el correo electrónico y/o contraseña son incorrectos.
 	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
@@ -132,7 +131,7 @@
  	\UCpaso [\UCactor] Selecciona los tratamientos con los que estará trabajando el auxiliar.
  	\UCpaso [\UCactor] Presiona el botón \textbf{Agregar Nuevo Auxiliar}.
  	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}.
- 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.
+ 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN12 Formato de Correo Electrónico}.
  	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Auxiliares}.
  	
  \end{UCtrayectoria}
@@ -143,12 +142,12 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Auxiliar}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Auxiliar}.
 	\UCpaso Continúa en el paso en donde no haya ingresado el dato requerido de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico con un formato incorrecto.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Auxiliar} indicando que el usuario y/o contraseña son incorrectos.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Auxiliar} indicando que el usuario y/o contraseña son incorrectos.
 	\UCpaso Continúa con el paso 5 de la trayectoria principal.
 \end{UCtrayectoriaA} 
 

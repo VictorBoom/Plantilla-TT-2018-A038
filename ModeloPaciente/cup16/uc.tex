@@ -1,12 +1,12 @@
-\begin{UseCase}{CUR 15}{Recibir Notificación}
+\begin{UseCase}{CUP16}{Recibir Notificación}
     {
-    	Un paciente recibirá una notificación que le recuerde que es hora de tomar sus medicamentos o en caso de que no pueda tomárselo en ese momento, permitirle posponerlo y que se le notifique otra vez cuando se lo tenga que tomar re ordenando todas las notificaciones posteriores, haciéndole saber si tiene algún retardo, mostrandole a que tratamiento pertenece y la cantidad de pastillas que le sobran.
+    	Un paciente recibirá una notificación que le recuerde que es hora de tomar sus medicamentos o en caso de que no pueda tomárselo en ese momento, permitirle posponerlo y que se le notifique otra vez cuando se lo tenga que tomar reordenando todas las notificaciones posteriores, haciéndole saber si tiene algún retardo, mostrándole a que tratamiento pertenece y la cantidad de pastillas que le sobran.
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
     \UCitem{Operación}{Recibir Notificación}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
@@ -109,18 +109,18 @@
     	{\bf Interna:} El actor debe tener mínimo un tratamiento activo.
     }
     \UCitem{Postcondiciones}{
-    	{\bf Interna:} Se contara la toma del medicamento en el tratamiento.	
+    	{\bf Interna:} Se contará la toma del medicamento en el tratamiento.	
     }
     \UCitem{Reglas de negocio}{
     	
     	\cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
     	\cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
     }
-    \UCitem{Errores}{
+    \UCitem{Mensajes}{
     	\begin{UClist}
-    		\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-    		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-    		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+    		\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inició la sesión de manera exitosa.	
+    		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+    		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
     		
     	\end{UClist}
     }
@@ -140,7 +140,7 @@
 \UCpaso Obtiene las píldoras restantes del medicamento
 \UCpaso Muestra la pantalla \textbf{Recibir Notificación 2}
 \UCpaso [\UCactor] Presiona el botón \cdtButton{Tomar}. \refTray{A} \label{tomar}
-\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
+\UCpaso Muestra el mensaje \cdtIdRef{MSG19}{Toma realizada}.
 
 
 
@@ -149,20 +149,19 @@
 
 \end{UCtrayectoria}
 
-\begin{UCtrayectoriaA}{A}{El actor no tomara el medicamento en ese momento.}
+\begin{UCtrayectoriaA}{A}{El actor no tomará el medicamento en ese momento.}
 	
 \UCpaso [\UCactor] Presiona el botón \cdtButton{Posponer}
 \UCpaso Muestra la pantalla \textbf{Recibir Notificación 3}
 \UCpaso [\UCactor] Selecciona el tiempo en que quiere que le avise la aplicación.
 \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar}. \refTray{B}
 \UCpaso Pasando el tiempo ingresado por el usuario Muestra la pantalla \textbf{Recibir Notificación 4}
-\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
+\UCpaso Muestra el mensaje \cdtIdRef{MSG19}{Toma realizada}.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{El actor cancela la operación}
-	\UCpaso Continua en el paso \ref{tomar} de la trayectoria principal
+	\UCpaso Continúa en el paso \ref{tomar} de la trayectoria principal
 \end{UCtrayectoriaA}
 
 
 
-\subsection{Puntos de extensión}

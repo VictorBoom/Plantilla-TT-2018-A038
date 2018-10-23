@@ -1,6 +1,6 @@
-\begin{UseCase}{CUR 14}{Consultar Doctor}
+\begin{UseCase}{CUP15}{Consultar Doctor}
     {
-    	Un paciente contara con la facultad de consultar los doctores que son o fueron responsables de sus tratamientos y asi poder tener un conocimiento de estos. 
+    	Un paciente contará con la facultad de consultar los doctores que son o fueron responsables de sus tratamientos y así poder tener un conocimiento de éstos. 
     	
     }
     \UCitem{Versión}{1.0}
@@ -13,7 +13,7 @@
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
     \UCitem{Estatus}{Terminado}
-    \UCitem{Fecha del último estatus}{16 de Octubre del 2018}
+    \UCitem{Fecha del último estatus}{05 de Octubre del 2018}
 
 %% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
 %% Esta sección la debe llenar solo el Revisor
@@ -102,7 +102,7 @@
 		Ninguna.
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+	\UCitem{Mensajes}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -110,7 +110,7 @@
 
  \begin{UCtrayectoria}
  	
-	 \UCpaso [\UCactor] Presiona el icono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
+	 \UCpaso [\UCactor] Presiona el ícono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
 	 
 	 \UCpaso Verifica que el paciente cuente con doctores agregados a su usuario.\refTray{A}
 	 
@@ -130,18 +130,18 @@
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
     
-   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay Doctores} en la pantalla \textbf{Gestión Doctor}.
+   	\UCpaso Muestra el mensaje \cdtIdRef{MSG18}{No hay Doctores} en la pantalla \textbf{Gestión Doctor}.
     
-    \UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar doctor} del mensaje {MSG}{No hay Doctores}. \refTray{B} 
+    \UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar doctor} del mensaje {MSG18}{No hay Doctores}. \refTray{B} 
     
-    \UCpaso Extiende al caso de uso \cdtIdRef{CU12}{Agregar doctor}. \label{agregar}
+    \UCpaso Extiende al caso de uso \cdtIdRef{CUP12}{Agregar Doctor}. \label{agregar}
    
  
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{B}{El actor no quiere agregar un doctor}
 	
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar} del mensaje {MSG}{No hay Doctores}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar} del mensaje {MSG18}{No hay Doctores}.
 	
 	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}
 	
@@ -153,17 +153,17 @@
 \UCExtensionPoint
 {El actor requiere registrar un nuevo doctor}
 { Paso \ref{agregar} de la trayectoria principal}
-{\cdtIdRef{CUR 12}{Agregar Doctor}}
+{\cdtIdRef{CUP12}{Agregar Doctor}}
 
 
 \UCExtensionPoint
 {El actor requiere editar un doctor}
 { Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 13}{Editar Doctor}}
+{\cdtIdRef{CUP13}{Editar Doctor}}
  
  
 \UCExtensionPoint
 {El actor requiere eliminar un doctor}
 { Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 14}{Eliminar Doctor}}
+{\cdtIdRef{CUP14}{Eliminar Doctor}}
 

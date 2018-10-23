@@ -1,12 +1,12 @@
-\begin{UseCase}{CUR 12}{Editar Doctor}
+\begin{UseCase}{CUP13}{Editar Doctor}
     {
-    	Un paciente al momento de hacer el registro de un doctor, puede llegar a equivocarse en los datos personales del doctor o quiera agregar un dato extra, es por eso que el usuario debe de contar con una herramienta que le permita editar a los doctores que están a cargo de sus tratamientos
+    	Un paciente al momento de hacer el registro de un doctor, puede llegar a equivocarse en los datos personales del doctor o quiera agregar un dato extra, es por eso que el usuario debe de contar con una herramienta que le permita editar a los doctores que están a cargo de sus tratamientos.
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
     \UCitem{Operación}{Editar Doctor}
     \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
@@ -104,16 +104,16 @@
 		{\bf Interna:} El doctor debe existir en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Los datos del doctor se actualizaran.	
+	    {\bf Interna:} Los datos del doctor se actualizarán.	
 	}
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
 
 		
 	    \end{UClist}
@@ -129,11 +129,11 @@
  	\UCpaso Obtiene los doctores ya registrados en la aplicación.
  	\UCpaso Ordena a los doctores por su nombre de manera ascendente.
  	\UCpaso Muestra la pantalla \textbf{Consulta de doctores}.
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Editar}
+ 	\UCpaso [\UCactor] Presiona el ícono \textbf{Editar}
  	\UCpaso Muestra una pantalla emergente con los datos del doctor.
  	\UCpaso [\UCactor] Modifica los datos del doctor que requiere.
  	\UCpaso [\UCactor] Presiona el botón \cdtButton{Guardar cambios}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
+ 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN1}{Información correcta}. \refTray{A}
  	
  	
     
@@ -145,9 +145,6 @@
  \end{UCtrayectoriaA}
  
 
-
- 
-\subsection{Puntos de extensión}
 
 
 

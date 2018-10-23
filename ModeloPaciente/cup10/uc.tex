@@ -1,14 +1,14 @@
-\begin{UseCase}{CUR 9}{Agregar Tratamiento}
+\begin{UseCase}{CUP10}{Agregar Tratamiento}
     {
 
-    	Cuando un paciente se enferma y recure a visitar al doctor este le dará un nuevo tratamiento, con nuevas instrucciones y medicamentos, entonces de esta manera el usuario podrá agregar un tratamiento nuevo en donde establecerá cuantos medicamentos tiene que tomar, cuando se expidió el tratamiento y quien es el doctor encargado de este.
+    	Cuando un paciente se enferma y recurre a visitar al doctor, éste le dará un nuevo tratamiento, con nuevas instrucciones y medicamentos, entonces de esta manera el usuario podrá agregar un tratamiento nuevo en donde establecerá cuantos medicamentos tiene que tomar, cuándo se expidió el tratamiento y quién es el doctor encargado de este.
     	
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
     \UCitem{Operación}{Agregar Tratamiento}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
@@ -25,7 +25,7 @@
         \begin{UClist} 
            \UCli Número de medicamentos.
            \UCli Fecha de Expedición del Tratamiento.
-           \UCli Doctor encargado del Tratamiento
+           \UCli Doctor encargado del tratamiento
         \end{UClist}
     }
 	\UCitem{Salidas}{
@@ -36,20 +36,20 @@
 		\end{UClist}
 		}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El actor debe estár registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
 	    {\bf Interna:} El actor tendrá un doctor.	
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RN4}{Doctor encargado}: Verifica que haya un doctor encargado del tratamiento.
+            \cdtIdRef{RN6}{Doctor encargado}: Verifica que haya un doctor encargado del tratamiento.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inició la sesión de manera exitosa.	
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
 		\UCli \cdtIdRef{MSG13}{No existe el doctor}
 		
 		
@@ -62,10 +62,10 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Agregar Tratamiento} de la pantalla \textbf{Tratamientos}.
+ 	\UCpaso [\UCactor] Presiona el ícono \textbf{Agregar Tratamiento} de la pantalla \textbf{Tratamientos}.
  	\UCpaso Genera el nombre del nuevo tratamiento, siguiendo el orden numérico de los nombres creados hasta el momento.
  	\UCpaso Muestra la pantalla \cdtIdRef{Agregar Nuevo Tratamiento}.
- 	\UCpaso [\UCactor] Selecciona cuantos medicamentos tiene el tratamiento.
+ 	\UCpaso [\UCactor] Selecciona cuántos medicamentos tiene el tratamiento.
  	\UCpaso [\UCactor] Selecciona la fecha de expedición del tratamiento.
  	\UCpaso [\UCactor] Ingresa la cédula profesional o el nombre del doctor.
  	\UCpaso [\UCactor] Selecciona el doctor que expidió el tratamiento.\refTray{A}
@@ -80,7 +80,7 @@
  \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{No se encuentra el doctor.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG14}{No existe el doctor}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG13}{No existe el doctor}
 	\UCpaso Extiende al caso de uso \cdtIdRef{CUR11}{Agregar Doctor} 
 	\UCpaso Continúa con el paso \ref{cur9:doc} de la trayectoria principal.
 \end{UCtrayectoriaA} 

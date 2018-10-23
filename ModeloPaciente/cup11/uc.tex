@@ -1,14 +1,14 @@
-\begin{UseCase}{CUR 10}{Agregar Medicamento}
+\begin{UseCase}{CUP11}{Agregar Medicamento}
 	{
 		
 		Un medicamento es la parte medular de un tratamiento y no solo del tratamiento, si no de las notificaciones, es por eso que es tan importante el agregar un medicamento, para que se pueda trabajar con el tratamiento de forma activa y se puedan empezar a recibir las notificaciones que le recuerden al usuario cuando tomar sus medicinas.
-		Los medicamentos son la parte medular de un tratamiento, son los que 
+%		Los medicamentos son la parte medular de un tratamiento, son los que 
 		
 	}
 	\UCitem{Versión}{1.0}
 	\UCccsection{Paciente}
 	\UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-	\UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+	\UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
 	\UCitem{Operación}{Inició de Sesión}
 	\UCccitem{Prioridad}{Alta}
 	\UCccitem{Complejidad}{Baja}
@@ -96,7 +96,7 @@
 		\begin{UClist} 
 			\UCli Nombre del medicamento.
 			\UCli Ingrediente Activo.
-			\UCli Catalogo de Unidades.
+			\UCli Catálogo de Unidades.
 			\UCli Cantidad de Unidades a tomar.
 			\UCli Frecuencia de la toma.
 			\UCli Hora de la primer toma.
@@ -107,18 +107,18 @@
 		{\bf Interna:} Debe de existir un tratamiento en estado \textbf{Incompleto}.
 	}
 	\UCitem{Postcondiciones}{
-		{\bf Interna:} La medicina se agregara al tratamiento.	
+		{\bf Interna:} La medicina se agregará al tratamiento.	
 	}
 	\UCitem{Reglas de negocio}{
 		
 		\cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
 		
 	}
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 		\begin{UClist}
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-			\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-			\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se agrego el medicamento de manera exitosa.	
+			\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+			\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
 			
 		\end{UClist}
 	}
@@ -133,12 +133,12 @@
 	\UCpaso Obtiene el nombre del tratamiento.
 	\UCpaso Muestra la pantalla \textbf{Agregar Medicamento 1}
 	\UCpaso [\UCactor] Ingresa el nombre del medicamento.\refTray{A}
-	\UCpaso Busca en el catalogo de los medicamentos el nombre ingresado.
+	\UCpaso Busca en el catálogo de los medicamentos el nombre ingresado.
 	\UCpaso Muestra los medicamentos que tengan coincidencia con el nombre ingresado.
 	\UCpaso [\UCactor] Selecciona el medicamento recetado por el doctor.
-	\UCpaso [\UCactor] Selecciona la opcion \textbf{¿Ya compraste el medicamento?}. \refTray{B} \label{medicamentono}
+	\UCpaso [\UCactor] Selecciona la opción \textbf{¿Ya compraste el medicamento?}. \refTray{B} \label{medicamentono}
 	\UCpaso Muestra la pantalla \textbf{Agregar Medicamento 2}.
-	\UCpaso [\UCactor] Selecciona la opción que corresponde al medicamento del catalogo unidades.
+	\UCpaso [\UCactor] Selecciona la opción que corresponde al medicamento del catálogo unidades.
 	\UCpaso Muestra en el texto la opción seleccionada.
 	\UCpaso [\UCactor] Selecciona la cantidad de píldoras a tomar.
 	\UCpaso [\UCactor] Selecciona la opción \textbf{todos los días} en la frecuencia en que se tiene que tomar el medicamento.\refTray{C}
@@ -158,7 +158,7 @@
 	\UCpaso Habilita el campo Ingrediente Activo.
 	\UCpaso [\UCactor] Ingresa el nombre del medicamento.
 	\UCpaso [\UCactor] Ingresa el ingrediente activo del medicamento.
-	\UCpaso Continua en el paso \ref{medicamentono} de la trayectoria principal.
+	\UCpaso Continúa en el paso \ref{medicamentono} de la trayectoria principal.
 	
 	
 \end{UCtrayectoriaA}
@@ -168,24 +168,24 @@
 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar}
 	\UCpaso Agrega el medicamento al tratamiento.
 	\UCpaso Muestra la pantalla \textbf{Editar Tratamiento}.
-	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Medicamento agregado pero incompleto} en la pantalla.
-	\UCpaso Extiende al caso de uso \cdtIdRef{CUR8}{Editar Tratamiento}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG14}{Medicamento agregado pero incompleto} en la pantalla.
+	\UCpaso Extiende al caso de uso \cdtIdRef{CUP9}{Editar Tratamiento}
 \end{UCtrayectoriaA}
 
 
 \begin{UCtrayectoriaA}{C}{El actor selecciona otra opción en la frecuencia del medicamento}
 	\UCpaso [\UCactor] Selecciona la opción \textbf{ciertos días} en la frecuencia en que se tiene que tomar el medicamento.
 	\UCpaso Muestra un checkbox por cada dia de la semana.
-	\UCpaso [\UCactor] Selecciona los dias que tiene que tomar la medicina a la semana.
-	\UCpaso Continua en el paso \ref{frecuencia} de la trayectoria principal.
+	\UCpaso [\UCactor] Selecciona los días que tiene que tomar la medicina a la semana.
+	\UCpaso Continúa en el paso \ref{frecuencia} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El paciente aun no toma el medicamento}
 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar}
 	\UCpaso Agrega el medicamento al tratamiento.
 	\UCpaso Muestra la pantalla \textbf{Editar Tratamiento}.
-	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Medicamento agregado pero incompleto} en la pantalla.
-	\UCpaso Extiende al caso de uso \cdtIdRef{CUR8}{Editar Tratamiento}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG14}{Medicamento agregado pero incompleto} en la pantalla.
+	\UCpaso Extiende al caso de uso \cdtIdRef{CUP9}{Editar Tratamiento}
 \end{UCtrayectoriaA}
 
 
@@ -195,4 +195,4 @@
 \UCExtensionPoint
 {El actor necesitar editar el tratamiento}
 {En las trayectorias alternativas A y D}
-{\cdtIdRef{CUR8}{Editar Tratamiento}}
+{\cdtIdRef{CUP9}{Editar Tratamiento}}

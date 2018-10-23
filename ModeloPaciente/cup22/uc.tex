@@ -1,4 +1,4 @@
-\begin{UseCase}{CUR 19}{Consultar Auxiliar}
+\begin{UseCase}{CUP22}{Consultar Auxiliar}
     {
     	Este caso de uso permite al \textbf{Paciente} consultar los auxiliares que tiene asociados a su cuenta permititendole saber los datos personales del auxiliar y saber los tratamientos del cual se hará cargo.
     }
@@ -92,7 +92,7 @@
 	\UCitem{Entradas}{Ninguna.}
 	\UCitem{Salidas}{\begin{UClist} 
 			\UCli Nombre de auxiliar.
-			\UCli Telefono de auxiliar.
+			\UCli Teléfono de auxiliar.
 			\UCli Correo de auxiliar.
 			\UCli Tratamientos
 	\end{UClist}}
@@ -103,7 +103,7 @@
 		Ninguna.
 	}
     \UCitem{Reglas de negocio}{Ninguna. }
-	\UCitem{Errores}{Ninguno.}
+	\UCitem{Mensajes}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -113,13 +113,13 @@
 \begin{UCtrayectoria}
 	
 	
-	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Auxiliar} en la pantalla \textbf{Gestión Auxiliares}.
+	\UCpaso [\UCactor] Presiona el ícono \textbf{Consultar Auxiliar} en la pantalla \textbf{Gestión Auxiliares}.
 	
 	\UCpaso Verifica que haya auxiliares agregados al usuario.\refTray{A}
 	
 	\UCpaso Obtiene el nombre del auxiliar.
 	
-	\UCpaso Obtiene el numero celular del auxiliar.
+	\UCpaso Obtiene el número celular del auxiliar.
 	
 	\UCpaso Obtiene el correo electrónico del auxiliar.
 	
@@ -132,8 +132,8 @@
 \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{El actor no tiene auxiliares asociados a su cuenta.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay auxiliares} en la pantalla \textbf{Auxiliar}.
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay auxiliares}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG21}{No hay auxiliares} en la pantalla \textbf{Auxiliar}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG21}{No hay auxiliares}.
 	
 	\UCpaso Muestra la pantalla \textbf{Auxiliar}.
 	
@@ -145,11 +145,11 @@
 \UCExtensionPoint
 {El actor requiere editar un auxiliar}
 { Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 21}{Editar Auxiliar}}
+{\cdtIdRef{CUP21}{Editar Auxiliar}}
 
 \UCExtensionPoint
 {El actor requiere eliminar un auxiliar}
 { Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 23}{Eliminar Auxiliar}}
+{\cdtIdRef{CUP23}{Eliminar Auxiliar}}
 
 

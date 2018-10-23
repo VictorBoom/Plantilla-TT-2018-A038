@@ -1,6 +1,6 @@
-\begin{UseCase}{CUR 26}{Consultar Recordatorios}
+\begin{UseCase}{CUP18}{Consultar Recordatorios}
     {
-    	Un paciente podrá consultar los recordatorios con los que cuente en ese momento, de esta manera podrá saber cuales son las medicinas mas próximas a tomar, saber su nombre y la dosis.
+    	Un paciente podrá consultar los recordatorios con los que cuente en ese momento, de esta manera podrá saber cuáles son las medicinas más próximas a tomar, saber su nombre y la dosis.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -96,7 +96,7 @@
 		\begin{UClist} 
 			\UCli Nombre del medicamento
 			\UCli Tratamiento al que pertenece el medicamento.
-			\UCli Numero de píldoras restantes.
+			\UCli Número de píldoras restantes.
 			\UCli Fecha de próxima toma
 		\end{UClist}
 }
@@ -108,9 +108,9 @@
 
             Ninguna.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	   
-	     \cdtIdRef{MSGX}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Gestión notificaciones} cuando el actor omitió un dato marcado como requerido.
+	     \cdtIdRef{MSG8}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Gestión notificaciones} cuando el actor omitió un dato marcado como requerido.
 		
 	}
 	\UCitem{Tipo}{Primario.}
@@ -120,11 +120,11 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Recordatorios} en la pantalla \textbf{Gestión recordatorios}
+ 	\UCpaso [\UCactor] Presiona el ícono \textbf{Consultar Recordatorios} en la pantalla \textbf{Gestión recordatorios}
  	\UCpaso Verifica que haya recordatorios. \refTray{A}
  	\UCpaso Obtiene el nombre del medicamento.
  	\UCpaso Obtiene el tratamiento al que pertenece el tratamiento.
- 	\UCpaso Obtiene el numero de píldoras restantes.
+ 	\UCpaso Obtiene el número de píldoras restantes.
  	\UCpaso Obtiene el horario del recordatorio.
  	\UCpaso Ordena los recordatorios según el horario del recordatorio.
  	\UCpaso Muestra la pantalla \textbf{Consultar recordatorios}
@@ -133,7 +133,7 @@
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene recordatorios.}
- 	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay recordatorios}.
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG25}{No hay recordatorios}.
  	\UCpaso Muestra la pantalla \textbf{Gestión de Recordatorios}.
     
  \end{UCtrayectoriaA}

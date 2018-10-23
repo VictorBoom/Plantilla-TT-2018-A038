@@ -1,7 +1,7 @@
-\begin{UseCase}{CUR 23}{Consultar Contacto de Emergencia}
+\begin{UseCase}{CUP26}{Consultar Contacto de Emergencia}
     {
     	
-    	Un contacto de emergencia es la persona a la cual se contactara cuando un \textbf{Paciente} no este realizando la toma de un medicamento que tenga una clasificación \textbf{Importante}, es por eso que un paciente podrá visualizar la información de los contactos de emergencia.
+    	Un contacto de emergencia es la persona a la cual se contactará cuando un \textbf{Paciente} no esté realizando la toma de un medicamento que tenga una clasificación \textbf{Importante}, es por eso que un paciente podrá visualizar la información de los contactos de emergencia.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
@@ -104,7 +104,7 @@
 	    Ninguna.	
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+	\UCitem{Mensajes}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -112,7 +112,7 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Presiona el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Consultar Datos Personales}.
+	\UCpaso [\UCactor] Presiona el ícono \textbf{Contactos de Emergencia} en la pantalla \textbf{Consultar Datos Personales}.
 	
 	\UCpaso Obtiene la foto de perfil de los contactos de emergencia.
 	
@@ -120,7 +120,7 @@
 	
 	\UCpaso Obtiene el celular de los contactos de emergencia.
 	
-	\UCpaso Obtiene el correo electronico de los contactos de emergencia.
+	\UCpaso Obtiene el correo electrónico de los contactos de emergencia.
 	
 	\UCpaso Ordena los contactos de emergencia por orden alfabético.
 	
@@ -131,8 +131,8 @@
 \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no tiene contactos de emergencia asociados a su cuenta.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay contactos de emergencia} en la pantalla \textbf{Contactos de Emergencia}.
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay contactos de emergencia}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG23}{No hay contactos de emergencia} en la pantalla \textbf{Contactos de Emergencia}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG23}{No hay contactos de emergencia}.
 	
 	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
 	
@@ -143,5 +143,5 @@
 \UCExtensionPoint
 {El actor requiere registrar un nuevo contacto de emergencia}
 { Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 16}{Agregar Contactos de Emergencia}}
+{\cdtIdRef{CUP24}{Agregar Contactos de Emergencia}}
 

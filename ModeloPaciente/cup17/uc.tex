@@ -1,13 +1,13 @@
-\begin{UseCase}{CUR 16}{Mandar Alerta}
+\begin{UseCase}{CUP17}{Mandar Alerta}
     {
-    	Cuando la ingesta de un medicamento se clasifica como importante ya que la ausencia de esta podría causar daños en la salud del paciente, se mandara una alerta a sus contactos de emergencia, notificando que el paciente no ha ingerido el medicamento
+    	Cuando la ingesta de un medicamento se clasifica como importante ya que la ausencia de ésta podría causar daños en la salud del paciente, se mandará una alerta a sus contactos de emergencia, notificando que el paciente no ha ingerido el medicamento.
 
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
     \UCitem{Operación}{Mandar Alerta}
     \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
@@ -103,13 +103,13 @@
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RNX}{Medicamento con clasificación}: Verifica que la medicina cuenta con una clasificación\textbf{Importante}.
+            \cdtIdRef{RN8}{Medicamento con clasificación}: Verifica que la medicina cuenta con una clasificación\textbf{Importante}.
             
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
 
-		\UCli \cdtIdRef{MSGX}{Aviso a contacto de emergencia}.
+		\UCli \cdtIdRef{MSG20}{Aviso a contacto de emergencia}.
 		
 	    \end{UClist}
 	}
@@ -125,9 +125,9 @@
  	
  	\UCpaso Verifica que la notificación haya sido aplazada mas de media hora.
  	
- 	\UCpaso Manda una alarma a sus contactos de emergencia.
+ 	\UCpaso Manda una alerta a sus contactos de emergencia.
  	
- 	\UCpaso Muestra el mensaje \textbf{MSGX}{Aviso a contacto de emergencia}.
+ 	\UCpaso Muestra el mensaje \textbf{MSG20}{Aviso a contacto de emergencia}.
  	
 
  	
