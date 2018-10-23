@@ -1,13 +1,16 @@
-\begin{UseCase}{CUR 25}{Cambiar Contraseña}
+\begin{UseCase}{CUR 6}{Consultar Tratamiento}
     {
-    	Es importante estár cambiando regularmente una contraseña para mantener la seguridad de nuestros datos. Es por eso que este caso de uso permite al \textbf{Paciente} cambiar su contraseña cada que éste lo solicite.
+    	
+    	Un paciente tendrá una lista con todos sus tratamientos, tanto los que están en estado activo, incompleto, interrumpido y terminado. De esta manera sabrá cuantos y cuales son sus tratamientos, su estado y la información de estos, como nombre de tratamiento, doctor que expidió, fecha de expedición y numero de medicamentos
+    	
+    	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
-    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Cambió de contraseña}
-    \UCccitem{Prioridad}{Baja}
+    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCitem{Operación}{Consulta de Tratamiento}
+    \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -88,36 +91,31 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Cambiar la contraseña.}
+	\UCitem{Propósito}{Consultar tratamientos.}
 	\UCitem{Entradas}{
-        \begin{UClist} 
-           \UCli \textbf{Contraseña anterior}: \ioEscribir.
-           \UCli \textbf{Contraseña nueva}: \ioEscribir.
-           \UCli \textbf{Confirmación de contraseña}: \ioEscribir.
-        \end{UClist}}
-	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Contraseña.
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Datos personales} cuando se cambió la contraseña de manera exitosa.
-	\end{UClist}}
-	\UCitem{Precondiciones}{Ninguna}
+        Ninguna.
+    }
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Nombre de tratamiento.
+			\UCli Nombre de doctor que expidió el tratamiento
+			\UCli Fecha en que se expidió el tratamiento.
+			\UCli Estado del tratamiento.
+			\UCli Numero de medicamentos del tratamiento.
+		\end{UClist}
+	}
+	\UCitem{Precondiciones}{
+		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El actor debe tener al menos un tratamiento agregado.
+		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Cambiará la contraseña del usuario.	
+	    {\bf Interna:} El actor podrá consultar la información completa del tratamiento.	
 	}
     \UCitem{Reglas de negocio}{
-
-            \cdtIdRef{RN}{Datos Requeridos}:Verifica que todos los datos requeridos sean proporcionados.
-            
-            \cdtIdRef{RN}{Formato de Contraseña Incorrecto}:Verifica que el correo electrónico cumpla con el formato correcto.
-            
-            \cdtIdRef{RN}{Confirmación de Contraseña Incorrecta}: Verifica que la contraseña coincida con la confirmación de contraseña:
+    	Ninguna.
     }
 	\UCitem{Errores}{
-	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
-		\UCli \cdtIdRef {MSG}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
-		
-	    \end{UClist}
+		Ninguno.
 	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
@@ -126,42 +124,47 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar Contraseña} de la pantalla \textbf{Editar Datos Personales}.
- 	\UCpaso Muestra la pantalla \textbf{Cambiar Contraseña}.
- 	\UCpaso [\UCactor] Ingresa la Contraseña Anterior . \label{contra}
- 	\UCpaso [\UCactor] Ingresa la Contraseña Nueva 
- 	\UCpaso [\UCactor]Ingresa la Confirmación de Contraseña.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar contraseña} en la pantalla \textbf{Cambiar Contraseña}.
- 	\UCpaso Verifica que todos los datos requeridos sean proporcionados con base a la regla de negocio \cdtIdRef{RN}{Datos Requeridos}.
- 	\UCpaso Verifica que las contraseñas cumplan con el formato correcto con base en la regla de negocio \cdtIdRef{RN}{Formato de Contraseña Incorrecto}.
- 	\UCpaso Verifica que la contraseña nueva coincida con la confirmación de la contraseña con base a la regla de negocio \cdtIdRef{RN}{Confirmación de Contraseña Incorrecta}
- 	\UCpaso Cambia la contraseña del usuario.
- 	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Editar Datos Personales}.
-     
+ 	\UCpaso [\UCactor] Da click sobre el icono \textbf{Tratamientos} en la pantalla \textbf{Menu Principal}.
+ 	
+ 	\UCpaso Muestra la pantalla Tratamientos. 
+ 	
+ 	\UCpaso [\UCactor] Da click sobre el icono \textbf{Consultar Tratamientos} en la pantalla \textbf{Tratamientos}.
+ 	
+ 	\UCpaso Obtiene el nombre del tratamiento.
+ 	
+ 	\UCpaso Obtiene el nombre del doctor que expidio el tratamiento
+ 	
+ 	\UCpaso Obtiene la fecha de expedicion del tratamiento.
+ 	
+ 	\UCpaso Obtiene el estado del tratamiento.
+ 	
+ 	\UCpaso Obtiene el numero de medicamentos.
+ 	
+ 	\UCpaso Muestra la pantalla \textbf{Consultar Tratamientos}.\refTray{A}
+ 	
+ 	\UCpaso Muestra primero los tratamientos activos, le siguen los incompletos, después los interrumpidos y al final los completados.\label{cup6:Acciones}
+ 	
+    
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
- 	\UCpaso [\UCactor] Da clic en el botón \textbf{Cancelar} de la pantalla \textbf{Cambiar Contraseña}.
- 	\UCpaso Muestra la pantalla \textbf{Editar Datos Personales}.
-    
+ \begin{UCtrayectoriaA}{A}{El actor no cuenta con un tratamiento.}
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG9}{No hay tratamientos} en la pantalla \textbf{Tratamientos}
+ 	
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar Nuevo Tratamiento} del mensaje. \refTray{B}
+
+   	\UCpaso Extiende al caso de uso \textbf{C8: Agregar Tratamiento}.
  \end{UCtrayectoriaA}
+ 
 
- \begin{UCtrayectoriaA}{B}{El actor no ingresó alguno de los datos requeridos.}
-	\UCpaso [\UCactor] Muestra el mensaje \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada} indicando que falta un dato que es obligatorio.
-	\UCpaso Regresa al paso \ref{contra} de la Trayectoria Principal.
-	
-\end{UCtrayectoriaA} 
-
-\begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña con un formato incorrecto}
-	\UCpaso [\UCactor] Muestra el mensaje \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto} indicando que la contraseña ingresada es incorrecta.
-	\UCpaso Regresa al paso \ref{contra} de la Trayectoria Principal.
-	
-\end{UCtrayectoriaA} 
+ 
+ 
+\subsection{Puntos de extensión}
 
 
-\begin{UCtrayectoriaA}{D}{El actor ingresó una confirmación de contraseña que no coincide con la contraseña nueva.}
-	\UCpaso [\UCactor] Muestra el mensaje  \cdtIdRef {MSG}{Validación de contraseña incorrecta} indicando que la confirmación de contraseña ingresada no coincide con la nueva contraseña.
-	\UCpaso Regresa al paso 4 de la Trayectoria Principal.
-	
-\end{UCtrayectoriaA} 
+\UCExtensionPoint
+{El actor requiere editar un tratamiento}
+{ Paso \ref{cur6:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUP7 }{Editar Tratamiento}}
+
+ 
 

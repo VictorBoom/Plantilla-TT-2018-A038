@@ -1,14 +1,14 @@
-\begin{UseCase}{CUR 4}{Consultar Datos Personales}
+\begin{UseCase}{CUP4}{Consultar Datos Personales}
     {
 
-    	Un usuario necesita saber cual es su categoría, su información personal, los roles a los que pertenece y sus contactos de emergencia, de esta manera el tendrá un conocimiento de todos los datos que tiene asociados a su cuenta.
+    	Un usuario necesita saber cuál es su categoría, su información personal, los roles a los que pertenece y sus contactos de emergencia, de esta manera él tendrá un conocimiento de todos los datos que tiene asociados a su cuenta.
 
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Inició de Sesión}
+    \UCitem{Operación}{Inicio de Sesión}
     \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -107,7 +107,7 @@
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El actor debe estár registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
 	    Ninguna.
@@ -116,9 +116,9 @@
 
            Ninguna.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG8}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Menu principal} indicando que no se pudieron obtener los datos del usuario.
+	    \UCli \cdtIdRef{MSG8}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Menú principal} indicando que no se pudieron obtener los datos del usuario.
 	    \end{UClist}
 	}
 	\UCitem{Tipo}{Primario.}
@@ -130,14 +130,14 @@
  	
  	
  	
- 	\UCpaso[\UCactor] Da click sobre el icono \textbf{Datos personales} de la pantalla \textbf{Menu principal}. \label{cur:ep}
+ 	\UCpaso[\UCactor] Da clic sobre el ícono \textbf{Datos personales} de la pantalla \textbf{Menú principal}. \label{cur:ep}
  	\UCpaso Obtiene el nombre del usuario.\refTray{A}
- 	\UCpaso Obtiene el rol al que esta asociado el usuario en ese momento.\refTray{A}
+ 	\UCpaso Obtiene el rol al que está asociado el usuario en ese momento.\refTray{A}
  	\UCpaso Obtiene la imagen del usuario.\refTray{A}
- 	\UCpaso Obtiene la categoria del usuario.\refTray{A}
+ 	\UCpaso Obtiene la categoría del usuario.\refTray{A}
  	\UCpaso Obtiene los datos del usuario.\refTray{A}
  	\UCpaso Obtiene los roles del usuario a los que pertence.\refTray{A}
- 	\UCpaso Obtiene el correo electronico del usuario.\refTray{A}
+ 	\UCpaso Obtiene el correo electrónico del usuario.\refTray{A}
  	\UCpaso Obtiene la contraseña del usuario.\refTray{A}
  	\UCpaso Muestra en la pantalla los datos obtenidos previamente.
  	
@@ -149,9 +149,9 @@
  \end{UCtrayectoria}
 
 \begin{UCtrayectoriaA}{A}{El sistema no pudo obtener los datos requeridos.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG8}{No se pudieron obtener los datos} en la pantalla \textbf{Menu principal}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG8}{No se pudieron obtener los datos} en la pantalla \textbf{Menú principal}
 	
-	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menu principal}
+	\UCpaso[\UCsist] Muestra la pantalla \textbf{Menú principal}
 
 \end{UCtrayectoriaA}
 

@@ -1,6 +1,6 @@
-\begin{UseCase}{CUR 2}{Recuperar Contraseña}
+\begin{UseCase}{CUP2}{Recuperar Contraseña}
     {
-    	En el momento en que un usuario de la aplicación no puede ingresar al sistema por que olvido su contraseña o no esta ingresando la contraseña correcta, la aplicación podrá recuperar su contraseña cuando el usuario proporcione su correo electrónico o su numero celular.
+    	En el momento en que un usuario de la aplicación no puede ingresar al sistema por que olvidó su contraseña o no está ingresando la contraseña correcta, la aplicación podrá recuperar su contraseña cuando el usuario proporcione su correo electrónico o su número celular.
    	
     }
     \UCitem{Versión}{1.0}
@@ -92,26 +92,26 @@
 	\UCitem{Propósito}{Recuperar contraseña.}
 	\UCitem{Entradas}{
 		\textbf{Correo Electrónico}: \ioEscribir.
-		\textbf{Numero celular}: \ioEscribir.
+		\textbf{Número Celular}: \ioEscribir.
 }
-	\UCitem{Salidas}{
-		\cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando se mando el correo para recuperar la contraseña.
-	}
+	\UCitem{Salidas}{Ninguna}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El actor debe estar registrado en el sistema.
+		{\bf Interna:} El actor debe estár registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor recuperara su contraseña
+	    {\bf Interna:} El actor recuperará su contraseña
 	}
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
             \cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
+	    	
+	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando se mando el correo para recuperar la contraseña.
 		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG4}{correo electrónico no existente}: Se muestra en la pantalla \textbf{Recuperar contraseña} indicando que el correo electrónico ingresado no existe.
+		\UCli \cdtIdRef{MSG4}{Correo electrónico no existente}: Se muestra en la pantalla \textbf{Recuperar contraseña} indicando que el correo electrónico ingresado no existe.
 		
 	    \end{UClist}
 	}
@@ -148,8 +148,6 @@
  
 
 
- 
-\subsection{Puntos de extensión}
 
 
  

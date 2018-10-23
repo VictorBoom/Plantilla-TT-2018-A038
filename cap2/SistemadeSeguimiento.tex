@@ -1,3 +1,38 @@
+\section{Metodología}
+Para la realización del Trabajo Terminal se utilizará la metodología SCRUM ya que es una metodología ágil y que es altamente flexible, ya que la lista de sprints pueden ser modificadas en el transcurso del desarrollo del proyecto por diversos motivos que se tengan. Otro punto de SCRUM es que al trabajar por partes pequeñas y comenzar por las más importantes, es más fácil poder detectar problemas a futuro que tal vez puedan presentarse\cite{Referencia13}.
+
+''Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos."\cite{Referencia14}
+
+Uno de los beneficios de la metodología SCRUM es que los proyectos pueden ser entregados con una mejor calidad, ya que como es más fácil detectar problemas, estos pueden ser corregidos en el momento justo, antes de que seán más costosos y difíciles de corregir. 
+
+En la figura \ref{fig:metodologiaSCRUM} se muestran las principales actividades abordadas por la metodología Scrum.
+\newpage
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{images/introduccion/scrum}
+	\caption{Marco de la Metodología SCRUM} \label{fig:metodologiaSCRUM}
+\end{figure}
+
+Se tendrán además prototipos de desarrollo donde se llevarán a cabo el análisis, diseño, construcción y pruebas de los prototipos implementados en cada etapa de la metodología anteriormente mencionada.
+
+Esta metodología será aplicada a nuestro Trabajo Terminal de la siguiente manera:\\
+
+\textbf{Trabajo Terminal 1}
+\begin{itemize}
+	\item Se trabajarán los primeros 2 sprints para esta primer parte del Trabajo Terminal.
+	\item El sprint 1 constará del análisis de requerimientos, análisis del proceso y el análisis formal del Trabajo Terminal por medio de casos de uso. Para el trabajo terminal 1, solamente se hará el análisis formal del rol del Paciente por medio de casos de uso.
+	\item El sprint 2 constará del diseño del sistema, diseño de pantallas por medio de mockups e implementación del primer prototipo que en este caso, será únicamente la parte del rol del \textbf{Paciente.}
+\end{itemize}
+
+\textbf{Trabajo Terminal 2}
+\begin{itemize}
+	\item Se trabajarán los últimos 3 sprints para esta segunda parte del Trabajo Terminal.
+	\item El sprint 3 constará de la definición formal de la aplicación.
+	\item El sprint 4 constará del diseño del sistema, diseño de pantallas por medio de mockups e implementación de los prototipos restantes que en este caso, serán las partes de los roles del \textbf{Doctor} y el \textbf{Auxiliar}.
+	\item El sprint 5 constará de las pruebas de la aplicación, la generación del manual de usuario y la generación del reporte técnico para la entrega final del Trabajo Terminal.
+\end{itemize}
+
+
 \section{Arquitectura}
 
 En la figura \ref{fig:arquitectura} se muestra el diagrama de la arquitectura propuesta con la que se trabajará para solucionar la problemática.
@@ -13,7 +48,7 @@ En la figura \ref{fig:arquitectura} se muestra el diagrama de la arquitectura pr
 Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con tres roles que participarán en el sistema, los cuales son :
 \begin{itemize}
 
-	\item Paciente: Se le llama paciente a la persona que cuenta con un tratamiento generado por el Médico que se encuentra a cargo de su salud.\\
+	\item Paciente: Se le llama paciente a la persona que cuenta con un tratamiento generado por el médico que se encuentra a cargo de su salud.\\
 	
 	Las acciones con las que cuenta su rol son:
 	\begin{itemize}
@@ -41,7 +76,7 @@ Como podemos notar en la figura \ref{fig:arquitectura} se cuenta con tres roles 
 		\item Editar sus datos.
 	\end{itemize}
 
-	\item Doctor: \textbf{Doctor} dentro del sistema es el profesional de la salud que se encarga del diagnostico del paciente.
+	\item Doctor: \textbf{Doctor} dentro del sistema es el profesional de la salud que se encarga del diagnóstico del paciente.
 	Las acciones con las que cuenta su rol son:
 		\begin{itemize}
 			
@@ -119,9 +154,9 @@ La arquitectura contará con los siguientes módulos:
 
 	\item Módulo de Captura de Medicamentos: Este módulo es el encargado de ingresar los medicamentos que son recetados por el Doctor para que el paciente siga su tratamiento médico.
 	
-	\item Módulo de Recordatorios: Este modulo es el encargado de crear los recordatorios de las medicinas una vez que estas hayan sido ingresadas dentro del tratamiento medico.
+	\item Módulo de Recordatorios: Este módulo es el encargado de crear los recordatorios de las medicinas una vez que éstas hayan sido ingresadas dentro del tratamiento médico.
 	
-	\item Módulo de Alarmas: Este modulo es el encargado de crear las alarmas cuando un medicamento sea de alta prioridad y que si no se toma en el momento pueda tener efectos negativos en el paciente.
+	\item Módulo de Alarmas: Este módulo es el encargado de crear las alarmas cuando un medicamento sea de alta prioridad y que si no se toma en el momento, pueda tener efectos negativos en el paciente.
 	
 	\item Módulo de Reportes: Este módulo es el encargado de generar un reporte con la información del tratamiento y datos relevantes del paciente como lo son la edad, estatura, peso, etc.
 	
@@ -138,11 +173,11 @@ La arquitectura contará con los siguientes módulos:
 \end{itemize}
 
 \section{Modelo Relacional}
-En la siguiente figura \ref{fig:modelorelacional} se muestra el modelo relacional con el que trabajara la aplicación mostrando así los datos que estarán proporcionando cada una de las partes responsables para que funcionen de manera correcta todos los módulos.
+En la siguiente figura \ref{fig:modelorelacional} se muestra el modelo relacional con el que trabajará la aplicación mostrando así los datos que estarán proporcionando cada una de las partes responsables para que funcionen de manera correcta todos los módulos.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=1.1\textwidth]{images/cap2/modelorelacional}
-	\caption{modelo relacional de rem-pills} \label{fig:modelorelacional}
+	\caption{Modelo Relacional de Rem-Pills} \label{fig:modelorelacional}
 \end{figure} 
 
 
@@ -234,11 +269,11 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	
 	\begin{ReqUser}		
 		\reqUserItem{RF1}{Registro de Usuario}{
-			El usuario requiere de un mecanismo que le permita registrarse en la aplicación
+			El usuario requiere de un mecanismo que le permita registrarse en la aplicación.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
-
+	\newpage
 	\begin{ReqUser}		
 		\reqUserItem{RF2}{Acceso al Sistema}{
 			El usuario requiere de un mecanismo que le permita ingresar al sistema.
@@ -277,7 +312,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF7}{Agregar Contactos de emergencia}{
+		\reqUserItem{RF7}{Agregar Contactos de Emergencia}{
 			El paciente requiere de un mecanismo que le permita agregar a un contacto de emergencia.
 		}
 		{\alta}{}{\corregir}
@@ -291,28 +326,28 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF9}{Agregar medicina}{
+		\reqUserItem{RF9}{Agregar Medicina}{
 			El usuario requiere de un mecanismo que le permita agregar una medicina nueva a un tratamiento.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF10}{Consultar tratamiento}{
+		\reqUserItem{RF10}{Consultar Tratamiento}{
 			El usuario requiere de un mecanismo que le permita consultar la información de su tratamiento.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF11}{Consultar doctores}{
+		\reqUserItem{RF11}{Consultar Doctores}{
 			El usuario requiere de un mecanismo que le permita consultar la información de sus doctores.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF12}{Consultar auxiliares}{
+		\reqUserItem{RF12}{Consultar Auxiliares}{
 			El usuario requiere de un mecanismo que le permita consultar la información de sus auxiliares.
 		}
 		{\alta}{}{\corregir}
@@ -320,45 +355,45 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 
 	\begin{ReqUser}		
 		\reqUserItem{RF13}{Notificaciones}{
-			La aplicación creara las notificaciones para los medicamentos en un tratamiento medico.
+			La aplicación creara las notificaciones para los medicamentos en un tratamiento médico.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
 
 	\begin{ReqUser}		
 		\reqUserItem{RF14}{Alarmas}{
-			La aplicación creara las alarmas para los medicamentos que sean de suma importancia en el tratamiento del paciente.
+			La aplicación creará las alarmas para los medicamentos que sean de suma importancia en el tratamiento del paciente.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
 
-	\begin{ReqUser}		
-		\reqUserItem{RF15}{Alarmas}{
-			La aplicación creara las alarmas para los medicamentos que sean de suma importancia en el tratamiento del paciente.
-		}
-		{\alta}{}{\corregir}
-	\end{ReqUser}
+%	\begin{ReqUser}		
+%		\reqUserItem{RF15}{Alarmas}{
+%			La aplicación creará las alarmas para los medicamentos que sean de suma importancia en el tratamiento del paciente.
+%		}
+%		{\alta}{}{\corregir}
+%	\end{ReqUser}
 
 	\begin{ReqUser}		
-		\reqUserItem{RF16}{Creación de reportes}{
+		\reqUserItem{RF15}{Creación de Reportes}{
 			El usuario requiere de un mecanismo que genere un reporte con los datos de su perfil, sus doctores y sus auxiliares.
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
+\newpage
 
-
-Requerimientos No Funcionales
+\textbf{Requerimientos No Funcionales}
 
 	
 	\begin{ReqSist}
 		\reqSistItem{RNF1}{Creación de Rol}
-		{La aplicación creara al usuario dependiendo de los roles que este seleccione.}{\alta}{\refUserReq{RF1},\refUserReq{RF2}}{}
+		{La aplicación creará al usuario dependiendo de los roles que éste seleccione.}{\alta}{\refUserReq{RF1},\refUserReq{RF2}}{}
 	\end{ReqSist}
 
 	\begin{ReqSist}
 		\reqSistItem{RNF2}{Verificación de Rol}
 		{
-			La aplicación verificara los roles que tiene el usuario y habilitara los módulos correspondientes.
+			La aplicación verificará los roles que tiene el usuario y habilitará los módulos correspondientes.
 		}
 		{\alta}
 		{\refUserReq{RF1}\refUserReq{RF2}}{}
@@ -367,16 +402,16 @@ Requerimientos No Funcionales
 	\begin{ReqSist}
 		\reqSistItem{RNF3}{Creación de Notificación}
 		{
-			La aplicación creara las notificaciones de los medicamentos que pertenecen a un tratamiento una vez que estos hayan sido agregados.
+			La aplicación creará las notificaciones de los medicamentos que pertenecen a un tratamiento una vez que estos hayan sido agregados.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
 	\end{ReqSist}
 
 	\begin{ReqSist}
-		\reqSistItem{RNF4}{Creación de Alarma}
+		\reqSistItem{RNF4}{Creación de Alarmas}
 		{
-			La aplicación creara las alarmas cuando un medicamento cuente con una clasificación de \textbf{Importante} y este haya sido agregado al tratamiento.
+			La aplicación creará las alarmas cuando un medicamento cuente con una clasificación de \textbf{Importante} y éste haya sido agregado al tratamiento.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
@@ -385,7 +420,7 @@ Requerimientos No Funcionales
 	\begin{ReqSist}
 		\reqSistItem{RNF5}{Interfaz Comprensible}
 		{
-			La aplicación contara con iconos que expliquen su funcionalidad, los formularios preguntaran por datos que se encuentren en la receta expedida por el doctor o que se encuentren en la caja del medicamento.
+			La aplicación contará con íconos que expliquen su funcionalidad, los formularios preguntarán por datos que se encuentren en la receta expedida por el doctor o que se encuentren en la caja del medicamento.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
@@ -394,7 +429,7 @@ Requerimientos No Funcionales
 	\begin{ReqSist}
 		\reqSistItem{RNF6}{Foto de Perfil}
 		{
-			La aplicación contara co 4 avatares que se podrán seleccionar en el caso de que el usuario no pueda realizar o seleccionar la foto de perfil en el momento en que esta creando su cuenta.
+			La aplicación contará con 4 avatares que se podrán seleccionar en el caso de que el usuario no pueda realizar o seleccionar la foto de perfil en el momento en que está creando su cuenta.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
@@ -403,7 +438,7 @@ Requerimientos No Funcionales
 	\begin{ReqSist}
 		\reqSistItem{RNF7}{Base de Datos}
 		{
-			La aplicación contara con una base de datos de forma local que permitirá que la consulta de los datos sea mas rápida.
+			La aplicación contará con una base de datos de forma local que permitirá que la consulta de los datos sea más rápida.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
@@ -412,29 +447,29 @@ Requerimientos No Funcionales
 	\begin{ReqSist}
 		\reqSistItem{RNF8}{Desarrollo Multiplataforma}
 		{
-			La aplicación sera desarrollada para los sistemas operativos iOS y Android de forma nativa para así explotar todas sus ventajas.
+			La aplicación será desarrollada para los sistemas operativos iOS y Android de forma nativa para así explotar todas sus ventajas.
 		}
 		{\alta}
 		{\refUserReq{RU-MR1}}{}
 	\end{ReqSist}
 
-	\begin{ReqSist}
-		\reqSistItem{RNF9}{Servicio Web}
-		{
-			La aplicación permitirá que el registro de un tratamiento sea ingresado por un servicio web.
-		}
-		{\alta}
-		{\refUserReq{RU-MR1}}{}
-	\end{ReqSist}
+%	\begin{ReqSist}
+%		\reqSistItem{RNF9}{Servicio Web}
+%		{
+%			La aplicación permitirá que el registro de un tratamiento sea ingresado por un servicio web.
+%		}
+%		{\alta}
+%		{\refUserReq{RU-MR1}}{}
+%	\end{ReqSist}
 
-	\begin{ReqSist}
-		\reqSistItem{RNF10}{Proteccion de información}
-		{
-			La aplicación contará con un cifrado AES-128 para proporcionar la seguridad de la información del usuario.
-		}
-		{\alta}
-		{\refUserReq{RU-MR1}}{}
-	\end{ReqSist}
+%	\begin{ReqSist}
+%		\reqSistItem{RNF9}{Protección de Información}
+%		{
+%			La aplicación contará con un cifrado AES-128 para proporcionar la seguridad de la información del usuario.
+%		}
+%		{\alta}
+%		{\refUserReq{RU-MR1}}{}
+%	\end{ReqSist}
 
 
 	
@@ -443,10 +478,10 @@ Requerimientos No Funcionales
 
 \section{Procesos}
 
-En el siguiente capitulo se muestran los procesos de cómo es una consulta médica y cómo sera una consulta médica con el uso de la aplicación.
+En la siguiente sección se muestran los procesos de cómo es una consulta médica en la actualidad y cómo será una consulta médica con el uso de la aplicación.
 
 
-En la figura \ref{fig:proceso1} con su subproceso \ref{fig:subproceso1} es cómo se maneja en la actualidad las consultas médicas y por ende la expedición de los tratamientos médicos.
+En la figura \ref{fig:proceso1} con su subproceso \ref{fig:subproceso1} se muestra cómo se maneja en la actualidad las consultas médicas y por ende la expedición de los tratamientos médicos.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=1.1\textwidth]{images/cap2/Proceso1}
@@ -459,7 +494,7 @@ En la figura \ref{fig:proceso1} con su subproceso \ref{fig:subproceso1} es cómo
 	\caption{Sub-proceso Adquiere tratamiento en la actualidad} \label{fig:subproceso1}
 \end{figure}
 
-En cambio con el uso de la aplicación como se muestra en la imagen \ref{fig:proceso2} y su subproceso \ref{fig:subproceso2} podemos notar como el uso de las nuevas tecnologías ayuda tanto a los pacientes como a los médicos.
+En cambio con el uso de la aplicación como se muestra en la imagen \ref{fig:proceso2} y su subproceso \ref{fig:subproceso2} podemos notar cómo el uso de las nuevas tecnologías ayuda tanto a los pacientes como a los médicos.
 
 \begin{figure}[htb]
 	\centering
@@ -476,7 +511,7 @@ En cambio con el uso de la aplicación como se muestra en la imagen \ref{fig:pro
 
 
 \section{Casos de uso}
-En el análisis realizado para la aplicación Rem-Pills se identificaron los siguientes casos de uso como se muestra en la figura\ref{fig:casosdeuso}
+En el análisis realizado para la aplicación Rem-Pills se identificaron los siguientes casos de uso como se muestra en la figura\ref{fig:casosdeuso}.
 
 \begin{figure}[htb]
 	\centering
@@ -491,29 +526,32 @@ La aplicación cuenta con los siguientes casos de uso:
 	\item Paciente:
 		\begin{itemize}
 			\item CUP1: Iniciar Sesión.
-			\item CUP2: Recuperar contraseña.
-			\item CUP3: Registro de cuenta.
-			\item CUP4: Consultar Datos personales.
-			\item CUP5: Editar Datos personales.
-			\item CUP6: Consultar Tratamientos.
-			\item CUP7: Consultar Información de Tratamientos.
-			\item CUP8: Editar Tratamientos
-			\item CUP9: Agregar Tratamiento.
-			\item CUP10: Agregar Medicamento.
-			\item CUP11: Agregar Doctor.
-			\item CUP12: Editar Doctor.
-			\item CUP13: Eliminar Doctor.
-			\item CUP14: Consultar Doctor.
-			\item CUP15: Recibir Notificación.
-			\item CUP16: Mandar Alerta.
-			\item CUP17: Agregar Auxiliar.
-			\item CUP18: Editar Auxiliar.
-			\item CUP19: Consultar Auxiliar
-			\item CUP20: Eliminar Auxiliar.
-			\item CUP21: Agregar Contacto de Emergencia.
-			\item CUP22: Editar Contacto de Emergencia.
-			\item CUP23: Consultar Contacto de Emergencia.
-			\item CUP24: Eliminar Contacto de Emergencia.
+			\item CUP2: Recuperar Contraseña.
+			\item CUP3: Registro de Cuenta.
+			\item CUP4: Consultar Datos Personales.
+			\item CUP5: Editar Datos Personales.
+			\item CUP6: Cambiar Contraseña
+			\item CUP7: Consultar Tratamiento.
+			\item CUP8: Consultar Información de Tratamiento.
+			\item CUP9: Editar Tratamiento.
+			\item CUP10: Agregar Tratamiento.
+			\item CUP11: Agregar Medicamento.
+			\item CUP12: Agregar Doctor.
+			\item CUP13: Editar Doctor.
+			\item CUP14: Eliminar Doctor.
+			\item CUP15: Consultar Doctor.
+			\item CUP16: Recibir Notificación.
+			\item CUP17: Mandar Alerta.
+			\item CUP18: Consultar Recordatorios.
+			\item CUP19: Consultar Alertas.
+			\item CUP20: Agregar Auxiliar.
+			\item CUP21: Editar Auxiliar.
+			\item CUP22: Consultar Auxiliar
+			\item CUP23: Eliminar Auxiliar.
+			\item CUP24: Agregar Contacto de Emergencia.
+			\item CUP25: Editar Contacto de Emergencia.
+			\item CUP26: Consultar Contacto de Emergencia.
+			\item CUP27: Eliminar Contacto de Emergencia.
 		\end{itemize}
 %	\item Doctor:
 %		\begin{itemize}

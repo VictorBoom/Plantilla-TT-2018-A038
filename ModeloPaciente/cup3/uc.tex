@@ -1,8 +1,8 @@
-\begin{UseCase}{CUR 3}{Registro de Cuenta}
+\begin{UseCase}{CUP3}{Registro de Cuenta}
     {
 
     	
-    	El registro de la cuenta del usuario consiste en que el usuario debe de ingresar todos los datos correspondientes a su perfil y seleccionar los roles a los cuales estará asociado, para que se le puedan asignar las acciones a las que podra acceder.
+    	El registro de la cuenta del usuario consiste en que el usuario debe de ingresar todos los datos correspondientes a su perfil y seleccionar los roles a los cuales estará asociado, para que se le puedan asignar las acciones a las que podrá acceder.
     
     	
     }
@@ -117,7 +117,7 @@
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
             \cdtIdRef{RN3}{Contraseña invalida}: Verifica que la contraseña escrita cuente con la estructura correcta.
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    	
 		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Crear cuenta} cuando el actor omitió un dato marcado como requerido.
@@ -137,10 +137,10 @@
 	 \UCpaso [\UCactor] Ingresa Apellido paterno.
 	 \UCpaso [\UCactor] Ingresa Apellido materno.
 	 \UCpaso [\UCactor] Ingresa Fecha de nacimiento.
-	 \UCpaso [\UCactor] Presiona el boton \cdtButton{Obtener numero} \refTray{A}
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Obtener numero} \refTray{A}
 	 \UCpaso Muestra el mensaje \textbf{MSG5{Obtener datos}}.
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} en el mensaje.
-	 \UCpaso Obtiene el numero celular del celular del usuario
+	 \UCpaso Obtiene el número del celular del usuario
 	 \UCpaso La casilla \textbf{Celular} se rellena con la información obtenida del paso anterior.
 	 \UCpaso [\UCactor] Ingresa su contraseña.\label{cur5:Celular}
 	 \UCpaso [\UCactor] Selecciona los roles a los que estará asociado.\refTray{B}
@@ -148,11 +148,11 @@
 	 \UCpaso Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN1}{Información correcta}. \refTray{C}
 	 \UCpaso Verifica que la contraseña sea correcta como lo indica la regla de negocio \cdtIdRef{RN3}{Contraseña}. \refTray{D}.
 	 \UCpaso Muestra la pantalla \textbf{Creación de cuenta fotografia}.
-	 \UCpaso [\UCactor] Da click en el icono \textbf{Tomar foto}. \refTray{E}
+	 \UCpaso [\UCactor] Da clic en el icono \textbf{Tomar foto}. \refTray{E}
 	 \UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia}.
-	 \UCpaso [\UCactor] Presiona el boton \cdtButton{Aceptar} del mensaje.
-	 \UCpaso Abre la camara del celular.
-	 \UCpaso Obtiene la fotografia tomada.
+	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje.
+	 \UCpaso Abre la cámara del celular.
+	 \UCpaso Obtiene la fotografía tomada.
 	 \UCpaso Muesta el mensaje \cdtIdRef{MSG7}{Obtener otra foto} en la pantalla \textbf{Creación de cuenta fotografia}.
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{No} del mensaje.
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear Cuenta} de la pantalla.\label{cur3:foto}
@@ -162,7 +162,7 @@
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no desea que la aplicación se comunique con su sistema operativo.}
- 	\UCpaso [\UCactor] Ingresa su numero celular.
+ 	\UCpaso [\UCactor] Ingresa su número celular.
  	\UCpaso Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
     
  \end{UCtrayectoriaA}
@@ -187,9 +187,9 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor no quiere tomar una foto.}
-	\UCpaso [\UCactor] Da click sobre el icono \textbf{Seleccionar de fototeca}.
+	\UCpaso [\UCactor] Da clic sobre el icono \textbf{Seleccionar de fototeca}.
 	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia} la primera vez que esto sucede.
-	\UCpaso [\UCactor] Presiona el boton \cdtButton{Aceptar} del mensaje.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje.
 	\UCpaso Muestra las fotos del celular.
 	\UCpaso Obtiene la foto seleccionada.
 	\UCpaso Continúa en el paso \ref{cur3:foto} de la trayectoria principal.
