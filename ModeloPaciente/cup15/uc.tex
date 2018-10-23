@@ -1,168 +1,169 @@
-\begin{UseCase}{CUR 15}{Recibir Notificación}
+\begin{UseCase}{CUR 14}{Consultar Doctor}
     {
-    	Un paciente recibirá una notificación que le recuerde que es hora de tomar sus medicamentos o en caso de que no pueda tomárselo en ese momento, permitirle posponerlo y que se le notifique otra vez cuando se lo tenga que tomar re ordenando todas las notificaciones posteriores, haciéndole saber si tiene algún retardo, mostrandole a que tratamiento pertenece y la cantidad de pastillas que le sobran.
+    	Un paciente contara con la facultad de consultar los doctores que son o fueron responsables de sus tratamientos y asi poder tener un conocimiento de estos. 
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Recibir Notificación}
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Consulta de doctor}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
     \UCitem{Estatus}{Terminado}
-    \UCitem{Fecha del último estatus}{05 de Octubre del 2018}
+    \UCitem{Fecha del último estatus}{16 de Octubre del 2018}
+
+%% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+%% Esta sección la debe llenar solo el Revisor
+% %--------------------------------------------------------
+% 	\UCccsection{Revisión Versión XX} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+% 	\UCccitem{Fecha}{Fecha en que se termino la revisión} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+% 	\UCccitem{Evaluador}{Nombre de quien revisó}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+% 	\UCccitem{Resultado}{Corregir, Desechar, Rehacer todo, terminar.}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+% 	\UCccitem{Observaciones}{
+% 		\begin{UClist}
+% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+% 			\RCitem{PC1}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC2}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC3}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 		\end{UClist}		
+% 	}
+% %--------------------------------------------------------
+% %--------------------------------------------------------
+% 	\UCccsection{Revisión Versión 0.3} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+% 	\UCccitem{Fecha}{04/11/2014} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+% 	\UCccitem{Evaluador}{Natalia Giselle Hernández Sánchez}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+% 	\UCccitem{Resultado}{Corregir}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+% 	\UCccitem{Observaciones}{
+% 		\begin{UClist}
+% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+% 			\RCitem{PC2}{\DONE{Cambiar en la sección de entradas el nombre del atributo ``Nombre de usuario'' y la redirección}}{04/11}
+% 			\RCitem{PC3}{\DONE{La liga de ``Contraseña'' está rota}}{04/11}
+% 			\RCitem{PC4}{\DONE{Hay oraciones que no tienen punto al final, como las precondiciones}}{04/11}
+% 			\RCitem{PC5}{\DONE{Quitar la palabra ``interna'' de las viñetasde los menús en la sección de postcondiciones}}{04/11}
+% 			\RCitem{PC6}{\DONE{En las postcondiciones dice ``perfl''}}{04/11}
+% 			\RCitem{PC7}{\DONE{Falta punto en el primer paso de la TP}}{05/11}
+% 			\RCitem{PC8}{\DONE{El paso 6 de la trayectoria principal no debería de estar debido a que el nombre de usuario no siempre es la cct}}{05/11}
+% 			\RCitem{PC9}{\DONE{El paso 5 de la TP podría ser general como ``Verifica que los datos ingresados sean correctos según la regla de negocio...'' para que se verifique la contraseña, en todos los campos se verifica la longitud}}{05/11}
+% 			\RCitem{PC10}{\DONE{Hace falta mencionar el mensaje de longitud}}{05/11}
+% 			\RCitem{PC11}{\DONE{Falta mencionar el mensaje 22 en la sección de errores}}{05/11}
+% 			\RCitem{PC12}{\DONE{Falta el mensaje de que se ha excedido la longitud}}{05/11}
+% 			\RCitem{PC13}{\DONE{Falta el mensaje de formato incorrecto}}{05/11}
+% 			\RCitem{PC14}{\DONE{En la trayectoria alternativa C el campo no debería de indicarse}}{05/11}
+% 			\RCitem{PC15}{\DONE{En el paso 8 indicar que se trata de una pantalla en lugar de decir ``figura''}}{05/11}
+% 			\RCitem{PC16}{\DONE{¿Se hablará de cómo cerrar la sesión?, en el sistema pasado se documento ``cerrar sesón'' como parte de la trayectoria principal del caso de uso ``Ingresar al sistema'' }}{05/11}
+% 			\RCitem{PC17}{\DONE{En el segunto punto de extensión dice ``insripción''}}{05/11}
+% 			
+% 		\end{UClist}		
+% 	}
+%--------------------------------------------------------
+	\UCccsection{Revisión Versión 0.3} % Anote la versión que se revisó.
+	% FECHA: Anote la fecha en que se terminó la revisión.
+	\UCccitem{Fecha}{11-11-14} 
+	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+	\UCccitem{Evaluador}{Natalia Giselle Hernández Sánchez}
+	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+	\UCccitem{Resultado}{Corregir}
+	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+	\UCccitem{Observaciones}{
+		\begin{UClist}
+			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+			\RCitem{PC1}{\DONE{Agregar a precondiciones el estado de la cuenta}}{Fecha de entrega}
+			\RCitem{PC2}{\DONE{Agregar el paso de la trayectoria de validación del estado de la cuenta}}{Fecha de entrega}
+			\RCitem{PC3}{\DONE{Agregar el mensaje de cuenta no activada a la sección de errores}}{Fecha de entrega}
+			\RCitem{PC4}{\DONE{Verificar las ligas a los estados}}{Fecha de entrega}
+			
+		\end{UClist}		
+	}
+%--------------------------------------------------------
+
+	\UCsection{Atributos}
+	\UCitem{Actor}{\textbf{Paciente}}
+	\UCitem{Propósito}{Consultar los doctores que se tienen asociados a la cuenta del Paciente.}
+	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Nombre de doctor.
+			\UCli Nombre de tratamiento del que es responsable.
+		\end{UClist}}
+	\UCitem{Precondiciones}{
+		Ninguna.
+		}
+	\UCitem{Postcondiciones}{
+		Ninguna.
+	}
+    \UCitem{Reglas de negocio}{Ninguna.}
+	\UCitem{Errores}{Ninguno.}
+	\UCitem{Tipo}{Primario.}
+	\UCitem{Fuente}{
+	}
+ \end{UseCase}
+
+ \begin{UCtrayectoria}
+ 	
+	 \UCpaso [\UCactor] Presiona el icono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
+	 
+	 \UCpaso Verifica que el paciente cuente con doctores agregados a su usuario.\refTray{A}
+	 
+	 \UCpaso Obtiene el nombre de los doctores registrados en la aplicación.
+	 
+	 \UCpaso Obtiene la fotografía de los doctores.
+	 
+	 \UCpaso Obtiene los tratamientos que expidieron los doctores.
+	 
+	 \UCpaso Ordena a los doctores por su nombre de manera ascendente.
+	 
+	 \UCpaso Muestra la pantalla \textbf{Consultar Doctor}. \label{acciones}
+	 
+	 
+   
+ \end{UCtrayectoria}
+
+ \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
     
-    %% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
-    %% Esta sección la debe llenar solo el Revisor
-    % %--------------------------------------------------------
-    % 	\UCccsection{Revisión Versión XX} % Anote la versión que se revisó.
-    % 	% FECHA: Anote la fecha en que se terminó la revisión.
-    % 	\UCccitem{Fecha}{Fecha en que se termino la revisión} 
-    % 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
-    % 	\UCccitem{Evaluador}{Nombre de quien revisó}
-    % 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
-    % 	\UCccitem{Resultado}{Corregir, Desechar, Rehacer todo, terminar.}
-    % 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
-    % 	\UCccitem{Observaciones}{
-    % 		\begin{UClist}
-    % 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
-    % 			\RCitem{PC1}{\TODO{Descripción del pendiente}}{Fecha de entrega}
-    % 			\RCitem{PC2}{\TODO{Descripción del pendiente}}{Fecha de entrega}
-    % 			\RCitem{PC3}{\TODO{Descripción del pendiente}}{Fecha de entrega}
-    % 		\end{UClist}		
-    % 	}
-    % %--------------------------------------------------------
-    % %--------------------------------------------------------
-    % 	\UCccsection{Revisión Versión 0.3} % Anote la versión que se revisó.
-    % 	% FECHA: Anote la fecha en que se terminó la revisión.
-    % 	\UCccitem{Fecha}{04/11/2014} 
-    % 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
-    % 	\UCccitem{Evaluador}{Natalia Giselle Hernández Sánchez}
-    % 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
-    % 	\UCccitem{Resultado}{Corregir}
-    % 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
-    % 	\UCccitem{Observaciones}{
-    % 		\begin{UClist}
-    % 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
-    % 			\RCitem{PC2}{\DONE{Cambiar en la sección de entradas el nombre del atributo ``Nombre de usuario'' y la redirección}}{04/11}
-    % 			\RCitem{PC3}{\DONE{La liga de ``Contraseña'' está rota}}{04/11}
-    % 			\RCitem{PC4}{\DONE{Hay oraciones que no tienen punto al final, como las precondiciones}}{04/11}
-    % 			\RCitem{PC5}{\DONE{Quitar la palabra ``interna'' de las viñetasde los menús en la sección de postcondiciones}}{04/11}
-    % 			\RCitem{PC6}{\DONE{En las postcondiciones dice ``perfl''}}{04/11}
-    % 			\RCitem{PC7}{\DONE{Falta punto en el primer paso de la TP}}{05/11}
-    % 			\RCitem{PC8}{\DONE{El paso 6 de la trayectoria principal no debería de estar debido a que el nombre de usuario no siempre es la cct}}{05/11}
-    % 			\RCitem{PC9}{\DONE{El paso 5 de la TP podría ser general como ``Verifica que los datos ingresados sean correctos según la regla de negocio...'' para que se verifique la contraseña, en todos los campos se verifica la longitud}}{05/11}
-    % 			\RCitem{PC10}{\DONE{Hace falta mencionar el mensaje de longitud}}{05/11}
-    % 			\RCitem{PC11}{\DONE{Falta mencionar el mensaje 22 en la sección de errores}}{05/11}
-    % 			\RCitem{PC12}{\DONE{Falta el mensaje de que se ha excedido la longitud}}{05/11}
-    % 			\RCitem{PC13}{\DONE{Falta el mensaje de formato incorrecto}}{05/11}
-    % 			\RCitem{PC14}{\DONE{En la trayectoria alternativa C el campo no debería de indicarse}}{05/11}
-    % 			\RCitem{PC15}{\DONE{En el paso 8 indicar que se trata de una pantalla en lugar de decir ``figura''}}{05/11}
-    % 			\RCitem{PC16}{\DONE{¿Se hablará de cómo cerrar la sesión?, en el sistema pasado se documento ``cerrar sesón'' como parte de la trayectoria principal del caso de uso ``Ingresar al sistema'' }}{05/11}
-    % 			\RCitem{PC17}{\DONE{En el segunto punto de extensión dice ``insripción''}}{05/11}
-    % 			
-    % 		\end{UClist}		
-    % 	}
-    %--------------------------------------------------------
-    \UCccsection{Revisión Versión 0.3} % Anote la versión que se revisó.
-    % FECHA: Anote la fecha en que se terminó la revisión.
-    \UCccitem{Fecha}{11-11-14} 
-    % EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
-    \UCccitem{Evaluador}{Natalia Giselle Hernández Sánchez}
-    % RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
-    \UCccitem{Resultado}{Corregir}
-    % OBSERVACIONES: Liste los cambios que debe realizar el Analista.
-    \UCccitem{Observaciones}{
-    	\begin{UClist}
-    		% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
-    		\RCitem{PC1}{\DONE{Agregar a precondiciones el estado de la cuenta}}{Fecha de entrega}
-    		\RCitem{PC2}{\DONE{Agregar el paso de la trayectoria de validación del estado de la cuenta}}{Fecha de entrega}
-    		\RCitem{PC3}{\DONE{Agregar el mensaje de cuenta no activada a la sección de errores}}{Fecha de entrega}
-    		\RCitem{PC4}{\DONE{Verificar las ligas a los estados}}{Fecha de entrega}
-    		
-    	\end{UClist}		
-    }
-    %--------------------------------------------------------
+   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay Doctores} en la pantalla \textbf{Gestión Doctor}.
     
-    \UCsection{Atributos}
-    \UCitem{Actor}{\textbf{Paciente}}
-    \UCitem{Propósito}{Notificar al paciente de sus medicamentos.}
-    \UCitem{Entradas}{
-    	\begin{UClist} 
-    		\UCli Hora del próximo recordatorio
-    	\end{UClist}
-    }
+    \UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar doctor} del mensaje {MSG}{No hay Doctores}. \refTray{B} 
     
-    \UCitem{Salidas}{
-    	\begin{UClist}
-    		\UCli Nombre del medicamento
-    		\UCli Hora de la toma del medicamento
-    		\UCli Tratamiento al que pertenece
-    		\UCli Cantidad restante del medicamento
-    	\end{UClist}
-    }
-    
-    \UCitem{Precondiciones}{
-    	{\bf Interna:} El actor debe tener mínimo un tratamiento activo.
-    }
-    \UCitem{Postcondiciones}{
-    	{\bf Interna:} Se contara la toma del medicamento en el tratamiento.	
-    }
-    \UCitem{Reglas de negocio}{
-    	
-    	\cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
-    	\cdtIdRef{RN2}{Usuario Existente}: Verifica que exista el usuario.
-    }
-    \UCitem{Errores}{
-    	\begin{UClist}
-    		\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
-    		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-    		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
-    		
-    	\end{UClist}
-    }
-    \UCitem{Tipo}{Primario.}
-    \UCitem{Fuente}{
-    }
-\end{UseCase}
+    \UCpaso Extiende al caso de uso \cdtIdRef{CU12}{Agregar doctor}. \label{agregar}
+   
+ 
+\end{UCtrayectoriaA}
 
-\begin{UCtrayectoria}
-
-
-\UCpaso Muestra la pantalla \textbf{Recibir Notificación}.
-\UCpaso [\UCactor] Presiona el botón \cdtButton{Entendido}
-\UCpaso Obtiene el nombre del medicamento perteneciente al recordatorio.
-\UCpaso Obtiene la hora del recordatorio.
-\UCpaso Obtiene el tratamiento al que pertenece el recordatorio.
-\UCpaso Obtiene las píldoras restantes del medicamento
-\UCpaso Muestra la pantalla \textbf{Recibir Notificación 2}
-\UCpaso [\UCactor] Presiona el botón \cdtButton{Tomar}. \refTray{A} \label{tomar}
-\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
-
-
-
-
-
-
-\end{UCtrayectoria}
-
-\begin{UCtrayectoriaA}{A}{El actor no tomara el medicamento en ese momento.}
+\begin{UCtrayectoriaA}{B}{El actor no quiere agregar un doctor}
 	
-\UCpaso [\UCactor] Presiona el botón \cdtButton{Posponer}
-\UCpaso Muestra la pantalla \textbf{Recibir Notificación 3}
-\UCpaso [\UCactor] Selecciona el tiempo en que quiere que le avise la aplicación.
-\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar}. \refTray{B}
-\UCpaso Pasando el tiempo ingresado por el usuario Muestra la pantalla \textbf{Recibir Notificación 4}
-\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{Toma realizada}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar} del mensaje {MSG}{No hay Doctores}.
+	
+	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}
+	
 \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{El actor cancela la operación}
-	\UCpaso Continua en el paso \ref{tomar} de la trayectoria principal
-\end{UCtrayectoriaA}
-
-
-
+ 
 \subsection{Puntos de extensión}
+
+\UCExtensionPoint
+{El actor requiere registrar un nuevo doctor}
+{ Paso \ref{agregar} de la trayectoria principal}
+{\cdtIdRef{CUR 12}{Agregar Doctor}}
+
+
+\UCExtensionPoint
+{El actor requiere editar un doctor}
+{ Paso \ref{acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 13}{Editar Doctor}}
+ 
+ 
+\UCExtensionPoint
+{El actor requiere eliminar un doctor}
+{ Paso \ref{acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 14}{Eliminar Doctor}}
+

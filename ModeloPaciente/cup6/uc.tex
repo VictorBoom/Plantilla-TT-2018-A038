@@ -97,7 +97,7 @@
         \end{UClist}}
 	\UCitem{Salidas}{\begin{UClist} 
 			\UCli Contraseña.
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Datos personales} cuando se cambió la contraseña de manera exitosa.
+			
 	\end{UClist}}
 	\UCitem{Precondiciones}{Ninguna}
 	\UCitem{Postcondiciones}{
@@ -105,17 +105,19 @@
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RN}{Datos Requeridos}:Verifica que todos los datos requeridos sean proporcionados.
+            \cdtIdRef{RN9}{Datos Requeridos}:Verifica que todos los datos requeridos sean proporcionados.
             
-            \cdtIdRef{RN}{Formato de Contraseña Incorrecto}:Verifica que el correo electrónico cumpla con el formato correcto.
+            \cdtIdRef{RN10}{Formato de Contraseña Incorrecto}:Verifica que la contraseña cumpla con el formato correcto.
             
-            \cdtIdRef{RN}{Confirmación de Contraseña Incorrecta}: Verifica que la contraseña coincida con la confirmación de contraseña:
+            \cdtIdRef{RN11}{Confirmación de Contraseña Incorrecta}: Verifica que la contraseña coincida con la confirmación de contraseña:
     }
-	\UCitem{Errores}{
+	\UCitem{Mensajes}{
 	    \begin{UClist}
-	    \UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
-		\UCli \cdtIdRef {MSG}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
+	    	
+	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Datos personales} cuando se cambió la contraseña de manera exitosa.
+	    \UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
+		\UCli \cdtIdRef {MSG24}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
 		
 	    \end{UClist}
 	}
@@ -129,12 +131,12 @@
  	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar Contraseña} de la pantalla \textbf{Editar Datos Personales}.
  	\UCpaso Muestra la pantalla \textbf{Cambiar Contraseña}.
  	\UCpaso [\UCactor] Ingresa la Contraseña Anterior . \label{contra}
- 	\UCpaso [\UCactor] Ingresa la Contraseña Nueva 
+ 	\UCpaso [\UCactor] Ingresa la Contraseña Nueva.
  	\UCpaso [\UCactor]Ingresa la Confirmación de Contraseña.
  	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar contraseña} en la pantalla \textbf{Cambiar Contraseña}.
- 	\UCpaso Verifica que todos los datos requeridos sean proporcionados con base a la regla de negocio \cdtIdRef{RN}{Datos Requeridos}.
- 	\UCpaso Verifica que las contraseñas cumplan con el formato correcto con base en la regla de negocio \cdtIdRef{RN}{Formato de Contraseña Incorrecto}.
- 	\UCpaso Verifica que la contraseña nueva coincida con la confirmación de la contraseña con base a la regla de negocio \cdtIdRef{RN}{Confirmación de Contraseña Incorrecta}
+ 	\UCpaso Verifica que todos los datos requeridos sean proporcionados con base a la regla de negocio \cdtIdRef{RN9}{Datos Requeridos}.
+ 	\UCpaso Verifica que las contraseñas cumplan con el formato correcto con base en la regla de negocio \cdtIdRef{RN10}{Formato de Contraseña Incorrecto}.
+ 	\UCpaso Verifica que la contraseña nueva coincida con la confirmación de la contraseña con base a la regla de negocio \cdtIdRef{RN11}{Confirmación de Contraseña Incorrecta}
  	\UCpaso Cambia la contraseña del usuario.
  	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Editar Datos Personales}.
      
@@ -153,14 +155,14 @@
 \end{UCtrayectoriaA} 
 
 \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña con un formato incorrecto}
-	\UCpaso [\UCactor] Muestra el mensaje \cdtIdRef{MSG2}{Correo electrónico y/o contraseña incorrecto} indicando que la contraseña ingresada es incorrecta.
+	\UCpaso [\UCactor] Muestra el mensaje \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto} indicando que la contraseña ingresada es incorrecta.
 	\UCpaso Regresa al paso \ref{contra} de la Trayectoria Principal.
 	
 \end{UCtrayectoriaA} 
 
 
 \begin{UCtrayectoriaA}{D}{El actor ingresó una confirmación de contraseña que no coincide con la contraseña nueva.}
-	\UCpaso [\UCactor] Muestra el mensaje  \cdtIdRef {MSG}{Validación de contraseña incorrecta} indicando que la confirmación de contraseña ingresada no coincide con la nueva contraseña.
+	\UCpaso [\UCactor] Muestra el mensaje  \cdtIdRef {MSG24}{Validación de contraseña incorrecta} indicando que la confirmación de contraseña ingresada no coincide con la nueva contraseña.
 	\UCpaso Regresa al paso 4 de la Trayectoria Principal.
 	
 \end{UCtrayectoriaA} 

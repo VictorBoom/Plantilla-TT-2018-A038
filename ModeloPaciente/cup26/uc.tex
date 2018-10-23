@@ -1,13 +1,14 @@
-\begin{UseCase}{CUR 26}{Consultar Recordatorios}
+\begin{UseCase}{CUR 23}{Consultar Contacto de Emergencia}
     {
-    	Un paciente podrá consultar los recordatorios con los que cuente en ese momento, de esta manera podrá saber cuales son las medicinas mas próximas a tomar, saber su nombre y la dosis.
+    	
+    	Un contacto de emergencia es la persona a la cual se contactara cuando un \textbf{Paciente} no este realizando la toma de un medicamento que tenga una clasificación \textbf{Importante}, es por eso que un paciente podrá visualizar la información de los contactos de emergencia.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
-    \UCitem{Operación}{Consultar recordatorios}
-    \UCccitem{Prioridad}{Media}
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Consulta de Contactos de Emergencia}
+    \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -88,55 +89,59 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Cambiar la contraseña.}
-	\UCitem{Entradas}{
-        Ninguna
-    }
-	\UCitem{Salidas}{
-		\begin{UClist} 
-			\UCli Nombre del medicamento
-			\UCli Tratamiento al que pertenece el medicamento.
-			\UCli Numero de píldoras restantes.
-			\UCli Fecha de próxima toma
-		\end{UClist}
-}
-	\UCitem{Precondiciones}{Ninguna}
+	\UCitem{Propósito}{Consultar información}
+	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Salidas}{\begin{UClist} 
+			\UCli Imagen de perfil de contacto de emergencia.
+			\UCli Nombre del contacto de emergencia.
+			\UCli Teléfono del contacto de emergencia.
+			\UCli Correo electrónico del contacto de emergencia
+	\end{UClist} }
+	\UCitem{Precondiciones}{
+		{\bf Interna:} El paciente debe de tener contactos de emergencia.
+		}
 	\UCitem{Postcondiciones}{
 	    Ninguna.	
 	}
-    \UCitem{Reglas de negocio}{
-
-            Ninguna.
-    }
-	\UCitem{Errores}{
-	   
-	     \cdtIdRef{MSGX}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Gestión notificaciones} cuando el actor omitió un dato marcado como requerido.
-		
-	}
+    \UCitem{Reglas de negocio}{Ninguna.}
+	\UCitem{Errores}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
  \end{UseCase}
 
- \begin{UCtrayectoria}
- 	
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Recordatorios} en la pantalla \textbf{Gestión recordatorios}
- 	\UCpaso Verifica que haya recordatorios. \refTray{A}
- 	\UCpaso Obtiene el nombre del medicamento.
- 	\UCpaso Obtiene el tratamiento al que pertenece el tratamiento.
- 	\UCpaso Obtiene el numero de píldoras restantes.
- 	\UCpaso Obtiene el horario del recordatorio.
- 	\UCpaso Ordena los recordatorios según el horario del recordatorio.
- 	\UCpaso Muestra la pantalla \textbf{Consultar recordatorios}
- 	
-     
- \end{UCtrayectoria}
+\begin{UCtrayectoria}
+	
+	\UCpaso [\UCactor] Presiona el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Consultar Datos Personales}.
+	
+	\UCpaso Obtiene la foto de perfil de los contactos de emergencia.
+	
+	\UCpaso Obtiene el nombre de los contactos de emergencia.
+	
+	\UCpaso Obtiene el celular de los contactos de emergencia.
+	
+	\UCpaso Obtiene el correo electronico de los contactos de emergencia.
+	
+	\UCpaso Ordena los contactos de emergencia por orden alfabético.
+	
+	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
+	
+	
+	
+\end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no tiene recordatorios.}
- 	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay recordatorios}.
- 	\UCpaso Muestra la pantalla \textbf{Gestión de Recordatorios}.
-    
- \end{UCtrayectoriaA}
+ \begin{UCtrayectoriaA}{A}{El actor no tiene contactos de emergencia asociados a su cuenta.}
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay contactos de emergencia} en la pantalla \textbf{Contactos de Emergencia}.
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay contactos de emergencia}.
+	
+	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
+	
+\end{UCtrayectoriaA}
+ 
+\subsection{Puntos de extensión}
 
-
+\UCExtensionPoint
+{El actor requiere registrar un nuevo contacto de emergencia}
+{ Paso \ref{cur1:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUR 16}{Agregar Contactos de Emergencia}}
 

@@ -1,14 +1,13 @@
-\begin{UseCase}{CUR 24}{Eliminar Contacto de Emergencia}
+\begin{UseCase}{CUR 21}{Agregar Contacto de Emergencia}
     {
-    	Este caso de uso permite al \textbf{Paciente} eliminar un contacto de emergencia en caso de que el actor no quiera que se le siga notificando a ese contacto de emergencia cuando no consuma algún medicamento de alta importancia. 
-    	
+    	Este caso de uso permite al \textbf{Paciente} ingresar los datos de un nuevo contacto de emergencia para que éste pueda ser notificado en caso de que el actor no consuma algún medicamento de alta importancia.  
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Eliminar Contacto de Emergencia}
-    \UCccitem{Prioridad}{Alta}
+    \UCitem{Operación}{Agregar Contacto de Emergencia}
+    \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -89,18 +88,37 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Eliminar Contactos de Emergencia}
-	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Propósito}{Agregar Contactos de Emergencia}
+	\UCitem{Entradas}{
+        \begin{UClist} 
+           \UCli \textbf{Nombre}: \ioEscribir.
+           \UCli \textbf{Apellido Paterno}: \ioEscribir.
+           \UCli \textbf{Apellido Materno}: \ioEscribir.
+           \UCli \textbf{Teléfono}: \ioEscribir.
+           \UCli \textbf{Correo Electrónico}: \ioEscribir.
+        \end{UClist}}
 	\UCitem{Salidas}{\begin{UClist} 
-			\UCli \cdtIdRef{MSG}{Eliminar Elemento}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando el actor solicita eliminar un contacto de emergencia
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando se eliminó el contacto de emergencia de manera exitosa.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Contactos de Emergencia} cuando se agregó el contacto de emergencia de manera exitosa.
 	\end{UClist}}
 	\UCitem{Precondiciones}{Ninguna.}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Eliminará el contacto de emergencia de la cuenta del paciente.
+	    {\bf Interna:} Agregara al contacto de emergencia en la aplicación.
 	}
-    \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+    \UCitem{Reglas de negocio}{
+
+            
+            \cdtIdRef{RN}{Datos Requeridos}:Verifica que todos los datos requeridos, sean proporcionados.
+            
+            \cdtIdRef{RN}{Formato de Correo Electrónico}:Verifica que el correo electrónico cumpla con el formato correcto.
+    }
+	\UCitem{Errores}{
+	    \begin{UClist}
+	    	
+		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia} indicando que el correo electrónico y/o contraseña son incorrectos.
+		
+	    \end{UClist}
+	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -108,19 +126,36 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Contacto de Emergencia} asociado al contacto de emergencia que desea eliminar en la pantalla \textbf{Contactos de Emergencia}.
- 	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Eliminar Elemento} en la pantalla \textbf{Contactos de Emergencia}.
- 	\UCpaso [\UCactor] Confirma eliminar el contacto de emergencia a través del botón \textbf{Eliminar}.
- 	\UCpaso Elimina el contacto de emergencia de la aplicación.
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Agregar Contacto de Emergencia} de la pantalla \textbf{Contactos de Emergencia}.
+ 	\UCpaso Muestra la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+ 	\UCpaso [\UCactor] Ingresa el Nombre del contacto de emergencia. \label{datos}
+ 	\UCpaso [\UCactor] Ingresa el apellido paterno del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el apellido materno del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el telefono del contacto de emergencia.
+ 	\UCpaso [\UCactor] Ingresa el correo electronico del contacto de emergencia.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar}. \refTray{A}
+	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}. \refTray{B}
+	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.\refTray{C}
 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Contactos de Emergencia}.
     
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
-    \UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón \textbf{Cancelar} en el mensaje \cdtIdRef{MSG}{Eliminar Elemento}.
-   \UCpaso Muestra a la pantalla \textbf{Contactos de Emergencia}.
+    \UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón Cancelar en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+   \UCpaso Regresa a la pantalla \textbf{Contactos de Emergencia}.
  \end{UCtrayectoriaA}
  
+ \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+    \UCpaso[] Continúa con el paso \ref{datos} de la trayectoria principal.
+ \end{UCtrayectoriaA}
+ 
+ \begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia} indicando que el usuario y/o contraseña son incorrectos.
+    \UCpaso[] Continúa con el paso \ref{datos} de la trayectoria principal.
+ \end{UCtrayectoriaA} 
+
+
  
 
 

@@ -1,13 +1,12 @@
-\begin{UseCase}{CUR 23}{Consultar Contacto de Emergencia}
+\begin{UseCase}{CUR 20}{Eliminar Auxiliar}
     {
-    	
-    	Un contacto de emergencia es la persona a la cual se contactara cuando un \textbf{Paciente} no este realizando la toma de un medicamento que tenga una clasificación \textbf{Importante}, es por eso que un paciente podrá visualizar la información de los contactos de emergencia.
+    	Este caso de uso permite al \textbf{Paciente} eliminar un auxiliar en caso de que el actor ya no necesite un auxiliar que lo esté apoyando con el proceso de su tratamiento médico. 
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Daniel Josue Fuentes Hernández}
     \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Consulta de Contactos de Emergencia}
+    \UCitem{Operación}{Eliminar Auxiliar}
     \UCccitem{Prioridad}{Baja}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,22 +88,20 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Consultar información}
+	\UCitem{Propósito}{Eliminar auxiliar.}
 	\UCitem{Entradas}{Ninguna.}
 	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Imagen de perfil de contacto de emergencia.
-			\UCli Nombre del contacto de emergencia.
-			\UCli Teléfono del contacto de emergencia.
-			\UCli Correo electrónico del contacto de emergencia
-	\end{UClist} }
+			\UCli \cdtIdRef{MSG}{Eliminar Elemento}: Se muestra en la pantalla \textbf{Auxiliares} cuando el actor solicita eliminar un auxiliar.
+			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se eliminó el auxiliar de manera exitosa.
+	\end{UClist}}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El paciente debe de tener contactos de emergencia.
-		}
+		{\bf Interna:} Debe de existir un auxiliar agregado al paciente.
+	}
 	\UCitem{Postcondiciones}{
-	    Ninguna.	
+	    {\bf Interna:} Eliminará el auxiliar de la cuenta del paciente.	
 	}
     \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+	\UCitem{Errores}{Ninguno}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -112,36 +109,17 @@
 
 \begin{UCtrayectoria}
 	
-	\UCpaso [\UCactor] Presiona el icono \textbf{Contactos de Emergencia} en la pantalla \textbf{Consultar Datos Personales}.
-	
-	\UCpaso Obtiene la foto de perfil de los contactos de emergencia.
-	
-	\UCpaso Obtiene el nombre de los contactos de emergencia.
-	
-	\UCpaso Obtiene el celular de los contactos de emergencia.
-	
-	\UCpaso Obtiene el correo electronico de los contactos de emergencia.
-	
-	\UCpaso Ordena los contactos de emergencia por orden alfabético.
-	
-	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
-	
-	
+	\UCpaso [\UCactor] Presiona el ícono \textbf{Eliminar Auxiliar} asociado al Auxiliar que desea eliminar en la pantalla \textbf{Consulta de Auxiliares}.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Eliminar Elemento} en la pantalla \textbf{Auxiliares}.
+	\UCpaso [\UCactor] Confirma eliminar el auxiliar a través del botón \textbf{Eliminar}. \refTray{A}
+	\UCpaso Elimina el auxiliar de la aplicación.
+	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Auxiliares}.
 	
 \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no tiene contactos de emergencia asociados a su cuenta.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{No hay contactos de emergencia} en la pantalla \textbf{Contactos de Emergencia}.
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje {MSG} {No hay contactos de emergencia}.
-	
-	\UCpaso Muestra la pantalla \textbf{Contactos de Emergencia}.
-	
+\begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
+	\UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón \textbf{Cancelar} en el mensaje \cdtIdRef{MSG}{Eliminar Elemento}.
+	\UCpaso Muestra a la pantalla \textbf{Auxiliares}.
 \end{UCtrayectoriaA}
- 
-\subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere registrar un nuevo contacto de emergencia}
-{ Paso \ref{cur1:Acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 16}{Agregar Contactos de Emergencia}}
 

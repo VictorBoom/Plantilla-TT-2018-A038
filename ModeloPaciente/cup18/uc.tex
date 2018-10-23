@@ -1,13 +1,13 @@
-\begin{UseCase}{CUR 18}{Editar Auxiliar}
+\begin{UseCase}{CUR 26}{Consultar Recordatorios}
     {
-    	Este caso de uso permite al \textbf{Paciente} editar los datos de un Auxiliar en caso de que haya registrado un dato incorrecto o desee actualizar su teléfono o correo electrónico.
+    	Un paciente podrá consultar los recordatorios con los que cuente en ese momento, de esta manera podrá saber cuales son las medicinas mas próximas a tomar, saber su nombre y la dosis.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
-    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Editar Auxiliar}
-    \UCccitem{Prioridad}{Baja}
+    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernández}
+    \UCitem{Operación}{Consultar recordatorios}
+    \UCccitem{Prioridad}{Media}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -88,42 +88,30 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Editar Auxiliar.}
+	\UCitem{Propósito}{Cambiar la contraseña.}
 	\UCitem{Entradas}{
-        \begin{UClist} 
-        	\UCli \textbf{Nombre}: \ioEscribir.
-        	\UCli \textbf{Apellido Paterno}: \ioEscribir.
-        	\UCli \textbf{Apellido Materno}: \ioEscribir.
-        	\UCli \textbf{Teléfono}: \ioEscribir.
-        	\UCli \textbf{Correo Electrónico}: \ioEscribir.
-        	\UCli \textbf{Tratamientos}: Se seleccionan de una lista de checkbox.
-    \end{UClist}}
-	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Nombre del auxiliar.
-			\UCli Apellido paterno del auxiliar.
-			\UCli Apellido materno del auxiliar.
-			\UCli Teléfono del auxiliar.
-			\UCli Correo electrónico del auxiliar.
-			\UCli Tratamientos de los que se encarga el auxiliar.
-			\UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Auxiliares} cuando se agregó el auxiliar de manera exitosa.
-	\end{UClist}}
-	\UCitem{Precondiciones}{Ninguna.}
+        Ninguna
+    }
+	\UCitem{Salidas}{
+		\begin{UClist} 
+			\UCli Nombre del medicamento
+			\UCli Tratamiento al que pertenece el medicamento.
+			\UCli Numero de píldoras restantes.
+			\UCli Fecha de próxima toma
+		\end{UClist}
+}
+	\UCitem{Precondiciones}{Ninguna}
 	\UCitem{Postcondiciones}{
-	     {\bf Interna:} Actualizara los datos del Auxiliar en la aplicación.	
+	    Ninguna.	
 	}
     \UCitem{Reglas de negocio}{
 
-            \cdtIdRef{RN}{Datos Requeridos}:Verifica que todos los datos requeridos, sean proporcionados.
-            
-            \cdtIdRef{RN}{Formato de Correo Electrónico}:Verifica que el correo electrónico cumpla con el formato correcto.
+            Ninguna.
     }
 	\UCitem{Errores}{
-	    \begin{UClist}
-	    
-	    \UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Editar Auxiliar} cuando el actor omitió un dato marcado como requerido.
-	    \UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Editar Auxiliar} indicando que el correo electrónico y/o contraseña son incorrectos.
+	   
+	     \cdtIdRef{MSGX}{No se pudieron obtener los datos}: Se muestra en la pantalla \textbf{Gestión notificaciones} cuando el actor omitió un dato marcado como requerido.
 		
-	    \end{UClist}
 	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
@@ -132,28 +120,23 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el ícono \textbf{Editar Auxiliar} asociado al auxiliar que desea editar en la pantalla \textbf{Auxiliares}.
- 	\UCpaso Muestra la pantalla \textbf{Editar Auxiliar}.
- 	\UCpaso [\UCactor] Edita la información que deseas editar en la pantalla \textbf{Editar Auxiliar}.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Aceptar}.
- 	\UCpaso Verifica que no haga falta ningún dato requerido con base a la regla de negocio \textbf{RN Datos Requeridos}.
- 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base a la regla de negocio \textbf{RN Formato de Correo Electrónico}.
- 	\UCpaso Actualiza los datos del auxiliar que fueron editados.
- 	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Auxiliares}.
- 	   
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Consultar Recordatorios} en la pantalla \textbf{Gestión recordatorios}
+ 	\UCpaso Verifica que haya recordatorios. \refTray{A}
+ 	\UCpaso Obtiene el nombre del medicamento.
+ 	\UCpaso Obtiene el tratamiento al que pertenece el tratamiento.
+ 	\UCpaso Obtiene el numero de píldoras restantes.
+ 	\UCpaso Obtiene el horario del recordatorio.
+ 	\UCpaso Ordena los recordatorios según el horario del recordatorio.
+ 	\UCpaso Muestra la pantalla \textbf{Consultar recordatorios}
+ 	
+     
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
-	\UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón Cancelar en la pantalla \textbf{Editar Auxiliar}.
-	\UCpaso Regresa a la pantalla \textbf{Auxiliares}.
-\end{UCtrayectoriaA}
+ \begin{UCtrayectoriaA}{A}{El actor no tiene recordatorios.}
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay recordatorios}.
+ 	\UCpaso Muestra la pantalla \textbf{Gestión de Recordatorios}.
+    
+ \end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Falta un dato requerido para efectuar la operaciónn solicitada} en la pantalla \textbf{Editar Auxiliar}.
-	\UCpaso Continúa con el paso 3 de la trayectoria principal.
-\end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{C}{El actor ingresó un correo electrónico y/o contraseña con un formato incorrecto.}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG}{Correo electrónico y/o contraseña incorrecta} en la pantalla \textbf{Editar Auxiliar} indicando que el usuario y/o contraseña son incorrectos.
-	\UCpaso Continúa con el paso 3 de la trayectoria principal.
-\end{UCtrayectoriaA} 
+

@@ -1,12 +1,15 @@
-\begin{UseCase}{CUR 7}{Consultar Información de Tratamiento}
+\begin{UseCase}{CUP7}{Consultar Tratamiento}
     {
-    	Un paciente podra consultar la informacion de un tratamiento que se encuentre en estado activo, en donde se mostrara el doctor que lo expidió, la fecha en que se expidió, el estado y una vista de las semanas en que ese tratamiento ha estado en función.
+    	
+    	Un paciente tendrá una lista con todos sus tratamientos, tanto los que están en estado activo, incompleto, interrumpido y terminado. De esta manera sabrá cuantos y cuáles son sus tratamientos, su estado y la información de estos, como nombre de tratamiento, doctor que expidió, fecha de expedición y número de medicamentos
+    	
+    	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
-    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Consulta de información de tratamiento}
+    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCitem{Operación}{Consulta de Tratamiento}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -88,26 +91,32 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Consultar la Información de los tratamientos}
-	\UCitem{Entradas}{Ninguna.}
+	\UCitem{Propósito}{Consultar tratamientos.}
+	\UCitem{Entradas}{
+        Ninguna.
+    }
 	\UCitem{Salidas}{
 		\begin{UClist}
-			\UCli Nombre del tratamiento
-			\UCli Fecha de expedición.
+			\UCli Nombre de tratamiento.
+			\UCli Nombre de doctor que expidió el tratamiento
+			\UCli Fecha en que se expidió el tratamiento.
 			\UCli Estado del tratamiento.
-			\UCli Semana en la que se encuentra.
-			\UCli Medicamentos del tratamiento
-			\UCli Tratamientos previamente registrados.
+			\UCli Número de medicamentos del tratamiento.
 		\end{UClist}
 	}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} Que exista el tratamiento al que se esta accediendo.
-		{\bf Interna:} Que el tratamiento al que se esta accediendo este en estado activo.
-		
+		{\bf Interna:} El actor debe estár registrado en el sistema.
+		{\bf Interna:} El actor debe tener al menos un tratamiento agregado.
+		}
+	\UCitem{Postcondiciones}{
+	    {\bf Interna:} El actor podrá consultar la información completa del tratamiento.	
 	}
-	\UCitem{Postcondiciones}{Ninguna.}
-    \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+    \UCitem{Reglas de negocio}{
+    	Ninguna.
+    }
+	\UCitem{Mensajes}{
+		Ninguno.
+	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -115,18 +124,47 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Selecciona un \textbf{Tratamiento} con estado \textbf{Activo} de la pantalla \textbf{Consulta Tratamientos}.
- 	\UCpaso	Obtiene el nombre del tratamiento.
- 	\UCpaso	Obtiene el nombre del doctor que expidió el tratamiento.
- 	\UCpaso	Obtiene la fecha de expedición del tratamiento.
- 	\UCpaso	Obtiene el estado del tratamiento. 
- 	\UCpaso	Obtiene los medicamentos que contiene ese tratamiento.
- 	\UCpaso	Muestra la pantalla \textbf{Consultar información de Tratamiento}.
- 	    
+ 	\UCpaso [\UCactor] Da clic sobre el ícono \textbf{Tratamientos} en la pantalla \textbf{Menú Principal}.
+ 	
+ 	\UCpaso Muestra la pantalla Tratamientos. 
+ 	
+ 	\UCpaso [\UCactor] Da clic sobre el ícono \textbf{Consultar Tratamientos} en la pantalla \textbf{Tratamientos}.
+ 	
+ 	\UCpaso Obtiene el nombre del tratamiento.
+ 	
+ 	\UCpaso Obtiene el nombre del doctor que expidió el tratamiento
+ 	
+ 	\UCpaso Obtiene la fecha de expedición del tratamiento.
+ 	
+ 	\UCpaso Obtiene el estado del tratamiento.
+ 	
+ 	\UCpaso Obtiene el número de medicamentos.
+ 	
+ 	\UCpaso Muestra la pantalla \textbf{Consultar Tratamientos}.\refTray{A}
+ 	
+ 	\UCpaso Muestra primero los tratamientos activos, le siguen los incompletos, después los interrumpidos y al final los completados.\label{cup6:Acciones}
+ 	
+    
  \end{UCtrayectoria}
 
+ \begin{UCtrayectoriaA}{A}{El actor no cuenta con un tratamiento.}
+ 	\UCpaso Muestra el mensaje \cdtIdRef{MSG9}{No hay tratamientos} en la pantalla \textbf{Tratamientos}
+ 	
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar Nuevo Tratamiento} del mensaje. \refTray{B}
+
+   	\UCpaso Extiende al caso de uso \textbf{C8: Agregar Tratamiento}.
+ \end{UCtrayectoriaA}
+ 
+
+ 
+ 
+\subsection{Puntos de extensión}
 
 
+\UCExtensionPoint
+{El actor requiere editar un tratamiento}
+{ Paso \ref{cur6:Acciones} de la trayectoria principal}
+{\cdtIdRef{CUP7 }{Editar Tratamiento}}
 
  
 

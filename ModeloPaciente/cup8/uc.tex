@@ -1,13 +1,12 @@
-\begin{UseCase}{CUR 8}{Editar Tratamiento}
+\begin{UseCase}{CUP8}{Consultar Información de Tratamiento}
     {
-    	Un tratamiento en estado \textbf{Incompleto} le muestra al paciente que hace falta que se le agreguen medicinas para que este completo y pueda pasar a estado \textbf{Activo}.
-    	
+    	Un paciente podrá consultar la información de un tratamiento que se encuentre en estado activo, en donde se mostrará el doctor que lo expidió, la fecha en que se expidió, el estado y una vista de las semanas en que ese tratamiento ha estado en función.
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
-    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Editar Tratamiento }
+    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
+    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
+    \UCitem{Operación}{Consulta de información de tratamiento}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
@@ -89,22 +88,26 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Editar tratamiento.}
+	\UCitem{Propósito}{Consultar la Información de los tratamientos}
 	\UCitem{Entradas}{Ninguna.}
-	\UCitem{Salidas}{Ninguna.}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli Nombre del tratamiento
+			\UCli Fecha de expedición.
+			\UCli Estado del tratamiento.
+			\UCli Semana en la que se encuentra.
+			\UCli Medicamentos del tratamiento
+			\UCli Tratamientos previamente registrados.
+		\end{UClist}
+	}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El tratamiento debe de estar en estado \textbf{Incompleto}.
-		}
-	\UCitem{Postcondiciones}{
-	    {\bf Interna:} El actor podrá agregar medicamentos a su tratamiento.	
+		{\bf Interna:} Que exista el tratamiento al que se está accediendo.
+		{\bf Interna:} Que el tratamiento al que se está accediendo esté en estado activo.
+		
 	}
-    \UCitem{Reglas de negocio}{
-
-            Ninguna
-    }
-	\UCitem{Errores}{
-	    Ninguno
-	}
+	\UCitem{Postcondiciones}{Ninguna.}
+    \UCitem{Reglas de negocio}{Ninguna.}
+	\UCitem{Mensajes}{Ninguno.}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -112,26 +115,17 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Selecciona un \textbf{Tratamiento} con estado \textbf{Incompleto} de la pantalla \textbf{Consulta Tratamientos}.
+ 	\UCpaso [\UCactor] Selecciona un \textbf{Tratamiento} con estado \textbf{Activo} de la pantalla \textbf{Consulta Tratamientos}.
  	\UCpaso	Obtiene el nombre del tratamiento.
  	\UCpaso	Obtiene el nombre del doctor que expidió el tratamiento.
  	\UCpaso	Obtiene la fecha de expedición del tratamiento.
  	\UCpaso	Obtiene el estado del tratamiento. 
  	\UCpaso	Obtiene los medicamentos que contiene ese tratamiento.
- 	\UCpaso Obtiene los medicamentos que hacen falta en el tratamiento.
- 	\UCpaso	Muestra la pantalla \textbf{Consultar información de Tratamiento}.\label{cur10:medicamentos}
-    
+ 	\UCpaso	Muestra la pantalla \textbf{Consultar información de Tratamiento}.
+ 	    
  \end{UCtrayectoria}
 
 
-
- 
-\subsection{Puntos de extensión}
-
-\UCExtensionPoint
-{El actor requiere agregar un medicamento}
-{ Paso \ref{cur10:medicamentos} de la trayectoria principal}
-{\cdtIdRef{CUP10}{Agregar Medicamento}}
 
 
  

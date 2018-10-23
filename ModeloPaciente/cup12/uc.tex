@@ -1,14 +1,16 @@
-\begin{UseCase}{CUR 12}{Editar Doctor}
+\begin{UseCase}{CUR 11}{Agregar Doctor}
     {
-    	Un paciente al momento de hacer el registro de un doctor, puede llegar a equivocarse en los datos personales del doctor o quiera agregar un dato extra, es por eso que el usuario debe de contar con una herramienta que le permita editar a los doctores que están a cargo de sus tratamientos
+
     	
+    	Un doctor es quien esta acargo de un tratamiento, es por eso que es importante agregar al o a los doctores que estarán llevando los tratamientos médicos de un paciente.
+   	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
     \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
     \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
-    \UCitem{Operación}{Editar Doctor}
-    \UCccitem{Prioridad}{Media}
+    \UCitem{Operación}{Agregar Doctor}
+    \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
@@ -89,32 +91,32 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Editar un doctor.}
+	\UCitem{Propósito}{Agregar un Doctor.}
 	\UCitem{Entradas}{
-        \begin{UClist}
-        	 
-          \UCli \textbf{Nombre}: \ioEscribir.
-          \UCli \textbf{Apellido Paterno}: \ioEscribir.
-          \UCli \textbf{Apellido Materno}: \ioEscribir.
-          \UCli \textbf{Correo electrónico}: \ioEscribir
-          
+        \begin{UClist} 
+           \UCli \textbf{Nombre}: \ioEscribir.
+           \UCli \textbf{Apellido Paterno}: \ioEscribir.
+           \UCli \textbf{Apellido Materno}: \ioEscribir.
+           \UCli \textbf{Numero de Cédula profesional}: \ioEscribir
+           \UCli \textbf{Correo electrónico}: \ioEscribir
         \end{UClist}}
 	\UCitem{Salidas}{Ninguna.}
 	\UCitem{Precondiciones}{
-		{\bf Interna:} El doctor debe existir en el sistema.
+		Ninguna.
 		}
 	\UCitem{Postcondiciones}{
-	    {\bf Interna:} Los datos del doctor se actualizaran.	
+	    {\bf Interna:} El doctor podrá ser asociado a un tratamiento.	
 	}
     \UCitem{Reglas de negocio}{
 
             \cdtIdRef{RN1}{Información correcta}: Verifica que la información introducida sea correcta.
+            \cdtIdRef{RNX}{Doctor existente}: Verifica que el doctor que se quiere agregar ya exista en la aplicación.
     }
 	\UCitem{Errores}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
 		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-
+		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
 		
 	    \end{UClist}
 	}
@@ -125,29 +127,55 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Consultar Doctor}.
- 	\UCpaso Obtiene los doctores ya registrados en la aplicación.
- 	\UCpaso Ordena a los doctores por su nombre de manera ascendente.
- 	\UCpaso Muestra la pantalla \textbf{Consulta de doctores}.
- 	\UCpaso [\UCactor] Presiona el icono \textbf{Editar}
- 	\UCpaso Muestra una pantalla emergente con los datos del doctor.
- 	\UCpaso [\UCactor] Modifica los datos del doctor que requiere.
- 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Guardar cambios}.
- 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{A}
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Agregar Doctor} de la pantalla \textbf{Gestion Doctores}\refTray{A}
+ 	\UCpaso [\UCactor] Ingresa el Numero de Cedula Profesional. \label{doctor}
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar nuevo doctor}
+ 	\UCpaso Muestra la cedula profesional ingresada en el paso \ref{doctor}.
+ 	\UCpaso [\UCactor] Ingresa el nombre del doctor.
+ 	\UCpaso [\UCactor] Ingresa el apellido paterno.
+ 	\UCpaso [\UCactor] Ingresa el apellido materno.
+ 	\UCpaso [\UCactor] Presiona el boton \cdtButton{Agregar nuevo doctor}.
+ 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{B}
+ 	\UCpaso [\UCsist] Verifica que no exista el doctor que se quiere agregar como lo indica la regla de negocio \cdtIdRef{RN-SX}{Doctor existente}. \refTray{C}
  	
+ 	
+ 	
+
  	
     
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
+ \begin{UCtrayectoriaA}{A}{Se quiere agregar el doctor desde la pantalla \textbf{Agregar Nuevo Tratamiento.}}
+	\UCpaso [\UCactor] Presiona el icono \textbf{Agregar Doctor} de la pantalla \textbf{Agregar nuevo tratamiento}
+	\UCpaso [\UCactor] Ingresa el Numero de Cedula Profesional. \label{doctor}
+	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar nuevo doctor}
+	\UCpaso Muestra la cedula profesional ingresada en el paso \ref{doctor}.
+	\UCpaso [\UCactor] Ingresa el nombre del doctor.
+	\UCpaso [\UCactor] Ingresa el apellido paterno.
+	\UCpaso [\UCactor] Ingresa el apellido materno.
+	\UCpaso [\UCactor] Presiona el boton \cdtButton{Agregar nuevo doctor}.
+	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN-S1}{Información correcta}. \refTray{B}
+	\UCpaso [\UCsist] Verifica que no exista el doctor que se quiere agregar como lo indica la regla de negocio \cdtIdRef{RN-SX}{Doctor existente}. \refTray{C}
+	\UCpaso Extiende al caso de uso \cdtIdRef{CUR9}{Agregar Tratamiento}
+\end{UCtrayectoriaA}
+
+
+ \begin{UCtrayectoriaA}{B}{El actor no ingresó alguno de los datos requeridos.}
     \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
    \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
+ \begin{UCtrayectoriaA}{C}{El doctor que se quiere registrar ya existe.}
+ 	
+ 	
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSGX}{Doctor existente} en la pantalla \textbf{Agregar Doctor}.
+    \UCpaso Continúa con el paso \ref{doctor}.
+ \end{UCtrayectoriaA}
 
 
  
 \subsection{Puntos de extensión}
 
 
+ 
 

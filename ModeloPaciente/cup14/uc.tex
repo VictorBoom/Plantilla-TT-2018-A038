@@ -1,19 +1,19 @@
-\begin{UseCase}{CUR 14}{Consultar Doctor}
+\begin{UseCase}{CUR 13}{Eliminar Doctor}
     {
-    	Un paciente contara con la facultad de consultar los doctores que son o fueron responsables de sus tratamientos y asi poder tener un conocimiento de estos. 
+    	Este caso de uso permite al actor ingresar a la aplicación, de esta manera podrá desempeñar las acciones correspondientes a su rol.
     	
     }
     \UCitem{Versión}{1.0}
     \UCccsection{Paciente}
-    \UCitem{Autor}{Daniel Josue Fuentes Hernández}
-    \UCccitem{Evaluador}{Victor Arquimedes Estrada Machuca}
-    \UCitem{Operación}{Consulta de doctor}
+    \UCitem{Autor}{Victor Arquimedes Estrada Machuca}
+    \UCccitem{Evaluador}{Daniel Josue Fuentes Hernandez}
+    \UCitem{Operación}{Inició de Sesión}
     \UCccitem{Prioridad}{Alta}
     \UCccitem{Complejidad}{Baja}
     \UCccitem{Volatilidad}{Baja}
     \UCccitem{Madurez}{Alta}
     \UCitem{Estatus}{Terminado}
-    \UCitem{Fecha del último estatus}{16 de Octubre del 2018}
+    \UCitem{Fecha del último estatus}{05 de Octubre del 2018}
 
 %% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
 %% Esta sección la debe llenar solo el Revisor
@@ -89,20 +89,29 @@
 
 	\UCsection{Atributos}
 	\UCitem{Actor}{\textbf{Paciente}}
-	\UCitem{Propósito}{Consultar los doctores que se tienen asociados a la cuenta del Paciente.}
-	\UCitem{Entradas}{Ninguna.}
-	\UCitem{Salidas}{\begin{UClist} 
-			\UCli Nombre de doctor.
-			\UCli Nombre de tratamiento del que es responsable.
-		\end{UClist}}
+	\UCitem{Propósito}{Acceder al sistema.}
+	\UCitem{Entradas}{
+        Ninguna
+   }
+	\UCitem{Salidas}{Ninguna.}
 	\UCitem{Precondiciones}{
-		Ninguna.
+		{\bf Interna:} El doctor debe estar registrado en el sistema.
 		}
 	\UCitem{Postcondiciones}{
-		Ninguna.
+	    {\bf Interna:} Los tratamientos de los cuales el doctor era el responsable, pasaran a estado \textbf{Incompleto}.	
 	}
-    \UCitem{Reglas de negocio}{Ninguna.}
-	\UCitem{Errores}{Ninguno.}
+    \UCitem{Reglas de negocio}{
+
+            Ninguna.
+    }
+	\UCitem{Errores}{
+	    \begin{UClist}
+	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inicio la sesión de manera exitosa.	
+		\UCli \cdtIdRef{MSG1}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+		
+	    \end{UClist}
+	}
 	\UCitem{Tipo}{Primario.}
 	\UCitem{Fuente}{
 	}
@@ -110,60 +119,32 @@
 
  \begin{UCtrayectoria}
  	
-	 \UCpaso [\UCactor] Presiona el icono \textbf{Consultar Doctores} en la pantalla \textbf{Gestión Doctor}.
-	 
-	 \UCpaso Verifica que el paciente cuente con doctores agregados a su usuario.\refTray{A}
-	 
-	 \UCpaso Obtiene el nombre de los doctores registrados en la aplicación.
-	 
-	 \UCpaso Obtiene la fotografía de los doctores.
-	 
-	 \UCpaso Obtiene los tratamientos que expidieron los doctores.
-	 
-	 \UCpaso Ordena a los doctores por su nombre de manera ascendente.
-	 
-	 \UCpaso Muestra la pantalla \textbf{Consultar Doctor}. \label{acciones}
-	 
-	 
-   
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Consultar Doctor}.
+ 	\UCpaso Obtiene los doctores ya registrados en la aplicación.
+ 	\UCpaso Ordena a los doctores por su nombre de manera ascendente.
+ 	\UCpaso Muestra la pantalla \textbf{Consulta de doctores}. \label{cancelar}
+ 	\UCpaso [\UCactor] Presiona el icono \textbf{Eliminar}.
+ 	\UCpaso Muestra el mensaje \textbf{MSGX}{Eliminar Doctor}.
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Eliminar}.\refTray{A}
+ 	\UCpaso Muestra el mensaje \textbf{MSGX}{Tratamiento pasaran a estado incompleto}
+ 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar}.\refTray{A}
+ 	\UCpaso Pasa los tratamientos que tenia el doctor a su cargo a estado \textbf{Incompleto}
+ 	\UCpaso Elimina al doctor de la lista de doctores del paciente.
+ 	\UCpaso Muestra el mensaje \textbf{MSG1}{Operacion correcta} en la pantalla \textbf{Consultar Doctor} 	
+ 	
+    
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}{A}{El actor no tiene doctores asociados a su cuenta.}
-    
-   	\UCpaso Muestra el mensaje \cdtIdRef{MSGX}{No hay Doctores} en la pantalla \textbf{Gestión Doctor}.
-    
-    \UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar doctor} del mensaje {MSG}{No hay Doctores}. \refTray{B} 
-    
-    \UCpaso Extiende al caso de uso \cdtIdRef{CU12}{Agregar doctor}. \label{agregar}
-   
+ \begin{UCtrayectoriaA}{A}{El actor no quiere eliminar al doctor.}
+    \UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar}.
+    \UCpaso Continúa con el paso \ref{cancelar} de la trayectoria principal
+ \end{UCtrayectoriaA}
  
-\end{UCtrayectoriaA}
 
-\begin{UCtrayectoriaA}{B}{El actor no quiere agregar un doctor}
-	
-	\UCpaso [\UCactor] Presiona el botón \cdtButton{Cancelar} del mensaje {MSG}{No hay Doctores}.
-	
-	\UCpaso Muestra la pantalla \textbf{Gestión Doctor}
-	
-\end{UCtrayectoriaA}
+
 
  
 \subsection{Puntos de extensión}
 
-\UCExtensionPoint
-{El actor requiere registrar un nuevo doctor}
-{ Paso \ref{agregar} de la trayectoria principal}
-{\cdtIdRef{CUR 12}{Agregar Doctor}}
-
-
-\UCExtensionPoint
-{El actor requiere editar un doctor}
-{ Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 13}{Editar Doctor}}
  
- 
-\UCExtensionPoint
-{El actor requiere eliminar un doctor}
-{ Paso \ref{acciones} de la trayectoria principal}
-{\cdtIdRef{CUR 14}{Eliminar Doctor}}
 
