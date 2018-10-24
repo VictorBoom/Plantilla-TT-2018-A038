@@ -1,25 +1,25 @@
-\subsection{IUR 1 Iniciar sesión}
+\subsection{IUP2 Recuperar Contraseña}
  
 \subsubsection{Objetivo}
 
-    Esta pantalla permite al actor \cdtRef{actor:usuarioEscuela}{Coordinador del programa} iniciar sesión en el sistema, recuperar la contraseña de acceso al sistema o registrarse para formar parte del mismo.
+    Esta pantalla permite al actor solicitar el envio de su contraseña a su correo para poder recuperar la contraseña de acceso al sistema y/o cambiarla si así lo desea.
 
 \subsubsection{Diseño}
 
-    En la figura~\ref{IUR 1} se muestra la pantalla ``Iniciar sesión'', por medio de la cual se podrá acceder al sistema. \\
-
-    \IUfig[1]{pantallas/registro/IUR1}{IUR 1}{Iniciar sesión}
+    En la figura~\ref{IUP2} se muestra la pantalla ``Recuperar Contraseña'', por medio de la cual se podrá recuperar su contraseña de acceso al sistema. \\
+	\newpage
+    \IUfig[.3]{pantallas/recuperarContrasena}{IUP2}{Recuperar Contraseña}
 
 \subsubsection{Comandos}
 \begin{itemize}
-    \item \cdtButton{Aceptar}: Permite al actor ingresar al sistema, dirige a la pantalla de Bienvenida que se muestra en la figura \ref{fig:inicio}.
-    \item \cdtButton{Recuperar contraseña}: Permite al actor solicitar el envío de su contraseña a su correo, dirige a la pantalla \cdtIdRef{IUR 2}{Recuperar contraseña}.
-    \item \cdtButton{Inscribirse al programa}: Se utiliza solicitar la inscripción de una escuela para formar parte del programa, dirige a la pantalla \cdtIdRef{IUR 3}{Solicitar preinscripción}.
+    \item \cdtButton{Regresar}: Permite al actor regresar a la pantalla de Iniciar Sesión que se muestra en la figura \ref{IUP1}.
+    \item \cdtButton{Recuperar Contraseña}: Permite al actor solicitar el envío de su contraseña a su correo.
+  
 \end{itemize}
 
 \subsubsection{Mensajes}
 
 \begin{description}
-    \item[\cdtIdRef{MSG5}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} cuando el actor omitió un dato marcado como requerido.
-    \item[\cdtIdRef{MSG22}{Nombre de usuario y/o contraseña incorrecto}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} indicando que el nombre de usuario y/o contraseña son incorrectos.
+    \item[\cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUP1}{Recuperar Contraseña} cuando el actor omitió un dato marcado como requerido.
+    \item[\cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}:] Se muestra en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña} indicando que el correo electrónico es incorrecto.
 \end{description}

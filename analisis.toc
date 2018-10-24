@@ -136,6 +136,22 @@
 \contentsline {subsection}{\numberline {3.27.1}Resumen}{101}{subsection.3.27.1}
 \contentsline {subsection}{\numberline {3.27.2}Descripci\IeC {\'o}n}{101}{subsection.3.27.2}
 \contentsline {subsection}{\numberline {3.27.3}Trayectorias del caso de uso}{102}{subsection.3.27.3}
-\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n y Trabajo a Futuro (Trabajo Terminal 2) }{103}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusi\IeC {\'o}n}{103}{section.4.1}
-\contentsline {section}{\numberline {4.2}Trabajo a Futuro}{103}{section.4.2}
+\contentsline {section}{\numberline {3.28}Interfaces del sistema}{103}{section.3.28}
+\contentsline {subsection}{\numberline {3.28.1}IUP 1 Iniciar sesi\IeC {\'o}n}{103}{subsection.3.28.1}
+\contentsline {subsubsection}{Objetivo}{103}{section*.6}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{103}{section*.7}
+\contentsline {subsubsection}{Comandos}{103}{section*.8}
+\contentsline {subsubsection}{Mensajes}{104}{section*.9}
+\contentsline {subsection}{\numberline {3.28.2}IUP2 Recuperar Contrase\IeC {\~n}a}{104}{subsection.3.28.2}
+\contentsline {subsubsection}{Objetivo}{104}{section*.10}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{104}{section*.11}
+\contentsline {subsubsection}{Comandos}{105}{section*.12}
+\contentsline {subsubsection}{Mensajes}{105}{section*.13}
+\contentsline {subsection}{\numberline {3.28.3}IUP3 Registro de Cuenta}{106}{subsection.3.28.3}
+\contentsline {subsubsection}{Objetivo}{106}{section*.14}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.15}
+\contentsline {subsubsection}{Comandos}{106}{section*.16}
+\contentsline {subsubsection}{Mensajes}{108}{section*.17}
+\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n y Trabajo a Futuro (Trabajo Terminal 2) }{109}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusi\IeC {\'o}n}{109}{section.4.1}
+\contentsline {section}{\numberline {4.2}Trabajo a Futuro}{109}{section.4.2}
