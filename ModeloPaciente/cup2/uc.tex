@@ -110,8 +110,8 @@
 	    \begin{UClist}
 	    	
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando se mando el correo para recuperar la contraseña.
-		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Recuperar contraseña} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG4}{Correo electrónico no existente}: Se muestra en la pantalla \textbf{Recuperar contraseña} indicando que el correo electrónico ingresado no existe.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG4}{Correo electrónico no existente}: Se muestra en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña} indicando que el correo electrónico ingresado no existe.
 		
 	    \end{UClist}
 	}
@@ -125,24 +125,24 @@
  	
  	
  	\UCpaso [\UCactor] Presiona el hipervinculo \underline{Olvidaste tu contraseña} de la pantalla \textbf{Iniciar sesión}.
- 	\UCpaso Muestra la pantalla \textbf{Recuperar contraseña}.
+ 	\UCpaso Muestra la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña}.
  	\UCpaso [\UCactor] Ingresa el correo electrónico. \label{cur2:correo}
  	\UCpaso [\UCactor] Presiona el botón \cdtButton{Recuperar contraseña}.
 	\UCpaso [\UCsist] Verifica que los datos ingresados por el usuario sean correctos como lo indica la regla de negocio \cdtIdRef{RN1}{Información correcta}. \refTray{A}
 	\UCpaso[\UCsist] Verifica que exista un usuario con el correo ingresado, tomando en cuenta la regla de negocio \cdtIdRef{RN2}{Usuario Existente}. \refTray{B}
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Iniciar sesión} 
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña} 
  	
  	
     
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{Recuperar contraseña}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña}
    \UCpaso[] Continúa en el paso \ref{cur2:correo} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el correo ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{correo electrónico no existente} en la pantalla \textbf{Recuperar contraseña}.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{correo electrónico no existente} en la pantalla \cdtIdRef{IUP2}{Recuperar Contraseña}.
     \UCpaso[] Continúa con el paso \ref{cur2:correo} de la trayectoria principal.
  \end{UCtrayectoriaA}
  

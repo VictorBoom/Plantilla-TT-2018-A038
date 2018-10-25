@@ -126,7 +126,7 @@
  \begin{UCtrayectoria}
  	
  	\UCpaso [\UCactor] Presiona el ícono \textbf{Agregar Contacto de Emergencia} de la pantalla \textbf{Contactos de Emergencia}.
- 	\UCpaso Muestra la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
+ 	\UCpaso Muestra la pantalla \cdtIdRef{IUP24}{Agregar Contacto}.
  	\UCpaso [\UCactor] Ingresa el Nombre del contacto de emergencia. \label{datos}
  	\UCpaso [\UCactor] Ingresa el apellido paterno del contacto de emergencia.
  	\UCpaso [\UCactor] Ingresa el apellido materno del contacto de emergencia.
@@ -135,13 +135,13 @@
  	\UCpaso [\UCactor] Presiona el botón \cdtButton{Agregar}. \refTray{A}
 	\UCpaso Verifica que no haga falta ningún dato requerido con base en la regla de negocio \textbf{RN Datos Requeridos}. \refTray{B}
 	\UCpaso Verifica que el correo electrónico cumpla con el formato correcto con base en la regla de negocio \textbf{RN Formato de Correo Electrónico}.\refTray{C}
-	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \textbf{Contactos de Emergencia}.
+	\UCpaso Muestra el mensaje \textbf{MSG1 Operación Exitosa} en la pantalla \cdtIdRef{IUP26}{Consultar Contacto}.
     
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
     \UCpaso[\UCactor] Solicita cancelar la operación oprimiendo el botón Cancelar en la pantalla \textbf{Agregar Nuevo Contacto de Emergencia}.
-   \UCpaso Regresa a la pantalla \textbf{Contactos de Emergencia}.
+   \UCpaso Regresa a la pantalla \cdtIdRef{IUP26}{Consultar Contacto}.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{B}{El actor no ingresó un dato requerido.}

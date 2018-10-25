@@ -120,7 +120,7 @@
 	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    	
-		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Crear cuenta} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \cdtIdRef{IUP3}{Registro de Cuenta} cuando el actor omitió un dato marcado como requerido.
 		
 	    \end{UClist}
 	}
@@ -132,7 +132,7 @@
  \begin{UCtrayectoria}
  	
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear cuenta} de la pantalla \textbf{Iniciar sesión}.
-	 \UCpaso Muestra la pantalla \textbf{Creación de cuenta}.
+	 \UCpaso Muestra la pantalla \cdtIdRef{IUP3}{Registro de Cuenta}.
 	 \UCpaso [\UCactor] Ingresa Nombre.
 	 \UCpaso [\UCactor] Ingresa Apellido paterno.
 	 \UCpaso [\UCactor] Ingresa Apellido materno.
@@ -156,7 +156,7 @@
 	 \UCpaso Muesta el mensaje \cdtIdRef{MSG7}{Obtener otra foto} en la pantalla \textbf{Creación de cuenta fotografia}.
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{No} del mensaje.
 	 \UCpaso [\UCactor] Presiona el botón \cdtButton{Crear Cuenta} de la pantalla.\label{cur3:foto}
-	 \UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \textbf{Iniciar sesión}.
+	 \UCpaso Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUP1}{Iniciar Sesión}.
 	 
 
  \end{UCtrayectoria}
@@ -169,7 +169,7 @@
  
  \begin{UCtrayectoriaA}{B}{El actor tendrá un rol que requiere un dato extra.}
  	\UCpaso [\UCactor] Selecciona la opción Doctor de la lista de checkbox.
- 	\UCpaso Muestra la casilla \textbf{Cédula profesional} en la pantalla \textbf{Creación de cuenta}.
+ 	\UCpaso Muestra la casilla \textbf{Cédula profesional} en la pantalla \cdtIdRef{IUP3}{Registro de Cuenta}.
  	\UCpaso [\UCactor] Ingresa su cédula profesional.
  	\UCpaso Continúa con el paso \ref{cur3:Doctor} de la trayectoria principal.
  	
@@ -182,13 +182,13 @@
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{D}{El actor no ingreso la contraseña de forma correcta.}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Faltan datos en la contraseña} en la pantalla \textbf{Creación de cuenta}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Faltan datos en la contraseña} en la pantalla \cdtIdRef{IUP3}{Registro de Cuenta}
 	\UCpaso[] Continúa en el paso \ref{cur5:Celular} de la trayectoria principal.
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{E}{El actor no quiere tomar una foto.}
 	\UCpaso [\UCactor] Da clic sobre el icono \textbf{Seleccionar de fototeca}.
-	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \textbf{Creación de cuenta fotografia} la primera vez que esto sucede.
+	\UCpaso Muestra el mensaje \cdtIdRef{MSG5}{Obtener datos} en la pantalla \cdtIdRef{IUP3-1}{Registro de Cuenta} la primera vez que esto sucede.
 	\UCpaso [\UCactor] Presiona el botón \cdtButton{Aceptar} del mensaje.
 	\UCpaso Muestra las fotos del celular.
 	\UCpaso Obtiene la foto seleccionada.

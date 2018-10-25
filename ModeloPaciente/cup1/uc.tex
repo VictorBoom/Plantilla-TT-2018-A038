@@ -110,8 +110,8 @@
 	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando se inició la sesión de manera exitosa.	
-		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
+		\UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \cdtIdRef{IUP1}{Iniciar sesión} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Iniciar sesión} indicando que el correo electrónico y/o contraseña son incorrectos.
 		
 	    \end{UClist}
 	}
@@ -133,17 +133,17 @@
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor no ingresó alguno de los datos requeridos.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \textbf{}{Iniciar sesión}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada} en la pantalla \cdtIdRef{IUP1}{Iniciar sesión}
    \UCpaso[] Continúa en el paso \ref{cur1:Acciones} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{B}{No se encontró una cuenta con el nombre de usuario ingresado.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión}.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \cdtIdRef{IUP1}{Iniciar sesión}.
     \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
  \end{UCtrayectoriaA}
  
  \begin{UCtrayectoriaA}{C}{El actor ingresó una contraseña que no coincide con la registrada en el sistema.}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \textbf{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Nombre de usuario y/o contraseña incorrecto} en la pantalla \cdtIdRef{IUP1}{Iniciar sesión} indicando que el usuario y/o contraseña son incorrectos.
     \UCpaso[] Continúa con el paso \ref{cur1:Acciones} de la trayectoria principal.
  \end{UCtrayectoriaA} 
 

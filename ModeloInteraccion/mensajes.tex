@@ -44,8 +44,8 @@
 \subsection{Mensajes a través de la pantalla}
 
 %===========================  MSG1 ==================================
-\begin{mensaje}{MSG1}{Operación realizada exitosamente}{Confirmación}
-    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+\begin{mensaje}{MSG1}{Operación Exitosa}{Confirmación}
+%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
     \item[Estatus:] Terminado
     \item[Objetivo:] Notificar al actor que la acción solicitada fue realizada exitosamente.
     \item[Redacción:] DETERMINADO ENTIDAD VALOR ha sido OPERACIÓN exitosamente.
@@ -56,4 +56,379 @@
 	\item OPERACIÓN: Es la acción que el actor solicitó realizar.
     \end{Citemize}
     \item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG2 ==================================
+\begin{mensaje}{MSG2}{Falta un dato requerido para efectuar la operación solicitada}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no falta un dato marcado como obligatorio.
+	\item[Redacción:] Campo obligatorio.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG3 ==================================
+\begin{mensaje}{MSG3}{Nombre de usuario y/o contraseña incorrecto}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que ingresó un nombre de usuario y/o contraseña incorrecta
+	\item[Redacción:] DETERMINADO ENTIDAD VALOR está incorrecto.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+	\end{Citemize}
+	\item[Ejemplo:] La contraseña ingresada está incorrecta.
+\end{mensaje}
+
+%===========================  MSG4 ==================================
+\begin{mensaje}{MSG4}{No existe correo}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el correo ingresado no existe.
+	\item[Redacción:] DETERMINADO ENTIDAD VALOR no existe en el sistema.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+	\end{Citemize}
+	\item[Ejemplo:] El correo que ingresó no existe en el sistema.
+\end{mensaje}
+
+%===========================  MSG5 ==================================
+\begin{mensaje}{MSG5}{Obtener datos}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el sistema operativo desea obtener su número celular
+	\item[Redacción:] El sistema operativo desea obtener tu número.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG6 ==================================
+\begin{mensaje}{MSG6}{Faltan datos en la contraseña}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que la contraseña ingresada no cumple con el formato correcto.
+	\item[Redacción:] La contraseña debe tener al menos 6 caracteres, una mayúscula, una minúscula, un número y un caracter especial.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] La contras.
+\end{mensaje}
+
+%===========================  MSG7 ==================================
+\begin{mensaje}{MSG7}{Obtener foto}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Preguntar al actor si desea obtener otra foto.
+	\item[Redacción:] ¿Desea obtener otra foto?
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG8 ==================================
+\begin{mensaje}{MSG8}{No se pudieron obtener los datos}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el sistema no pudo obtener los datos requeridos.
+	\item[Redacción:] El sistema o pudo obtener los datos requeridos.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG9 ==================================
+\begin{mensaje}{MSG9}{No tiene tratamiento}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no tiene tratamientos registrados
+	\item[Redacción:] No cuanta aún con un tratamiento registrado.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG10 ==================================
+\begin{mensaje}{MSG10}{Correo electrónico nuevo}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el correo electrónico que desea ingresar es nuevo.
+	\item[Redacción:] El correo electrónico que quiere ingresar es nuevo.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG11 ==================================
+\begin{mensaje}{MSG11}{No hay rol}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no seleccionó ningún rol.
+	\item[Redacción:] No ha seleccionado ningún rol.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG12 ==================================
+\begin{mensaje}{MSG12}{Cédula Profesional no válida}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que la cédula profesional que ingresó no es válida.
+	\item[Redacción:] La cédula profesional que intenta ingresar no es válida.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG13 ==================================
+\begin{mensaje}{MSG13}{No existe el doctor}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el doctor que quiere ingresar no existe.
+	\item[Redacción:] El doctor que ingresó no existe, verifique el número de cédula.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG14 ==================================
+\begin{mensaje}{MSG14}{Medicamento agregado pero incompleto}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que falta por completar el registro de un medicamento.
+	\item[Redacción:] No ha completado el registro de su medicamento.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG15 ==================================
+\begin{mensaje}{MSG15}{Doctor existente}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el doctor que desea registrar ya existe.
+	\item[Redacción:] El doctor que desea registrar ya existe.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG16 ==================================
+\begin{mensaje}{MSG16}{Eliminar doctor}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Solicitar la confirmación del actor para eliminar un doctor.
+	\item[Redacción:] ¿Está seguro que desea eliminar el doctor seleccionado?
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG17 ==================================
+\begin{mensaje}{MSG17}{Tratamiento pasaran a estado incompleto}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que el tratamiento pasará a estado incompleto.
+	\item[Redacción:] El tratamiento pasará a estado incompleto.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG18 ==================================
+\begin{mensaje}{MSG18}{No hay doctores}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no cuenta con doctores asociados a su cuenta.
+	\item[Redacción:] No tiene doctores asociados a su cuenta.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG19 ==================================
+\begin{mensaje}{MSG19}{Toma realizada}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que realizó la toma de su medicamento.
+	\item[Redacción:] Ha realizado la toma del medicamento exitosamente.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG20 ==================================
+\begin{mensaje}{MSG20}{Aviso a contacto de emergencia}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Alertar a un contacto de emergencia que su paciente no ha consumido un medicamento de alta importancia.
+	\item[Redacción:] El paciente no ha consumido correctamente sus medicamentos.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG21 ==================================
+\begin{mensaje}{MSG21}{No hay auxiliares}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no tiene auxiliares asociados a su cuenta.
+	\item[Redacción:] No tiene auxiliares asociados a su cuenta.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG22 ==================================
+\begin{mensaje}{MSG22}{Eliminar elemento}{Confirmación}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Solicitar la confirmación del actor para eliminar un elemento.
+	\item[Redacción:] ¿Está seguro que desea eliminar este elemento?.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG23 ==================================
+\begin{mensaje}{MSG23}{No hay contactos de emergencia}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no hay contactos de emergencia asociados a su cuenta.
+	\item[Redacción:] No tiene contactos de emergencia asociados a su cuenta.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG24 ==================================
+\begin{mensaje}{MSG24}{Validación de contraseña incorrecta}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que la validación de la contraseña no coincide con la contraseña ingresada.
+	\item[Redacción:] La validación de la contraseña no coincide con la contraseña ingresada.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG25==================================
+\begin{mensaje}{MSG25}{No hay recordatorios}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no ha configurado ningún recordatorio
+	\item[Redacción:] No tiene recordatorios configurados.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
+\end{mensaje}
+
+%===========================  MSG26 ==================================
+\begin{mensaje}{MSG26}{No hay alertas}{Error}
+	%    \item[Ubicación:] Formulario. Se muestra en la parte superior del formulario.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no ha configurado ninguna alerta.
+	\item[Redacción:] No tiene alertas configuradas.
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize}
+%		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+%		\item OPERACIÓN: Es la acción que el actor solicitó realizar.
+%	\end{Citemize}
+%	\item[Ejemplo:] {\em La escuela 15DPR2497K} ha sido {\em registrada} exitosamente.
 \end{mensaje}

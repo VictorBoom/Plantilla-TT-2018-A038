@@ -114,10 +114,10 @@
 	\UCitem{Mensajes}{
 	    \begin{UClist}
 	    	
-	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \textbf{Datos personales} cuando se cambió la contraseña de manera exitosa.
-	    \UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \textbf{Datos Personales} cuando el actor omitió un dato marcado como requerido.
-		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \textbf{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
-		\UCli \cdtIdRef {MSG24}{Validación de contraseña incorrecta}: Se muestra en la pantalla \textbf{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
+	    \UCli \cdtIdRef{MSG1}{Operación Exitosa}: Se muestra en la pantalla \cdtIdRef{IUP4}{Datos Personales} cuando se cambió la contraseña de manera exitosa.
+	    \UCli \cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}: Se muestra en la pantalla \cdtIdRef{IUP4}{Datos Personales} cuando el actor omitió un dato marcado como requerido.
+		\UCli \cdtIdRef{MSG3}{Correo electrónico y/o contraseña incorrecto}: Se muestra en la pantalla \cdtIdRef{IUP4}{Datos Personales} indicando que el correo electrónico y/o contraseña son incorrectos.
+		\UCli \cdtIdRef {MSG24}{Validación de contraseña incorrecta}: Se muestra en la pantalla \cdtIdRef{IUP4}{Datos Personales} indicando que la confirmación de contraseña no coincide con la contraseña ingresada.
 		
 	    \end{UClist}
 	}
@@ -128,12 +128,12 @@
 
  \begin{UCtrayectoria}
  	
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar Contraseña} de la pantalla \textbf{Editar Datos Personales}.
- 	\UCpaso Muestra la pantalla \textbf{Cambiar Contraseña}.
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar Contraseña} de la pantalla \cdtIdRef{IUP5}{Editar Datos Personales}.
+ 	\UCpaso Muestra la pantalla \cdtIdRef{IUP6}{Cambiar Contraseña}.
  	\UCpaso [\UCactor] Ingresa la Contraseña Anterior . \label{contra}
  	\UCpaso [\UCactor] Ingresa la Contraseña Nueva.
  	\UCpaso [\UCactor]Ingresa la Confirmación de Contraseña.
- 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar contraseña} en la pantalla \textbf{Cambiar Contraseña}.
+ 	\UCpaso [\UCactor] Presiona el botón \textbf{Cambiar contraseña} en la pantalla  \cdtIdRef{IUP6}{Cambiar Contraseña}.
  	\UCpaso Verifica que todos los datos requeridos sean proporcionados con base a la regla de negocio \cdtIdRef{RN9}{Datos Requeridos}.
  	\UCpaso Verifica que las contraseñas cumplan con el formato correcto con base en la regla de negocio \cdtIdRef{RN10}{Formato de Contraseña Incorrecto}.
  	\UCpaso Verifica que la contraseña nueva coincida con la confirmación de la contraseña con base a la regla de negocio \cdtIdRef{RN11}{Confirmación de Contraseña Incorrecta}
@@ -143,8 +143,8 @@
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}{A}{El actor desea cancelar la operación.}
- 	\UCpaso [\UCactor] Da clic en el botón \textbf{Cancelar} de la pantalla \textbf{Cambiar Contraseña}.
- 	\UCpaso Muestra la pantalla \textbf{Editar Datos Personales}.
+ 	\UCpaso [\UCactor] Da clic en el botón \textbf{Cancelar} de la pantalla \cdtIdRef{IUP6}{Cambiar Contraseña}.
+ 	\UCpaso Muestra la pantalla \cdtIdRef{IUP5}{Editar Datos Personales}.
     
  \end{UCtrayectoriaA}
 
