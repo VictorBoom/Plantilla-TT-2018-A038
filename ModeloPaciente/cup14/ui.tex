@@ -1,25 +1,24 @@
-\subsection{IUR 1 Iniciar sesión}
+\subsection{IUP14 Eliminar Doctor}
  
 \subsubsection{Objetivo}
 
-    Esta pantalla permite al actor \cdtRef{actor:usuarioEscuela}{Coordinador del programa} iniciar sesión en el sistema, recuperar la contraseña de acceso al sistema o registrarse para formar parte del mismo.
-
+    Esta pantalla permite al actor eliminar un doctor siempre y cuando, éste no sea responsable de ningún tratamiento que se encuentre en estado Activo.
 \subsubsection{Diseño}
 
-    En la figura~\ref{IUR 1} se muestra la pantalla ``Iniciar sesión'', por medio de la cual se podrá acceder al sistema. \\
+    En la figura \ref{IUP14} se muestra la pantalla ``Eliminar Doctor'', por medio de la cual se podrá eliminar un doctor. \\
 
-    \IUfig[1]{pantallas/registro/IUR1}{IUR 1}{Iniciar sesión}
+    \IUfig[.3]{pantallas/eliminarDoctor}{IUP14}{Eliminar Doctor}
 
 \subsubsection{Comandos}
 \begin{itemize}
-    \item \cdtButton{Aceptar}: Permite al actor ingresar al sistema, dirige a la pantalla de Bienvenida que se muestra en la figura \ref{fig:inicio}.
-    \item \cdtButton{Recuperar contraseña}: Permite al actor solicitar el envío de su contraseña a su correo, dirige a la pantalla \cdtIdRef{IUR 2}{Recuperar contraseña}.
-    \item \cdtButton{Inscribirse al programa}: Se utiliza solicitar la inscripción de una escuela para formar parte del programa, dirige a la pantalla \cdtIdRef{IUR 3}{Solicitar preinscripción}.
+    \item \cdtButton{Eliminar}: Permite al actor eliminar a un doctor.
+    \item \cdtButton{Cancelar}: Permite al actor cancelar la operación.
+   
 \end{itemize}
 
-\subsubsection{Mensajes}
-
-\begin{description}
-    \item[\cdtIdRef{MSG5}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} cuando el actor omitió un dato marcado como requerido.
-    \item[\cdtIdRef{MSG22}{Nombre de usuario y/o contraseña incorrecto}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} indicando que el nombre de usuario y/o contraseña son incorrectos.
-\end{description}
+%\subsubsection{Mensajes}
+%
+%\begin{description}
+%    \item[\cdtIdRef{MSG5}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} cuando el actor omitió un dato marcado como requerido.
+%    \item[\cdtIdRef{MSG22}{Nombre de usuario y/o contraseña incorrecto}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} indicando que el nombre de usuario y/o contraseña son incorrectos.
+%\end{description}

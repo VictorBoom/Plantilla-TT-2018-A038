@@ -1,25 +1,24 @@
-\subsection{IUR 1 Iniciar sesión}
+\subsection{IUP5 Editar Datos Personales}
  
 \subsubsection{Objetivo}
 
-    Esta pantalla permite al actor \cdtRef{actor:usuarioEscuela}{Coordinador del programa} iniciar sesión en el sistema, recuperar la contraseña de acceso al sistema o registrarse para formar parte del mismo.
+    Esta pantalla permite al actor editar sus datos personales.
 
 \subsubsection{Diseño}
 
-    En la figura~\ref{IUR 1} se muestra la pantalla ``Iniciar sesión'', por medio de la cual se podrá acceder al sistema. \\
+    En la figura \ref{IUP5} se muestra la pantalla ``Editar Datos Personales'', por medio de la cual se podrá editar sus datos personales si así lo desea. \\
 
-    \IUfig[1]{pantallas/registro/IUR1}{IUR 1}{Iniciar sesión}
+    \IUfig[.3]{pantallas/editarDatos}{IUP5}{Editar Datos Personales}
 
 \subsubsection{Comandos}
 \begin{itemize}
-    \item \cdtButton{Aceptar}: Permite al actor ingresar al sistema, dirige a la pantalla de Bienvenida que se muestra en la figura \ref{fig:inicio}.
-    \item \cdtButton{Recuperar contraseña}: Permite al actor solicitar el envío de su contraseña a su correo, dirige a la pantalla \cdtIdRef{IUR 2}{Recuperar contraseña}.
-    \item \cdtButton{Inscribirse al programa}: Se utiliza solicitar la inscripción de una escuela para formar parte del programa, dirige a la pantalla \cdtIdRef{IUR 3}{Solicitar preinscripción}.
+    \item \cdtButton{Regresar}: Permite al actor regresar a la pantalla \cdtIdRef{IUP4}{Consultar Datos Personales}.
+    \item \cdtButton{Guardar Cambios}: Permite al actor guardar los cambios de sus datos editados.
+    \item \cdtButton{Cambiar Contraseña}: Permite al actor modificar su contraseña, dirige a la pantalla \cdtIdRef{IUP6}{Cambiar Contraseña}.
 \end{itemize}
 
 \subsubsection{Mensajes}
 
 \begin{description}
-    \item[\cdtIdRef{MSG5}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} cuando el actor omitió un dato marcado como requerido.
-    \item[\cdtIdRef{MSG22}{Nombre de usuario y/o contraseña incorrecto}:] Se muestra en la pantalla \cdtIdRef{IUR 1}{Iniciar de sesión} indicando que el nombre de usuario y/o contraseña son incorrectos.
+    \item[\cdtIdRef{MSG2}{Falta un dato requerido para efectuar la operación solicitada}:] Se muestra en la pantalla \cdtIdRef{IUP5}{Editar Datos Personales} cuando el actor omitió un dato marcado como requerido.
 \end{description}

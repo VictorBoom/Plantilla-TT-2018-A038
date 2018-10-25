@@ -133,9 +133,33 @@
 \BOOKMARK [2][-]{subsection.3.27.2}{Descripci\363n}{section.3.27}% 133
 \BOOKMARK [2][-]{subsection.3.27.3}{Trayectorias del caso de uso}{section.3.27}% 134
 \BOOKMARK [1][-]{section.3.28}{Interfaces del sistema}{chapter.3}% 135
-\BOOKMARK [2][-]{subsection.3.28.1}{IUP 1 Iniciar sesi\363n}{section.3.28}% 136
+\BOOKMARK [2][-]{subsection.3.28.1}{IUP1 Iniciar sesi\363n}{section.3.28}% 136
 \BOOKMARK [2][-]{subsection.3.28.2}{IUP2 Recuperar Contrase\361a}{section.3.28}% 137
 \BOOKMARK [2][-]{subsection.3.28.3}{IUP3 Registro de Cuenta}{section.3.28}% 138
-\BOOKMARK [0][-]{chapter.4}{Conclusi\363n y Trabajo a Futuro \(Trabajo Terminal 2\) }{}% 139
-\BOOKMARK [1][-]{section.4.1}{Conclusi\363n}{chapter.4}% 140
-\BOOKMARK [1][-]{section.4.2}{Trabajo a Futuro}{chapter.4}% 141
+\BOOKMARK [2][-]{subsection.3.28.4}{IUP4 Consultar Datos Personales}{section.3.28}% 139
+\BOOKMARK [2][-]{subsection.3.28.5}{IUP5 Editar Datos Personales}{section.3.28}% 140
+\BOOKMARK [2][-]{subsection.3.28.6}{IUP6 Cambiar Contrase\361a}{section.3.28}% 141
+\BOOKMARK [2][-]{subsection.3.28.7}{IUP7 Consultar Tratamiento}{section.3.28}% 142
+\BOOKMARK [2][-]{subsection.3.28.8}{IUP8 Consultar Informaci\363n del Tratamiento}{section.3.28}% 143
+\BOOKMARK [2][-]{subsection.3.28.9}{IUP9 Editar Tratamiento}{section.3.28}% 144
+\BOOKMARK [2][-]{subsection.3.28.10}{IUP10 Agregar Tratamiento}{section.3.28}% 145
+\BOOKMARK [2][-]{subsection.3.28.11}{IUP11 Agregar Medicamento}{section.3.28}% 146
+\BOOKMARK [2][-]{subsection.3.28.12}{IUP12 Agregar Doctor}{section.3.28}% 147
+\BOOKMARK [2][-]{subsection.3.28.13}{IUP13 Editar Doctor}{section.3.28}% 148
+\BOOKMARK [2][-]{subsection.3.28.14}{IUP14 Eliminar Doctor}{section.3.28}% 149
+\BOOKMARK [2][-]{subsection.3.28.15}{IUP15 Consultar Doctor}{section.3.28}% 150
+\BOOKMARK [2][-]{subsection.3.28.16}{IUP6 Recibir Notificaci\363n}{section.3.28}% 151
+\BOOKMARK [2][-]{subsection.3.28.17}{IUP17 Mandar Alerta}{section.3.28}% 152
+\BOOKMARK [2][-]{subsection.3.28.18}{IUP18 Consultar Recordatorios}{section.3.28}% 153
+\BOOKMARK [2][-]{subsection.3.28.19}{IUP19 Consultar Alertas}{section.3.28}% 154
+\BOOKMARK [2][-]{subsection.3.28.20}{IUP20 Agregar Auxiliar}{section.3.28}% 155
+\BOOKMARK [2][-]{subsection.3.28.21}{IUP21 Editar Auxiliar}{section.3.28}% 156
+\BOOKMARK [2][-]{subsection.3.28.22}{IUP22 Consultar Auxiliar}{section.3.28}% 157
+\BOOKMARK [2][-]{subsection.3.28.23}{IUP23 Eliminar Auxiliar}{section.3.28}% 158
+\BOOKMARK [2][-]{subsection.3.28.24}{IUP24 Agregar Contacto de Emergencia}{section.3.28}% 159
+\BOOKMARK [2][-]{subsection.3.28.25}{IUP25 Editar Contacto de Emergencia}{section.3.28}% 160
+\BOOKMARK [2][-]{subsection.3.28.26}{IUP26 Consultar Contacto de Emergencia}{section.3.28}% 161
+\BOOKMARK [2][-]{subsection.3.28.27}{IUP27 Eliminar Contacto de Emergencia}{section.3.28}% 162
+\BOOKMARK [0][-]{chapter.4}{Conclusi\363n y Trabajo a Futuro \(Trabajo Terminal 2\) }{}% 163
+\BOOKMARK [1][-]{section.4.1}{Conclusi\363n}{chapter.4}% 164
+\BOOKMARK [1][-]{section.4.2}{Trabajo a Futuro}{chapter.4}% 165

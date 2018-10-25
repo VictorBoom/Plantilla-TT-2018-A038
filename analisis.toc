@@ -137,7 +137,7 @@
 \contentsline {subsection}{\numberline {3.27.2}Descripci\IeC {\'o}n}{101}{subsection.3.27.2}
 \contentsline {subsection}{\numberline {3.27.3}Trayectorias del caso de uso}{102}{subsection.3.27.3}
 \contentsline {section}{\numberline {3.28}Interfaces del sistema}{103}{section.3.28}
-\contentsline {subsection}{\numberline {3.28.1}IUP 1 Iniciar sesi\IeC {\'o}n}{103}{subsection.3.28.1}
+\contentsline {subsection}{\numberline {3.28.1}IUP1 Iniciar sesi\IeC {\'o}n}{103}{subsection.3.28.1}
 \contentsline {subsubsection}{Objetivo}{103}{section*.6}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{103}{section*.7}
 \contentsline {subsubsection}{Comandos}{103}{section*.8}
@@ -152,6 +152,100 @@
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{106}{section*.15}
 \contentsline {subsubsection}{Comandos}{106}{section*.16}
 \contentsline {subsubsection}{Mensajes}{108}{section*.17}
-\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n y Trabajo a Futuro (Trabajo Terminal 2) }{109}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusi\IeC {\'o}n}{109}{section.4.1}
-\contentsline {section}{\numberline {4.2}Trabajo a Futuro}{109}{section.4.2}
+\contentsline {subsection}{\numberline {3.28.4}IUP4 Consultar Datos Personales}{108}{subsection.3.28.4}
+\contentsline {subsubsection}{Objetivo}{108}{section*.18}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{108}{section*.19}
+\contentsline {subsubsection}{Comandos}{109}{section*.20}
+\contentsline {subsection}{\numberline {3.28.5}IUP5 Editar Datos Personales}{109}{subsection.3.28.5}
+\contentsline {subsubsection}{Objetivo}{109}{section*.21}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{109}{section*.22}
+\contentsline {subsubsection}{Comandos}{110}{section*.23}
+\contentsline {subsubsection}{Mensajes}{110}{section*.24}
+\contentsline {subsection}{\numberline {3.28.6}IUP6 Cambiar Contrase\IeC {\~n}a}{110}{subsection.3.28.6}
+\contentsline {subsubsection}{Objetivo}{110}{section*.25}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{110}{section*.26}
+\contentsline {subsubsection}{Comandos}{110}{section*.27}
+\contentsline {subsubsection}{Mensajes}{110}{section*.28}
+\contentsline {subsection}{\numberline {3.28.7}IUP7 Consultar Tratamiento}{111}{subsection.3.28.7}
+\contentsline {subsubsection}{Objetivo}{111}{section*.29}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{111}{section*.30}
+\contentsline {subsection}{\numberline {3.28.8}IUP8 Consultar Informaci\IeC {\'o}n del Tratamiento}{111}{subsection.3.28.8}
+\contentsline {subsubsection}{Objetivo}{112}{section*.31}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{112}{section*.32}
+\contentsline {subsection}{\numberline {3.28.9}IUP9 Editar Tratamiento}{112}{subsection.3.28.9}
+\contentsline {subsubsection}{Objetivo}{112}{section*.33}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{113}{section*.34}
+\contentsline {subsubsection}{Comandos}{113}{section*.35}
+\contentsline {subsection}{\numberline {3.28.10}IUP10 Agregar Tratamiento}{113}{subsection.3.28.10}
+\contentsline {subsubsection}{Objetivo}{113}{section*.36}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.37}
+\contentsline {subsection}{\numberline {3.28.11}IUP11 Agregar Medicamento}{114}{subsection.3.28.11}
+\contentsline {subsubsection}{Objetivo}{114}{section*.38}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{114}{section*.39}
+\contentsline {subsubsection}{Comandos}{116}{section*.40}
+\contentsline {subsubsection}{Mensajes}{116}{section*.41}
+\contentsline {subsection}{\numberline {3.28.12}IUP12 Agregar Doctor}{116}{subsection.3.28.12}
+\contentsline {subsubsection}{Objetivo}{116}{section*.42}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{116}{section*.43}
+\contentsline {subsubsection}{Comandos}{116}{section*.44}
+\contentsline {subsubsection}{Mensajes}{116}{section*.45}
+\contentsline {subsection}{\numberline {3.28.13}IUP13 Editar Doctor}{116}{subsection.3.28.13}
+\contentsline {subsubsection}{Objetivo}{116}{section*.46}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{118}{section*.47}
+\contentsline {subsubsection}{Comandos}{118}{section*.48}
+\contentsline {subsubsection}{Mensajes}{118}{section*.49}
+\contentsline {subsection}{\numberline {3.28.14}IUP14 Eliminar Doctor}{119}{subsection.3.28.14}
+\contentsline {subsubsection}{Objetivo}{119}{section*.50}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{119}{section*.51}
+\contentsline {subsubsection}{Comandos}{119}{section*.52}
+\contentsline {subsection}{\numberline {3.28.15}IUP15 Consultar Doctor}{120}{subsection.3.28.15}
+\contentsline {subsubsection}{Objetivo}{120}{section*.53}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{120}{section*.54}
+\contentsline {subsection}{\numberline {3.28.16}IUP6 Recibir Notificaci\IeC {\'o}n}{120}{subsection.3.28.16}
+\contentsline {subsubsection}{Objetivo}{120}{section*.55}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.56}
+\contentsline {subsection}{\numberline {3.28.17}IUP17 Mandar Alerta}{121}{subsection.3.28.17}
+\contentsline {subsubsection}{Objetivo}{121}{section*.57}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{121}{section*.58}
+\contentsline {subsection}{\numberline {3.28.18}IUP18 Consultar Recordatorios}{123}{subsection.3.28.18}
+\contentsline {subsubsection}{Objetivo}{123}{section*.59}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{123}{section*.60}
+\contentsline {subsection}{\numberline {3.28.19}IUP19 Consultar Alertas}{123}{subsection.3.28.19}
+\contentsline {subsubsection}{Objetivo}{123}{section*.61}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{124}{section*.62}
+\contentsline {subsection}{\numberline {3.28.20}IUP20 Agregar Auxiliar}{124}{subsection.3.28.20}
+\contentsline {subsubsection}{Objetivo}{124}{section*.63}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{124}{section*.64}
+\contentsline {subsubsection}{Comandos}{125}{section*.65}
+\contentsline {subsubsection}{Mensajes}{125}{section*.66}
+\contentsline {subsection}{\numberline {3.28.21}IUP21 Editar Auxiliar}{125}{subsection.3.28.21}
+\contentsline {subsubsection}{Objetivo}{125}{section*.67}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{126}{section*.68}
+\contentsline {subsubsection}{Comandos}{126}{section*.69}
+\contentsline {subsubsection}{Mensajes}{126}{section*.70}
+\contentsline {subsection}{\numberline {3.28.22}IUP22 Consultar Auxiliar}{127}{subsection.3.28.22}
+\contentsline {subsubsection}{Objetivo}{127}{section*.71}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{127}{section*.72}
+\contentsline {subsection}{\numberline {3.28.23}IUP23 Eliminar Auxiliar}{127}{subsection.3.28.23}
+\contentsline {subsubsection}{Objetivo}{127}{section*.73}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{128}{section*.74}
+\contentsline {subsubsection}{Comandos}{128}{section*.75}
+\contentsline {subsection}{\numberline {3.28.24}IUP24 Agregar Contacto de Emergencia}{128}{subsection.3.28.24}
+\contentsline {subsubsection}{Objetivo}{128}{section*.76}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{129}{section*.77}
+\contentsline {subsubsection}{Comandos}{129}{section*.78}
+\contentsline {subsubsection}{Mensajes}{129}{section*.79}
+\contentsline {subsection}{\numberline {3.28.25}IUP25 Editar Contacto de Emergencia}{130}{subsection.3.28.25}
+\contentsline {subsubsection}{Objetivo}{130}{section*.80}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{130}{section*.81}
+\contentsline {subsubsection}{Comandos}{130}{section*.82}
+\contentsline {subsubsection}{Mensajes}{131}{section*.83}
+\contentsline {subsection}{\numberline {3.28.26}IUP26 Consultar Contacto de Emergencia}{131}{subsection.3.28.26}
+\contentsline {subsubsection}{Objetivo}{131}{section*.84}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{131}{section*.85}
+\contentsline {subsection}{\numberline {3.28.27}IUP27 Eliminar Contacto de Emergencia}{132}{subsection.3.28.27}
+\contentsline {subsubsection}{Objetivo}{132}{section*.86}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{132}{section*.87}
+\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n y Trabajo a Futuro (Trabajo Terminal 2) }{133}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusi\IeC {\'o}n}{133}{section.4.1}
+\contentsline {section}{\numberline {4.2}Trabajo a Futuro}{133}{section.4.2}
