@@ -1,36 +1,75 @@
 \section{Metodología}
-Para la realización del Trabajo Terminal se utilizará la metodología SCRUM ya que es una metodología ágil y que es altamente flexible, ya que la lista de sprints pueden ser modificadas en el transcurso del desarrollo del proyecto por diversos motivos que se tengan. Otro punto de SCRUM es que al trabajar por partes pequeñas y comenzar por las más importantes, es más fácil poder detectar problemas a futuro que tal vez puedan presentarse\cite{Referencia17}.
+Para la realización del Trabajo Terminal se utilizará una metodología híbrida compuesta por la metodología SCRUM que adopta el ciclo de vida de desarrollo de sistemas de cascada.
+
+Las metodologías híbridas son una combinación de dos metodologías y retoman las ventajas de los dos tipos de metodologías lo que nos ayuda a formar una combinación de las mejores prácticas existentes dentro de ellas.
+
+La metodología SCRUM es una metodología ágil y es altamente flexible, ya que la lista de sprints pueden ser modificadas en el transcurso del desarrollo del proyecto por diversos motivos que se tengan. Otro punto de SCRUM es que al trabajar por partes pequeñas y comenzar por las más importantes, es más fácil poder detectar problemas a futuro que tal vez puedan presentarse\cite{Referencia17}.
 
 ''Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos."\cite{Referencia18}
 
 Uno de los beneficios de la metodología SCRUM es que los proyectos pueden ser entregados con una mejor calidad, ya que como es más fácil detectar problemas, estos pueden ser corregidos en el momento justo, antes de que seán más costosos y difíciles de corregir. 
 
 En la figura \ref{fig:metodologiaSCRUM} se muestran las principales actividades abordadas por la metodología Scrum.
-\newpage
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=1\textwidth]{images/introduccion/scrum}
 	\caption{Marco de la Metodología SCRUM} \label{fig:metodologiaSCRUM}
 \end{figure}
 
-Se tendrán además prototipos de desarrollo donde se llevarán a cabo el análisis, diseño, construcción y pruebas de los prototipos implementados en cada etapa de la metodología anteriormente mencionada.
+Se tendrán además prototipos de desarrollo donde se llevarán a cabo el análisis, diseño, construcción y pruebas de los prototipos implementados en cada etapa de la metodología anteriormente mencionada.\\
 
-Esta metodología será aplicada a nuestro Trabajo Terminal de la siguiente manera:\\
+En cambio el modelo de desarrollo de sistemas de cascada, es un proceso de desarrollo secuencial, en el que el desarrollo de software se concibe como  un conjunto de etapas que  se ejecutan una tras otra. Se le denomina así por las posiciones que ocupan las diferentes fases que componen el proyecto, colocadas una encima de otra, y siguiendo un flujo de ejecución de arriba hacia abajo, como una cascada.\cite{Referencia21}
+
+En la figura \ref{fig:cascada} se muestran las principales actividades abordadas por el modelo de desarrollo de sistemas de cascada.
+\newpage
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{images/cap2/cascada}
+	\caption{Modelo de Desarrollo de Sistemas de Cascada} \label{fig:cascada}
+\end{figure}
+
+Para poder trabajar con esta metodología híbrida manejaremos un ciclo de vida de desarrollo de sistemas de cascada dentro de cada sprint de SCRUM.
+
+Esta metodología híbrida será aplicada a nuestro Trabajo Terminal de la siguiente manera:\\
 
 \textbf{Trabajo Terminal 1}
+Se trabajarán los primeros 2 sprints para esta primer parte del Trabajo Terminal
 \begin{itemize}
-	\item Se trabajarán los primeros 2 sprints para esta primer parte del Trabajo Terminal.
-	\item El sprint 1 constará del análisis de requerimientos, análisis del proceso y el análisis formal del Trabajo Terminal por medio de casos de uso. Para el trabajo terminal 1, solamente se hará el análisis formal del rol del Paciente por medio de casos de uso.
-	\item El sprint 2 constará del diseño del sistema, diseño de pantallas por medio de mockups e implementación del primer prototipo que en este caso, será únicamente la parte del rol del \textbf{Paciente.}
+	 
+	\item El sprint 1 constará de:
+	\begin{itemize}
+		\item Análisis de requerimientos.
+		\item Análisis del Proceso
+		\item Análisis formal del Rol del paciente por medio de casos de uso.
+		\item Diseño de Pantallas del Rol del paciente por medio de Mockups
+	\end{itemize}
+	
+	\item El sprint 2 constará de:
+	\begin{itemize}
+		\item Análisis formal del Rol del doctor por medio de casos de uso.
+		\item Diseño de Pantallas del Rol del doctor por medio de Mockups.
+		\item Análisis formal del Rol del Auxiliar por medio de casos de uso.
+		\item Diseño de Pantallas del Rol del Auxiliar por medio de Mockups
+		\item Implementación del primer prototipo funcional.
+	\end{itemize}
 \end{itemize}
 
-\textbf{Trabajo Terminal 2}
-\begin{itemize}
-	\item Se trabajarán los últimos 3 sprints para esta segunda parte del Trabajo Terminal.
-	\item El sprint 3 constará de la definición formal de la aplicación.
-	\item El sprint 4 constará del diseño del sistema, diseño de pantallas por medio de mockups e implementación de los prototipos restantes que en este caso, serán las partes de los roles del \textbf{Doctor} y el \textbf{Auxiliar}.
-	\item El sprint 5 constará de las pruebas de la aplicación, la generación del manual de usuario y la generación del reporte técnico para la entrega final del Trabajo Terminal.
-\end{itemize}
+En la figura \ref{fig:arquitectura3} se definen los módulos trabajados para Trabajo Terminal 1 y los módulos que se trabajarán para Trabajo Terminal 2. 
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{images/cap2/arquitectura3}
+	\caption{TT1 y TT2} \label{fig:arquitectura3}
+\end{figure}
+
+%\textbf{Trabajo Terminal 2}
+%\begin{itemize}
+%	\item Se trabajarán los últimos 3 sprints para esta segunda parte del Trabajo Terminal.
+%	\item El sprint 3 constará de la definición formal de la aplicación.
+%	\item El sprint 4 constará del diseño del sistema, diseño de pantallas por medio de mockups e implementación de los prototipos restantes que en este caso, serán las partes de los roles del \textbf{Doctor} y el \textbf{Auxiliar}.
+%	\item El sprint 5 constará de las pruebas de la aplicación, la generación del manual de usuario y la generación del reporte técnico para la entrega final del Trabajo Terminal.
+%\end{itemize}
 
 
 \section{Arquitectura}
@@ -273,7 +312,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
-	\newpage
+	
 	\begin{ReqUser}		
 		\reqUserItem{RF2}{Acceso al Sistema}{
 			El usuario requiere de un mecanismo que le permita ingresar al sistema.
@@ -380,27 +419,40 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 		}
 		{\alta}{}{\corregir}
 	\end{ReqUser}
+	
+	\begin{ReqUser}
+		\reqSistItem{RF16}{Creación de Rol}
+		{La aplicación creará al usuario dependiendo de los roles que éste seleccione.}{\alta}{}{\corregir}
+	\end{ReqUser}
+	
+	\begin{ReqUser}
+		\reqSistItem{RF17}{Verificación de Rol}
+		{
+			La aplicación verificará los roles que tiene el usuario y habilitará los módulos correspondientes.
+		}
+		{\alta}{}{\corregir}
+	\end{ReqUser}
 \newpage
 
 \textbf{Requerimientos No Funcionales}
 
 	
-	\begin{ReqSist}
-		\reqSistItem{RNF1}{Creación de Rol}
-		{La aplicación creará al usuario dependiendo de los roles que éste seleccione.}{\alta}{\refUserReq{RF1},\refUserReq{RF2}}{}
-	\end{ReqSist}
-
-	\begin{ReqSist}
-		\reqSistItem{RNF2}{Verificación de Rol}
-		{
-			La aplicación verificará los roles que tiene el usuario y habilitará los módulos correspondientes.
-		}
-		{\alta}
-		{\refUserReq{RF1}\refUserReq{RF2}}{}
-	\end{ReqSist}
+%	\begin{ReqSist}
+%		\reqSistItem{RNF1}{Creación de Rol}
+%		{La aplicación creará al usuario dependiendo de los roles que éste seleccione.}{\alta}{\refUserReq{RF1},\refUserReq{RF2}}{}
+%	\end{ReqSist}
+%
+%	\begin{ReqSist}
+%		\reqSistItem{RNF2}{Verificación de Rol}
+%		{
+%			La aplicación verificará los roles que tiene el usuario y habilitará los módulos correspondientes.
+%		}
+%		{\alta}
+%		{\refUserReq{RF1}\refUserReq{RF2}}{}
+%	\end{ReqSist}
 	
 	\begin{ReqSist}
-		\reqSistItem{RNF3}{Creación de Notificación}
+		\reqSistItem{RNF1}{Creación de Notificación}
 		{
 			La aplicación creará las notificaciones de los medicamentos que pertenecen a un tratamiento una vez que estos hayan sido agregados.
 		}
@@ -409,7 +461,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqSist}
 
 	\begin{ReqSist}
-		\reqSistItem{RNF4}{Creación de Alarmas}
+		\reqSistItem{RNF2}{Creación de Alarmas}
 		{
 			La aplicación creará las alarmas cuando un medicamento cuente con una clasificación de \textbf{Importante} y éste haya sido agregado al tratamiento.
 		}
@@ -418,7 +470,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqSist}
 	
 	\begin{ReqSist}
-		\reqSistItem{RNF5}{Interfaz Comprensible}
+		\reqSistItem{RNF3}{Interfaz Comprensible}
 		{
 			La aplicación contará con íconos que expliquen su funcionalidad, los formularios preguntarán por datos que se encuentren en la receta expedida por el doctor o que se encuentren en la caja del medicamento.
 		}
@@ -427,7 +479,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqSist}
 
 	\begin{ReqSist}
-		\reqSistItem{RNF6}{Foto de Perfil}
+		\reqSistItem{RNF4}{Foto de Perfil}
 		{
 			La aplicación contará con 4 avatares que se podrán seleccionar en el caso de que el usuario no pueda realizar o seleccionar la foto de perfil en el momento en que está creando su cuenta.
 		}
@@ -436,7 +488,7 @@ En la siguiente sección se especificarán los requerimientos con los que estar�
 	\end{ReqSist}
 
 	\begin{ReqSist}
-		\reqSistItem{RNF7}{Base de Datos}
+		\reqSistItem{RNF5}{Base de Datos}
 		{
 			La aplicación contará con una base de datos de forma local que permitirá que la consulta de los datos sea más rápida.
 		}
